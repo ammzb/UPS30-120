@@ -1,0 +1,237 @@
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.xst" -ofn "E:/JDEVS/New_Project89/UPS3phase/ISE/ISE_CPLD_JC328_04/SBDC1/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+taengine -intstyle ise -f test1 -w --format html1 -l test1_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/CPLD/ISE_CPLD_JC328_04 - Copy/ISE_CPLD_JC328_04_new/test1.xst" -ofn "D:/New/CPLD/ISE_CPLD_JC328_04 - Copy/ISE_CPLD_JC328_04_new/test1.syr" 
+xst -intstyle ise -ifn "D:/New/CPLD/ISE_CPLD_JC328_04 - Copy/ISE_CPLD_JC328_04_new/test1.xst" -ofn "D:/New/CPLD/ISE_CPLD_JC328_04 - Copy/ISE_CPLD_JC328_04_new/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 "test1.ngc" test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "G:/ISE_CPLD_JC328_04_new/test1.xst" -ofn "G:/ISE_CPLD_JC328_04_new/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "J:/ISE_CPLD_JC328_04_new/test1.xst" -ofn "J:/ISE_CPLD_JC328_04_new/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "J:/ISE_CPLD_JC328_04_new/test1.xst" -ofn "J:/ISE_CPLD_JC328_04_new/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "J:/ISE_CPLD_JC328_04_new/test1.xst" -ofn "J:/ISE_CPLD_JC328_04_new/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/CPLD/ISE_CPLD_3_09_98/test1.xst" -ofn "D:/New/LastTries/CPLD/ISE_CPLD_3_09_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/CPLD/ISE_CPLD_3_09_98/test1.xst" -ofn "D:/New/LastTries/CPLD/ISE_CPLD_3_09_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/CPLD/ISE_CPLD_18_09_98/test1.xst" -ofn "D:/New/LastTries/CPLD/ISE_CPLD_18_09_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/A.Mirza/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/A.Mirza/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/New/LastTries/Azar99/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/CPLD/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/CPLD/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 
+xst -intstyle ise -ifn "D:/CPLD/ISE_CPLD_09_10_98/test1.xst" -ofn "D:/CPLD/ISE_CPLD_09_10_98/test1.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc JC328_03_cpld.ucf -p xc9572xl-TQ100-10 test1.ngc test1.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper test1.ngd 
+XSLTProcess test1_build.xml 
+tsim -intstyle ise test1 test1.nga 
+hprep6 -s IEEE1149 -n test1 -i test1 

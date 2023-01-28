@@ -1,0 +1,230 @@
+MDF Database:  version 1.0
+MDF_INFO | test1 | XC9572XL-10-TQ100
+MACROCELL | 2 | 10 | cpld_to_STS_in_pulse_INV_2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_INV_3 = STS_byepass_nEnable & !STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 2 | 6 | cpld_to_STS_in_pulse_IN_2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_IN_3 = !STS_byepass_nEnable & STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 0 | 10 | Charger_4_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_Batt_leg4_up_dsp2  | PWM_Batt_leg4_enable_dsp2  | PWM_Batt_leg4_down_dsp2
+INPUTP | 3 | 13 | 14 | 12
+EQ | 2 | 
+   !Charger_4_PWM1 = !PWM_Batt_leg4_up_dsp2 & !PWM_Batt_leg4_enable_dsp2 & 
+	PWM_Batt_leg4_down_dsp2;
+
+MACROCELL | 0 | 3 | Charger_4_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_Batt_leg4_up_dsp2  | PWM_Batt_leg4_enable_dsp2  | PWM_Batt_leg4_down_dsp2
+INPUTP | 3 | 13 | 14 | 12
+EQ | 2 | 
+   !Charger_4_PWM2 = PWM_Batt_leg4_up_dsp2 & !PWM_Batt_leg4_enable_dsp2 & 
+	!PWM_Batt_leg4_down_dsp2;
+
+MACROCELL | 2 | 1 | Charger_R_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_R_up_dsp2  | PWM_RST_enable_dsp2  | PWM_R_down_dsp2
+INPUTP | 3 | 6 | 11 | 5
+EQ | 2 | 
+   !Charger_R_PWM1 = !PWM_R_up_dsp2 & !PWM_RST_enable_dsp2 & 
+	PWM_R_down_dsp2;
+
+MACROCELL | 0 | 16 | Charger_R_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_R_up_dsp2  | PWM_RST_enable_dsp2  | PWM_R_down_dsp2
+INPUTP | 3 | 6 | 11 | 5
+EQ | 2 | 
+   !Charger_R_PWM2 = PWM_R_up_dsp2 & !PWM_RST_enable_dsp2 & 
+	!PWM_R_down_dsp2;
+
+MACROCELL | 0 | 14 | Charger_S_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_RST_enable_dsp2  | PWM_S_up_dsp2  | PWM_S_down_dsp2
+INPUTP | 3 | 11 | 7 | 8
+EQ | 2 | 
+   !Charger_S_PWM1 = !PWM_RST_enable_dsp2 & !PWM_S_up_dsp2 & 
+	PWM_S_down_dsp2;
+
+MACROCELL | 0 | 9 | Charger_S_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_RST_enable_dsp2  | PWM_S_up_dsp2  | PWM_S_down_dsp2
+INPUTP | 3 | 11 | 7 | 8
+EQ | 2 | 
+   !Charger_S_PWM2 = !PWM_RST_enable_dsp2 & PWM_S_up_dsp2 & 
+	!PWM_S_down_dsp2;
+
+MACROCELL | 0 | 13 | Charger_T_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_RST_enable_dsp2  | PWM_T_up_dsp2  | PWM_T_down_dsp2
+INPUTP | 3 | 11 | 9 | 10
+EQ | 2 | 
+   !Charger_T_PWM1 = !PWM_RST_enable_dsp2 & !PWM_T_up_dsp2 & 
+	PWM_T_down_dsp2;
+
+MACROCELL | 0 | 6 | Charger_T_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_RST_enable_dsp2  | PWM_T_up_dsp2  | PWM_T_down_dsp2
+INPUTP | 3 | 11 | 9 | 10
+EQ | 2 | 
+   !Charger_T_PWM2 = !PWM_RST_enable_dsp2 & PWM_T_up_dsp2 & 
+	!PWM_T_down_dsp2;
+
+MACROCELL | 2 | 3 | inv_R_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_R_up_dsp1  | PWM_R_down_dsp1
+INPUTP | 3 | 83 | 71 | 70
+EQ | 2 | 
+   !inv_R_PWM1 = !PWM_inv_RST_enable_dsp1 & !PWM_R_up_dsp1 & 
+	PWM_R_down_dsp1;
+
+MACROCELL | 2 | 2 | inv_R_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_R_up_dsp1  | PWM_R_down_dsp1
+INPUTP | 3 | 83 | 71 | 70
+EQ | 2 | 
+   !inv_R_PWM2 = !PWM_inv_RST_enable_dsp1 & PWM_R_up_dsp1 & 
+	!PWM_R_down_dsp1;
+
+MACROCELL | 2 | 8 | inv_S_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_S_up_dsp1  | PWM_S_down_dsp1
+INPUTP | 3 | 83 | 72 | 74
+EQ | 2 | 
+   !inv_S_PWM1 = !PWM_inv_RST_enable_dsp1 & !PWM_S_up_dsp1 & 
+	PWM_S_down_dsp1;
+
+MACROCELL | 2 | 0 | inv_S_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_S_up_dsp1  | PWM_S_down_dsp1
+INPUTP | 3 | 83 | 72 | 74
+EQ | 2 | 
+   !inv_S_PWM2 = !PWM_inv_RST_enable_dsp1 & PWM_S_up_dsp1 & 
+	!PWM_S_down_dsp1;
+
+MACROCELL | 0 | 17 | inv_T_PWM1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_T_up_dsp1  | PWM_T_down_dsp1
+INPUTP | 3 | 83 | 75 | 80
+EQ | 2 | 
+   !inv_T_PWM1 = !PWM_inv_RST_enable_dsp1 & !PWM_T_up_dsp1 & 
+	PWM_T_down_dsp1;
+
+MACROCELL | 0 | 15 | inv_T_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | PWM_inv_RST_enable_dsp1  | PWM_T_up_dsp1  | PWM_T_down_dsp1
+INPUTP | 3 | 83 | 75 | 80
+EQ | 2 | 
+   !inv_T_PWM2 = !PWM_inv_RST_enable_dsp1 & PWM_T_up_dsp1 & 
+	!PWM_T_down_dsp1;
+
+MACROCELL | 2 | 16 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_INV_2 = STS_byepass_nEnable & !STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 2 | 11 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_INV_1 = STS_byepass_nEnable & !STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 2 | 9 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_IN_2 = !STS_byepass_nEnable & STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 2 | 15 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | STS_byepass_nEnable  | STS_INV_nEnable  | PWM_inv_leg4_enable_dsp1
+INPUTP | 3 | 20 | 1 | 84
+EQ | 2 | 
+   cpld_to_STS_in_pulse_IN_1 = !STS_byepass_nEnable & STS_INV_nEnable & 
+	!PWM_inv_leg4_enable_dsp1;
+
+MACROCELL | 0 | 12 | inv_4_PWM2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   inv_4_PWM2 = Gnd;
+
+MACROCELL | 3 | 12 | test_85_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   test_85 = Vcc;
+
+MACROCELL | 2 | 7 | test_85_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   inv_4_PWM1 = Vcc;
+
+MACROCELL | 1 | 4 | test_85_OBUF$BUF1
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   CPLD_59 = Vcc;
+
+PIN | STS_byepass_nEnable | 64 | 0 | N/A | 20 | 6 | 2 | 10 | 2 | 6 | 2 | 16 | 2 | 11 | 2 | 9 | 2 | 15
+PIN | STS_INV_nEnable | 64 | 0 | N/A | 1 | 6 | 2 | 10 | 2 | 6 | 2 | 16 | 2 | 11 | 2 | 9 | 2 | 15
+PIN | PWM_inv_leg4_enable_dsp1 | 64 | 0 | N/A | 84 | 6 | 2 | 10 | 2 | 6 | 2 | 16 | 2 | 11 | 2 | 9 | 2 | 15
+PIN | PWM_Batt_leg4_up_dsp2 | 64 | 0 | N/A | 13 | 2 | 0 | 10 | 0 | 3
+PIN | PWM_Batt_leg4_enable_dsp2 | 64 | 0 | N/A | 14 | 2 | 0 | 10 | 0 | 3
+PIN | PWM_Batt_leg4_down_dsp2 | 64 | 0 | N/A | 12 | 2 | 0 | 10 | 0 | 3
+PIN | PWM_R_up_dsp2 | 64 | 0 | N/A | 6 | 2 | 2 | 1 | 0 | 16
+PIN | PWM_RST_enable_dsp2 | 64 | 0 | N/A | 11 | 6 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 9 | 0 | 13 | 0 | 6
+PIN | PWM_R_down_dsp2 | 64 | 0 | N/A | 5 | 2 | 2 | 1 | 0 | 16
+PIN | PWM_S_up_dsp2 | 64 | 0 | N/A | 7 | 2 | 0 | 14 | 0 | 9
+PIN | PWM_S_down_dsp2 | 64 | 0 | N/A | 8 | 2 | 0 | 14 | 0 | 9
+PIN | PWM_T_up_dsp2 | 64 | 0 | N/A | 9 | 2 | 0 | 13 | 0 | 6
+PIN | PWM_T_down_dsp2 | 64 | 0 | N/A | 10 | 2 | 0 | 13 | 0 | 6
+PIN | PWM_inv_RST_enable_dsp1 | 64 | 0 | N/A | 83 | 6 | 2 | 3 | 2 | 2 | 2 | 8 | 2 | 0 | 0 | 17 | 0 | 15
+PIN | PWM_R_up_dsp1 | 64 | 0 | N/A | 71 | 2 | 2 | 3 | 2 | 2
+PIN | PWM_R_down_dsp1 | 64 | 0 | N/A | 70 | 2 | 2 | 3 | 2 | 2
+PIN | PWM_S_up_dsp1 | 64 | 0 | N/A | 72 | 2 | 2 | 8 | 2 | 0
+PIN | PWM_S_down_dsp1 | 64 | 0 | N/A | 74 | 2 | 2 | 8 | 2 | 0
+PIN | PWM_T_up_dsp1 | 64 | 0 | N/A | 75 | 2 | 0 | 17 | 0 | 15
+PIN | PWM_T_down_dsp1 | 64 | 0 | N/A | 80 | 2 | 0 | 17 | 0 | 15
+PIN | cpld_to_STS_in_pulse_INV_3 | 536871040 | 0 | N/A | 46
+PIN | cpld_to_STS_in_pulse_IN_3 | 536871040 | 0 | N/A | 48
+PIN | Charger_4_PWM1 | 536871040 | 0 | N/A | 21
+PIN | Charger_4_PWM2 | 536871040 | 0 | N/A | 17
+PIN | Charger_R_PWM1 | 536871040 | 0 | N/A | 29
+PIN | Charger_R_PWM2 | 536871040 | 0 | N/A | 27
+PIN | Charger_S_PWM1 | 536871040 | 0 | N/A | 26
+PIN | Charger_S_PWM2 | 536871040 | 0 | N/A | 25
+PIN | Charger_T_PWM1 | 536871040 | 0 | N/A | 24
+PIN | Charger_T_PWM2 | 536871040 | 0 | N/A | 22
+PIN | inv_R_PWM1 | 536871040 | 0 | N/A | 44
+PIN | inv_R_PWM2 | 536871040 | 0 | N/A | 43
+PIN | inv_S_PWM1 | 536871040 | 0 | N/A | 38
+PIN | inv_S_PWM2 | 536871040 | 0 | N/A | 37
+PIN | inv_T_PWM1 | 536871040 | 0 | N/A | 36
+PIN | inv_T_PWM2 | 536871040 | 0 | N/A | 35
+PIN | cpld_to_STS_in_pulse_INV_2 | 536871040 | 0 | N/A | 52
+PIN | cpld_to_STS_in_pulse_INV_1 | 536871040 | 0 | N/A | 55
+PIN | cpld_to_STS_in_pulse_IN_2 | 536871040 | 0 | N/A | 54
+PIN | cpld_to_STS_in_pulse_IN_1 | 536871040 | 0 | N/A | 59
+PIN | inv_4_PWM2 | 536871040 | 0 | N/A | 32
+PIN | test_85 | 536871040 | 0 | N/A | 78
+PIN | inv_4_PWM1 | 536871040 | 0 | N/A | 33
+PIN | CPLD_59 | 536871040 | 0 | N/A | 88

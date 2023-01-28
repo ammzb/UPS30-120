@@ -1,0 +1,552 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: test1                               Date:  1-18-2022,  3:23PM
+Device Used: XC9572XL-10-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+24 /72  ( 33%) 20  /360  (  6%) 24 /216 ( 11%)   0  /72  (  0%) 44 /72  ( 61%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1          10/18       13/54        9/90      15/18
+FB2           1/18        0/54        0/90      10/18
+FB3          12/18       11/54       11/90      12/18
+FB4           1/18        0/54        0/90       7/18
+             -----       -----       -----      -----    
+             24/72       24/216      20/360     44/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   20          20    |  I/O              :    41      66
+Output        :   24          24    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     44          44
+
+** Power Data **
+
+There are 24 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'test1.ise'.
+INFO:Cpld - Inferring BUFG constraint for signal 'STS_byepass_nEnable' based
+   upon the LOC constraint 'P22'. It is recommended that you declare this BUFG
+   explicitedly in your design. Note that for certain device families the output
+   of a BUFG constraint can not drive a gated clock, and the BUFG constraint
+   will be ignored.
+WARNING:Cpld:1007 - Removing unused input(s) 'CPLD_clk_dsp1'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'CPLD_clk_dsp2'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'PWM_leg4_down_dsp1'.  The input(s)
+   are unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'PWM_leg4_up_dsp1'.  The input(s)
+   are unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'STS_INV_Command_L123'.  The
+   input(s) are unused after optimization. Please verify functionality via
+   simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'STS_INV_nc'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'STS_byepass_Command_L123'.  The
+   input(s) are unused after optimization. Please verify functionality via
+   simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'STS_byepass_nc'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1007 - Removing unused input(s) 'clk_30mhz'.  The input(s) are
+   unused after optimization. Please verify functionality via simulation.
+WARNING:Cpld:1239 - The global clock designation (BUFG) on signal
+   'STS_byepass_nEnable_IBUF' is ignored. Most likely the signal is gated and
+   therefore cannot be used as a global control signal.
+*************************  Summary of Mapped Logic  ************************
+
+** 24 Outputs **
+
+Signal                      Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                        Pts   Inps          No.  Type    Use     Mode Rate State
+Charger_4_PWM2              1     3     FB1_4   20   I/O     O       STD  FAST 
+Charger_T_PWM2              1     3     FB1_7   25   I/O     O       STD  FAST 
+Charger_S_PWM2              1     3     FB1_10  28   I/O     O       STD  FAST 
+Charger_4_PWM1              1     3     FB1_11  23   GCK/I/O O       STD  FAST 
+inv_4_PWM2                  0     0     FB1_13  36   I/O     O       STD  FAST 
+Charger_T_PWM1              1     3     FB1_14  27   GCK/I/O O       STD  FAST 
+Charger_S_PWM1              1     3     FB1_15  29   I/O     O       STD  FAST 
+inv_T_PWM2                  1     3     FB1_16  39   I/O     O       STD  FAST 
+Charger_R_PWM2              1     3     FB1_17  30   I/O     O       STD  FAST 
+inv_T_PWM1                  1     3     FB1_18  40   I/O     O       STD  FAST 
+CPLD_59                     0     0     FB2_5   95   I/O     O       STD  FAST 
+inv_S_PWM2                  1     3     FB3_1   41   I/O     O       STD  FAST 
+Charger_R_PWM1              1     3     FB3_2   32   I/O     O       STD  FAST 
+inv_R_PWM2                  1     3     FB3_3   49   I/O     O       STD  FAST 
+inv_R_PWM1                  1     3     FB3_4   50   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_IN_3   1     3     FB3_7   54   I/O     O       STD  FAST 
+inv_4_PWM1                  0     0     FB3_8   37   I/O     O       STD  FAST 
+inv_S_PWM1                  1     3     FB3_9   42   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_IN_2   1     3     FB3_10  60   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_INV_3  1     3     FB3_11  52   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_INV_1  1     3     FB3_12  61   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_IN_1   1     3     FB3_16  64   I/O     O       STD  FAST 
+cpld_to_STS_in_pulse_INV_2  1     3     FB3_17  58   I/O     O       STD  FAST 
+test_85                     0     0     FB4_13  85   I/O     O       STD  FAST 
+
+** 20 Inputs **
+
+Signal                      Loc     Pin  Pin     Pin     
+Name                                No.  Type    Use     
+PWM_Batt_leg4_enable_dsp2   FB1_1   16   I/O     I
+PWM_RST_enable_dsp2         FB1_2   13   I/O     I
+PWM_Batt_leg4_down_dsp2     FB1_5   14   I/O     I
+PWM_Batt_leg4_up_dsp2       FB1_6   15   I/O     I
+STS_byepass_nEnable         FB1_9   22   GCK/I/O I
+PWM_T_down_dsp1             FB2_1   87   I/O     I
+PWM_inv_leg4_enable_dsp1    FB2_3   91   I/O     I
+STS_INV_nEnable             FB2_10  1    I/O     I
+PWM_R_down_dsp2             FB2_12  6    I/O     I
+PWM_R_up_dsp2               FB2_13  8    I/O     I
+PWM_S_up_dsp2               FB2_14  9    I/O     I
+PWM_T_up_dsp2               FB2_15  11   I/O     I
+PWM_S_down_dsp2             FB2_16  10~  I/O     I
+PWM_T_down_dsp2             FB2_17  12   I/O     I
+PWM_R_down_dsp1             FB4_6   76   I/O     I
+PWM_R_up_dsp1               FB4_7   77   I/O     I
+PWM_S_down_dsp1             FB4_10  81~  I/O     I
+PWM_T_up_dsp1               FB4_12  82   I/O     I
+PWM_S_up_dsp1               FB4_14  78   I/O     I
+PWM_inv_RST_enable_dsp1     FB4_17  90   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               13/41
+Number of signals used by logic mapping into function block:  13
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1   16    I/O     I
+(unused)              0       0     0   5     FB1_2   13    I/O     I
+(unused)              0       0     0   5     FB1_3   18    I/O     
+Charger_4_PWM2        1       0     0   4     FB1_4   20    I/O     O
+(unused)              0       0     0   5     FB1_5   14    I/O     I
+(unused)              0       0     0   5     FB1_6   15    I/O     I
+Charger_T_PWM2        1       0     0   4     FB1_7   25    I/O     O
+(unused)              0       0     0   5     FB1_8   17    I/O     
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O I
+Charger_S_PWM2        1       0     0   4     FB1_10  28    I/O     O
+Charger_4_PWM1        1       0     0   4     FB1_11  23    GCK/I/O O
+(unused)              0       0     0   5     FB1_12  33    I/O     
+inv_4_PWM2            0       0     0   5     FB1_13  36    I/O     O
+Charger_T_PWM1        1       0     0   4     FB1_14  27    GCK/I/O O
+Charger_S_PWM1        1       0     0   4     FB1_15  29    I/O     O
+inv_T_PWM2            1       0     0   4     FB1_16  39    I/O     O
+Charger_R_PWM2        1       0     0   4     FB1_17  30    I/O     O
+inv_T_PWM1            1       0     0   4     FB1_18  40    I/O     O
+
+Signals Used by Logic in Function Block
+  1: PWM_Batt_leg4_down_dsp2     6: PWM_R_up_dsp2     10: PWM_T_down_dsp2 
+  2: PWM_Batt_leg4_enable_dsp2   7: PWM_S_down_dsp2   11: PWM_T_up_dsp1 
+  3: PWM_Batt_leg4_up_dsp2       8: PWM_S_up_dsp2     12: PWM_T_up_dsp2 
+  4: PWM_RST_enable_dsp2         9: PWM_T_down_dsp1   13: PWM_inv_RST_enable_dsp1 
+  5: PWM_R_down_dsp2           
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Charger_4_PWM2       XXX..................................... 3
+Charger_T_PWM2       ...X.....X.X............................ 3
+Charger_S_PWM2       ...X..XX................................ 3
+Charger_4_PWM1       XXX..................................... 3
+inv_4_PWM2           ........................................ 0
+Charger_T_PWM1       ...X.....X.X............................ 3
+Charger_S_PWM1       ...X..XX................................ 3
+inv_T_PWM2           ........X.X.X........................... 3
+Charger_R_PWM2       ...XXX.................................. 3
+inv_T_PWM1           ........X.X.X........................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1   87    I/O     I
+(unused)              0       0     0   5     FB2_2   94    I/O     
+(unused)              0       0     0   5     FB2_3   91    I/O     I
+(unused)              0       0     0   5     FB2_4   93    I/O     
+CPLD_59               0       0     0   5     FB2_5   95    I/O     O
+(unused)              0       0     0   5     FB2_6   96    I/O     
+(unused)              0       0     0   5     FB2_7   3     GTS/I/O 
+(unused)              0       0     0   5     FB2_8   97    I/O     
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O 
+(unused)              0       0     0   5     FB2_10  1     I/O     I
+(unused)              0       0     0   5     FB2_11  4     GTS/I/O 
+(unused)              0       0     0   5     FB2_12  6     I/O     I
+(unused)              0       0     0   5     FB2_13  8     I/O     I
+(unused)              0       0     0   5     FB2_14  9     I/O     I
+(unused)              0       0     0   5     FB2_15  11    I/O     I
+(unused)              0       0     0   5     FB2_16  10    I/O     I
+(unused)              0       0     0   5     FB2_17  12    I/O     I
+(unused)              0       0     0   5     FB2_18  92    I/O     
+
+Signals Used by Logic in Function Block
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+CPLD_59              ........................................ 0
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               11/43
+Number of signals used by logic mapping into function block:  11
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+inv_S_PWM2            1       0     0   4     FB3_1   41    I/O     O
+Charger_R_PWM1        1       0     0   4     FB3_2   32    I/O     O
+inv_R_PWM2            1       0     0   4     FB3_3   49    I/O     O
+inv_R_PWM1            1       0     0   4     FB3_4   50    I/O     O
+(unused)              0       0     0   5     FB3_5   35    I/O     
+(unused)              0       0     0   5     FB3_6   53    I/O     
+cpld_to_STS_in_pulse_IN_3
+                      1       0     0   4     FB3_7   54    I/O     O
+inv_4_PWM1            0       0     0   5     FB3_8   37    I/O     O
+inv_S_PWM1            1       0     0   4     FB3_9   42    I/O     O
+cpld_to_STS_in_pulse_IN_2
+                      1       0     0   4     FB3_10  60    I/O     O
+cpld_to_STS_in_pulse_INV_3
+                      1       0     0   4     FB3_11  52    I/O     O
+cpld_to_STS_in_pulse_INV_1
+                      1       0     0   4     FB3_12  61    I/O     O
+(unused)              0       0     0   5     FB3_13  63    I/O     
+(unused)              0       0     0   5     FB3_14  55    I/O     
+(unused)              0       0     0   5     FB3_15  56    I/O     
+cpld_to_STS_in_pulse_IN_1
+                      1       0     0   4     FB3_16  64    I/O     O
+cpld_to_STS_in_pulse_INV_2
+                      1       0     0   4     FB3_17  58    I/O     O
+(unused)              0       0     0   5     FB3_18  59    I/O     
+
+Signals Used by Logic in Function Block
+  1: PWM_RST_enable_dsp2   5: PWM_R_up_dsp2             9: PWM_inv_leg4_enable_dsp1 
+  2: PWM_R_down_dsp1       6: PWM_S_down_dsp1          10: STS_INV_nEnable 
+  3: PWM_R_down_dsp2       7: PWM_S_up_dsp1            11: STS_byepass_nEnable 
+  4: PWM_R_up_dsp1         8: PWM_inv_RST_enable_dsp1 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+inv_S_PWM2           .....XXX................................ 3
+Charger_R_PWM1       X.X.X................................... 3
+inv_R_PWM2           .X.X...X................................ 3
+inv_R_PWM1           .X.X...X................................ 3
+cpld_to_STS_in_pulse_IN_3 
+                     ........XXX............................. 3
+inv_4_PWM1           ........................................ 0
+inv_S_PWM1           .....XXX................................ 3
+cpld_to_STS_in_pulse_IN_2 
+                     ........XXX............................. 3
+cpld_to_STS_in_pulse_INV_3 
+                     ........XXX............................. 3
+cpld_to_STS_in_pulse_INV_1 
+                     ........XXX............................. 3
+cpld_to_STS_in_pulse_IN_1 
+                     ........XXX............................. 3
+cpld_to_STS_in_pulse_INV_2 
+                     ........XXX............................. 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1   65    I/O     
+(unused)              0       0     0   5     FB4_2   67    I/O     
+(unused)              0       0     0   5     FB4_3   71    I/O     
+(unused)              0       0     0   5     FB4_4   72    I/O     
+(unused)              0       0     0   5     FB4_5   68    I/O     
+(unused)              0       0     0   5     FB4_6   76    I/O     I
+(unused)              0       0     0   5     FB4_7   77    I/O     I
+(unused)              0       0     0   5     FB4_8   70    I/O     
+(unused)              0       0     0   5     FB4_9   66    I/O     
+(unused)              0       0     0   5     FB4_10  81    I/O     I
+(unused)              0       0     0   5     FB4_11  74    I/O     
+(unused)              0       0     0   5     FB4_12  82    I/O     I
+test_85               0       0     0   5     FB4_13  85    I/O     O
+(unused)              0       0     0   5     FB4_14  78    I/O     I
+(unused)              0       0     0   5     FB4_15  89    I/O     
+(unused)              0       0     0   5     FB4_16  86    I/O     
+(unused)              0       0     0   5     FB4_17  90    I/O     I
+(unused)              0       0     0   5     FB4_18  79    I/O     
+
+Signals Used by Logic in Function Block
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+test_85              ........................................ 0
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+CPLD_59 <= '1';
+
+
+Charger_4_PWM1 <= NOT ((NOT PWM_Batt_leg4_up_dsp2 AND NOT PWM_Batt_leg4_enable_dsp2 AND 
+	PWM_Batt_leg4_down_dsp2));
+
+
+Charger_4_PWM2 <= NOT ((PWM_Batt_leg4_up_dsp2 AND NOT PWM_Batt_leg4_enable_dsp2 AND 
+	NOT PWM_Batt_leg4_down_dsp2));
+
+
+Charger_R_PWM1 <= NOT ((NOT PWM_R_up_dsp2 AND NOT PWM_RST_enable_dsp2 AND 
+	PWM_R_down_dsp2));
+
+
+Charger_R_PWM2 <= NOT ((PWM_R_up_dsp2 AND NOT PWM_RST_enable_dsp2 AND 
+	NOT PWM_R_down_dsp2));
+
+
+Charger_S_PWM1 <= NOT ((NOT PWM_RST_enable_dsp2 AND NOT PWM_S_up_dsp2 AND 
+	PWM_S_down_dsp2));
+
+
+Charger_S_PWM2 <= NOT ((NOT PWM_RST_enable_dsp2 AND PWM_S_up_dsp2 AND 
+	NOT PWM_S_down_dsp2));
+
+
+Charger_T_PWM1 <= NOT ((NOT PWM_RST_enable_dsp2 AND NOT PWM_T_up_dsp2 AND 
+	PWM_T_down_dsp2));
+
+
+Charger_T_PWM2 <= NOT ((NOT PWM_RST_enable_dsp2 AND PWM_T_up_dsp2 AND 
+	NOT PWM_T_down_dsp2));
+
+
+cpld_to_STS_in_pulse_INV_1 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+cpld_to_STS_in_pulse_INV_2 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+cpld_to_STS_in_pulse_INV_3 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+cpld_to_STS_in_pulse_IN_1 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+cpld_to_STS_in_pulse_IN_2 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+cpld_to_STS_in_pulse_IN_3 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+	NOT PWM_inv_leg4_enable_dsp1);
+
+
+inv_4_PWM1 <= '1';
+
+
+inv_4_PWM2 <= '0';
+
+
+inv_R_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_R_up_dsp1 AND 
+	PWM_R_down_dsp1));
+
+
+inv_R_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_R_up_dsp1 AND 
+	NOT PWM_R_down_dsp1));
+
+
+inv_S_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_S_up_dsp1 AND 
+	PWM_S_down_dsp1));
+
+
+inv_S_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_S_up_dsp1 AND 
+	NOT PWM_S_down_dsp1));
+
+
+inv_T_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_T_up_dsp1 AND 
+	PWM_T_down_dsp1));
+
+
+inv_T_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_T_up_dsp1 AND 
+	NOT PWM_T_down_dsp1));
+
+
+test_85 <= '1';
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13               XC9572XL-10-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 STS_INV_nEnable                  51 VCC                           
+  2 NC                               52 cpld_to_STS_in_pulse_INV_3    
+  3 KPR                              53 KPR                           
+  4 KPR                              54 cpld_to_STS_in_pulse_IN_3     
+  5 VCC                              55 KPR                           
+  6 PWM_R_down_dsp2                  56 KPR                           
+  7 NC                               57 VCC                           
+  8 PWM_R_up_dsp2                    58 cpld_to_STS_in_pulse_INV_2    
+  9 PWM_S_up_dsp2                    59 KPR                           
+ 10 PWM_S_down_dsp2                  60 cpld_to_STS_in_pulse_IN_2     
+ 11 PWM_T_up_dsp2                    61 cpld_to_STS_in_pulse_INV_1    
+ 12 PWM_T_down_dsp2                  62 GND                           
+ 13 PWM_RST_enable_dsp2              63 KPR                           
+ 14 PWM_Batt_leg4_down_dsp2          64 cpld_to_STS_in_pulse_IN_1     
+ 15 PWM_Batt_leg4_up_dsp2            65 KPR                           
+ 16 PWM_Batt_leg4_enable_dsp2        66 KPR                           
+ 17 KPR                              67 KPR                           
+ 18 KPR                              68 KPR                           
+ 19 NC                               69 GND                           
+ 20 Charger_4_PWM2                   70 KPR                           
+ 21 GND                              71 KPR                           
+ 22 STS_byepass_nEnable              72 KPR                           
+ 23 Charger_4_PWM1                   73 NC                            
+ 24 NC                               74 KPR                           
+ 25 Charger_T_PWM2                   75 GND                           
+ 26 VCC                              76 PWM_R_down_dsp1               
+ 27 Charger_T_PWM1                   77 PWM_R_up_dsp1                 
+ 28 Charger_S_PWM2                   78 PWM_S_up_dsp1                 
+ 29 Charger_S_PWM1                   79 KPR                           
+ 30 Charger_R_PWM2                   80 NC                            
+ 31 GND                              81 PWM_S_down_dsp1               
+ 32 Charger_R_PWM1                   82 PWM_T_up_dsp1                 
+ 33 KPR                              83 TDO                           
+ 34 NC                               84 GND                           
+ 35 KPR                              85 test_85                       
+ 36 inv_4_PWM2                       86 KPR                           
+ 37 inv_4_PWM1                       87 PWM_T_down_dsp1               
+ 38 VCC                              88 VCC                           
+ 39 inv_T_PWM2                       89 KPR                           
+ 40 inv_T_PWM1                       90 PWM_inv_RST_enable_dsp1       
+ 41 inv_S_PWM2                       91 PWM_inv_leg4_enable_dsp1      
+ 42 inv_S_PWM1                       92 KPR                           
+ 43 NC                               93 KPR                           
+ 44 GND                              94 KPR                           
+ 45 TDI                              95 CPLD_59                       
+ 46 NC                               96 KPR                           
+ 47 TMS                              97 KPR                           
+ 48 TCK                              98 VCC                           
+ 49 inv_R_PWM2                       99 KPR                           
+ 50 inv_R_PWM1                      100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-TQ100
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

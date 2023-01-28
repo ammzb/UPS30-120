@@ -1,0 +1,211 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "test1";
+      var device = "XC9572XL";
+      signals = new Array("CPLD_59","Charger_4_PWM1","Charger_4_PWM2","Charger_R_PWM1","Charger_R_PWM2","Charger_S_PWM1","Charger_S_PWM2","Charger_T_PWM1","Charger_T_PWM2","cpld_to_STS_in_pulse_INV_1","cpld_to_STS_in_pulse_INV_2","cpld_to_STS_in_pulse_INV_3","cpld_to_STS_in_pulse_IN_1","cpld_to_STS_in_pulse_IN_2","cpld_to_STS_in_pulse_IN_3","inv_4_PWM1","inv_4_PWM2","inv_R_PWM1","inv_R_PWM2","inv_S_PWM1","inv_S_PWM2","inv_T_PWM1","inv_T_PWM2","test_85");
+      sigNegs = new Array("OFF","ON","ON","ON","ON","ON","ON","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","ON","ON","ON","ON","ON","ON","OFF");
+      sigTypes = new Array("","","","","","","","","","","","","","","","","","","","","","","","");
+
+      
+            pterms["FB1_4_1"]=new Array("PWM_Batt_leg4_up_dsp2","/PWM_Batt_leg4_enable_dsp2","/PWM_Batt_leg4_down_dsp2");
+          
+            pterms["FB1_7_1"]=new Array("/PWM_RST_enable_dsp2","PWM_T_up_dsp2","/PWM_T_down_dsp2");
+          
+            pterms["FB1_10_1"]=new Array("/PWM_RST_enable_dsp2","PWM_S_up_dsp2","/PWM_S_down_dsp2");
+          
+            pterms["FB1_11_1"]=new Array("/PWM_Batt_leg4_up_dsp2","/PWM_Batt_leg4_enable_dsp2","PWM_Batt_leg4_down_dsp2");
+          
+            pterms["FB1_14_1"]=new Array("/PWM_RST_enable_dsp2","/PWM_T_up_dsp2","PWM_T_down_dsp2");
+          
+            pterms["FB1_15_1"]=new Array("/PWM_RST_enable_dsp2","/PWM_S_up_dsp2","PWM_S_down_dsp2");
+          
+            pterms["FB1_16_1"]=new Array("/PWM_inv_RST_enable_dsp1","PWM_T_up_dsp1","/PWM_T_down_dsp1");
+          
+            pterms["FB1_17_1"]=new Array("PWM_R_up_dsp2","/PWM_RST_enable_dsp2","/PWM_R_down_dsp2");
+          
+            pterms["FB1_18_1"]=new Array("/PWM_inv_RST_enable_dsp1","/PWM_T_up_dsp1","PWM_T_down_dsp1");
+          
+            pterms["FB3_1_1"]=new Array("/PWM_inv_RST_enable_dsp1","PWM_S_up_dsp1","/PWM_S_down_dsp1");
+          
+            pterms["FB3_2_1"]=new Array("/PWM_R_up_dsp2","/PWM_RST_enable_dsp2","PWM_R_down_dsp2");
+          
+            pterms["FB3_3_1"]=new Array("/PWM_inv_RST_enable_dsp1","PWM_R_up_dsp1","/PWM_R_down_dsp1");
+          
+            pterms["FB3_4_1"]=new Array("/PWM_inv_RST_enable_dsp1","/PWM_R_up_dsp1","PWM_R_down_dsp1");
+          
+            pterms["FB3_7_1"]=new Array("/STS_byepass_nEnable","STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+            pterms["FB3_9_1"]=new Array("/PWM_inv_RST_enable_dsp1","/PWM_S_up_dsp1","PWM_S_down_dsp1");
+          
+            pterms["FB3_10_1"]=new Array("/STS_byepass_nEnable","STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+            pterms["FB3_11_1"]=new Array("STS_byepass_nEnable","/STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+            pterms["FB3_12_1"]=new Array("STS_byepass_nEnable","/STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+            pterms["FB3_16_1"]=new Array("/STS_byepass_nEnable","STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+            pterms["FB3_17_1"]=new Array("STS_byepass_nEnable","/STS_INV_nEnable","/PWM_inv_leg4_enable_dsp1");
+          
+          d2["Charger_4_PWM2"]=new Array("FB1_4_1");
+          
+            d2imp["Charger_4_PWM2"]=new Array("1");
+          
+          d2["Charger_T_PWM2"]=new Array("FB1_7_1");
+          
+            d2imp["Charger_T_PWM2"]=new Array("1");
+          
+          d2["Charger_S_PWM2"]=new Array("FB1_10_1");
+          
+            d2imp["Charger_S_PWM2"]=new Array("1");
+          
+          d2["Charger_4_PWM1"]=new Array("FB1_11_1");
+          
+            d2imp["Charger_4_PWM1"]=new Array("1");
+          
+          d2["inv_4_PWM2"]=new Array("GND");
+          
+            d2imp["inv_4_PWM2"]=new Array("1");
+          
+          d2["Charger_T_PWM1"]=new Array("FB1_14_1");
+          
+            d2imp["Charger_T_PWM1"]=new Array("1");
+          
+          d2["Charger_S_PWM1"]=new Array("FB1_15_1");
+          
+            d2imp["Charger_S_PWM1"]=new Array("1");
+          
+          d2["inv_T_PWM2"]=new Array("FB1_16_1");
+          
+            d2imp["inv_T_PWM2"]=new Array("1");
+          
+          d2["Charger_R_PWM2"]=new Array("FB1_17_1");
+          
+            d2imp["Charger_R_PWM2"]=new Array("1");
+          
+          d2["inv_T_PWM1"]=new Array("FB1_18_1");
+          
+            d2imp["inv_T_PWM1"]=new Array("1");
+          
+          d2["CPLD_59"]=new Array("VCC");
+          
+            d2imp["CPLD_59"]=new Array("1");
+          
+          d2["inv_S_PWM2"]=new Array("FB3_1_1");
+          
+            d2imp["inv_S_PWM2"]=new Array("1");
+          
+          d2["Charger_R_PWM1"]=new Array("FB3_2_1");
+          
+            d2imp["Charger_R_PWM1"]=new Array("1");
+          
+          d2["inv_R_PWM2"]=new Array("FB3_3_1");
+          
+            d2imp["inv_R_PWM2"]=new Array("1");
+          
+          d2["inv_R_PWM1"]=new Array("FB3_4_1");
+          
+            d2imp["inv_R_PWM1"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_IN_3"]=new Array("FB3_7_1");
+          
+            d2imp["cpld_to_STS_in_pulse_IN_3"]=new Array("1");
+          
+          d2["inv_4_PWM1"]=new Array("VCC");
+          
+            d2imp["inv_4_PWM1"]=new Array("1");
+          
+          d2["inv_S_PWM1"]=new Array("FB3_9_1");
+          
+            d2imp["inv_S_PWM1"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_IN_2"]=new Array("FB3_10_1");
+          
+            d2imp["cpld_to_STS_in_pulse_IN_2"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_INV_3"]=new Array("FB3_11_1");
+          
+            d2imp["cpld_to_STS_in_pulse_INV_3"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_INV_1"]=new Array("FB3_12_1");
+          
+            d2imp["cpld_to_STS_in_pulse_INV_1"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_IN_1"]=new Array("FB3_16_1");
+          
+            d2imp["cpld_to_STS_in_pulse_IN_1"]=new Array("1");
+          
+          d2["cpld_to_STS_in_pulse_INV_2"]=new Array("FB3_17_1");
+          
+            d2imp["cpld_to_STS_in_pulse_INV_2"]=new Array("1");
+          
+          d2["test_85"]=new Array("VCC");
+          
+            d2imp["test_85"]=new Array("1");
+          
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

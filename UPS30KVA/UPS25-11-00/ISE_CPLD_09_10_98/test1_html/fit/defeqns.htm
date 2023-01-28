@@ -1,0 +1,111 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_59 <= '1';
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_4_PWM1 <= NOT ((NOT PWM_Batt_leg4_up_dsp2 AND NOT PWM_Batt_leg4_enable_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_Batt_leg4_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_4_PWM2 <= NOT ((PWM_Batt_leg4_up_dsp2 AND NOT PWM_Batt_leg4_enable_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_Batt_leg4_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_R_PWM1 <= NOT ((NOT PWM_R_up_dsp2 AND NOT PWM_RST_enable_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_R_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_R_PWM2 <= NOT ((PWM_R_up_dsp2 AND NOT PWM_RST_enable_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_R_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_S_PWM1 <= NOT ((NOT PWM_RST_enable_dsp2 AND NOT PWM_S_up_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_S_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_S_PWM2 <= NOT ((NOT PWM_RST_enable_dsp2 AND PWM_S_up_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_S_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_T_PWM1 <= NOT ((NOT PWM_RST_enable_dsp2 AND NOT PWM_T_up_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_T_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Charger_T_PWM2 <= NOT ((NOT PWM_RST_enable_dsp2 AND PWM_T_up_dsp2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_T_down_dsp2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_INV_1 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_INV_2 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_INV_3 <= (STS_byepass_nEnable AND NOT STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_IN_1 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_IN_2 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+cpld_to_STS_in_pulse_IN_3 <= (NOT STS_byepass_nEnable AND STS_INV_nEnable AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_inv_leg4_enable_dsp1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_4_PWM1 <= '1';
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_4_PWM2 <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_R_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_R_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_R_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_R_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_R_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_R_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_S_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_S_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_S_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_S_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_S_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_S_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_T_PWM1 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND NOT PWM_T_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PWM_T_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+inv_T_PWM2 <= NOT ((NOT PWM_inv_RST_enable_dsp1 AND PWM_T_up_dsp1 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PWM_T_down_dsp1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+test_85 <= '1';
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

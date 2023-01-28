@@ -1,0 +1,68 @@
+Pin Freeze File:  version P.20131013
+
+9572XL100 XC9572XL-10-TQ100
+PWM_Batt_leg4_down_dsp2 S:PIN14
+PWM_Batt_leg4_enable_dsp2 S:PIN16
+PWM_Batt_leg4_up_dsp2 S:PIN15
+PWM_RST_enable_dsp2 S:PIN13
+PWM_R_down_dsp1 S:PIN76
+PWM_R_down_dsp2 S:PIN6
+PWM_R_up_dsp1 S:PIN77
+PWM_R_up_dsp2 S:PIN8
+PWM_S_down_dsp1 S:PIN81
+PWM_S_down_dsp2 S:PIN10
+PWM_S_up_dsp1 S:PIN78
+PWM_S_up_dsp2 S:PIN9
+PWM_T_down_dsp1 S:PIN87
+PWM_T_down_dsp2 S:PIN12
+PWM_T_up_dsp1 S:PIN82
+PWM_T_up_dsp2 S:PIN11
+PWM_inv_RST_enable_dsp1 S:PIN90
+PWM_inv_leg4_enable_dsp1 S:PIN91
+STS_INV_nEnable S:PIN1
+STS_byepass_nEnable S:PIN22
+Charger_4_PWM1 S:PIN23
+Charger_4_PWM2 S:PIN20
+Charger_R_PWM1 S:PIN32
+Charger_R_PWM2 S:PIN30
+Charger_S_PWM1 S:PIN29
+Charger_S_PWM2 S:PIN28
+Charger_T_PWM1 S:PIN27
+Charger_T_PWM2 S:PIN25
+cpld_to_STS_in_pulse_INV_3 S:PIN52
+cpld_to_STS_in_pulse_INV_2 S:PIN58
+cpld_to_STS_in_pulse_INV_1 S:PIN61
+cpld_to_STS_in_pulse_IN_3 S:PIN54
+cpld_to_STS_in_pulse_IN_2 S:PIN60
+cpld_to_STS_in_pulse_IN_1 S:PIN64
+inv_4_PWM2 S:PIN36
+inv_R_PWM1 S:PIN50
+inv_R_PWM2 S:PIN49
+inv_S_PWM1 S:PIN42
+inv_S_PWM2 S:PIN41
+inv_T_PWM1 S:PIN40
+inv_T_PWM2 S:PIN39
+test_85 S:PIN85
+inv_4_PWM1 S:PIN37
+CPLD_59 S:PIN95
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_4 Charger_4_PWM2_OBUF
+PARTITION FB1_7 Charger_T_PWM2_OBUF
+PARTITION FB1_10 Charger_S_PWM2_OBUF Charger_4_PWM1_OBUF
+PARTITION FB1_13 inv_4_PWM2_OBUF Charger_T_PWM1_OBUF Charger_S_PWM1_OBUF inv_T_PWM2_OBUF
+		 Charger_R_PWM2_OBUF inv_T_PWM1_OBUF
+PARTITION FB2_5 test_85_OBUF$BUF1
+
+PARTITION FB3_1 inv_S_PWM2_OBUF Charger_R_PWM1_OBUF inv_R_PWM2_OBUF inv_R_PWM1_OBUF
+		
+PARTITION FB3_7 cpld_to_STS_in_pulse_IN_2_OBUF test_85_OBUF$BUF0 inv_S_PWM1_OBUF cpld_to_STS_in_pulse_IN_2_OBUF$BUF0
+		 cpld_to_STS_in_pulse_INV_2_OBUF cpld_to_STS_in_pulse_INV_2_OBUF$BUF1
+PARTITION FB3_16 cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 cpld_to_STS_in_pulse_INV_2_OBUF$BUF0
+
+PARTITION FB4_13 test_85_OBUF
+
+

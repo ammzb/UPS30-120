@@ -1,0 +1,60 @@
+
+NET "CPLD_clk_dsp1" LOC = "P4";
+NET "PWM_R_up_dsp1" LOC = "P77";
+NET "PWM_R_down_dsp1" LOC = "P76";
+NET "PWM_S_up_dsp1" LOC = "P78";
+NET "PWM_S_down_dsp1" LOC = "81";
+NET "PWM_T_up_dsp1" LOC = "P82";
+NET "PWM_T_down_dsp1" LOC = "P87";
+NET "PWM_leg4_up_dsp1" LOC = "P86";
+NET "PWM_leg4_down_dsp1" LOC = "P79";
+NET "PWM_inv_RST_enable_dsp1" LOC = "P90";
+NET "PWM_inv_leg4_enable_dsp1" LOC = "P91";
+NET "STS_byepass_Command_L123" LOC = "P93";
+NET "STS_byepass_nEnable" LOC = "P22";
+NET "STS_byepass_nc" LOC = "P94";
+NET "STS_INV_Command_L123" LOC = "P96";
+NET "STS_INV_nEnable" LOC = "P1";
+NET "STS_INV_nc" LOC = "P97";
+NET "CPLD_59" LOC = "P95";
+#NET " " LOC = "P99" | pullup;
+NET "cpld_to_STS_in_pulse_INV_1" LOC = "P61";
+NET "cpld_to_STS_in_pulse_INV_2" LOC = "P58";
+NET "cpld_to_STS_in_pulse_INV_3" LOC = "P52";
+NET "cpld_to_STS_in_pulse_IN_1" LOC = "P64";
+NET "cpld_to_STS_in_pulse_IN_2" LOC = "P60";
+NET "cpld_to_STS_in_pulse_IN_3" LOC = "P54";
+
+NET "clk_30mhz" LOC="p92";
+NET "test_85" LOC="p85";
+
+
+NET "CPLD_clk_dsp2" LOC = "P3";
+NET "PWM_R_up_dsp2" LOC = "P8";
+NET "PWM_R_down_dsp2" LOC = "P6";
+NET "PWM_S_up_dsp2" LOC = "P9";
+NET "PWM_S_down_dsp2" LOC = "10";
+NET "PWM_T_up_dsp2" LOC = "P11";
+NET "PWM_T_down_dsp2" LOC = "P12";
+NET "PWM_Batt_leg4_up_dsp2" LOC = "P15";
+NET "PWM_Batt_leg4_down_dsp2" LOC = "P14";
+NET "PWM_RST_enable_dsp2" LOC = "P13";
+NET "PWM_Batt_leg4_enable_dsp2" LOC = "P16";
+
+NET "inv_R_PWM1" LOC = "P50";
+NET "inv_R_PWM2" LOC = "P49";
+NET "inv_S_PWM1" LOC = "P42";
+NET "inv_S_PWM2" LOC = "P41";
+NET "inv_T_PWM1" LOC = "P40";
+NET "inv_T_PWM2" LOC = "P39";
+NET "inv_4_PWM1" LOC = "P37";
+NET "inv_4_PWM2" LOC = "P36";
+
+NET "Charger_R_PWM1" LOC = "P32";
+NET "Charger_R_PWM2" LOC = "P30";
+NET "Charger_S_PWM1" LOC = "P29";
+NET "Charger_S_PWM2" LOC = "P28";
+NET "Charger_T_PWM1" LOC = "P27";
+NET "Charger_T_PWM2" LOC = "P25";
+NET "Charger_4_PWM1" LOC = "P23";
+NET "Charger_4_PWM2" LOC = "P20";

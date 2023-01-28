@@ -1,0 +1,1012 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500xl | 9572XL100 | XC9572XL-10-TQ100
+
+DEVICE | 9572XL | 9572XL100 | 
+
+NETWORK | test1 | 0 | 0 | 16391
+
+INPUT_INSTANCE | 0 | 0 | NULL | STS_byepass_nEnable_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | STS_byepass_nEnable | 852 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | STS_INV_nEnable_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | STS_INV_nEnable | 853 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_inv_leg4_enable_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_inv_leg4_enable_dsp1 | 854 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_INV_2_OBUF | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$Q | 787 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.Q | cpld_to_STS_in_pulse_INV_2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF.SI | cpld_to_STS_in_pulse_INV_2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF.D1 | 873 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF.D2 | 874 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | STS_byepass_nEnable_IBUF | IV_FALSE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF.REG | cpld_to_STS_in_pulse_INV_2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF.D | 872 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF.Q | 875 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_IN_2_OBUF | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$Q | 788 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.Q | cpld_to_STS_in_pulse_IN_2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF.SI | cpld_to_STS_in_pulse_IN_2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF.D1 | 877 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF.D2 | 878 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | STS_byepass_nEnable_IBUF | IV_TRUE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF.REG | cpld_to_STS_in_pulse_IN_2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF.D | 876 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF.Q | 879 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_Batt_leg4_up_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_Batt_leg4_up_dsp2 | 855 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_Batt_leg4_up_dsp2_IBUF | 789 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_up_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_Batt_leg4_enable_dsp2 | 856 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_Batt_leg4_enable_dsp2_IBUF | 790 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_Batt_leg4_down_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_Batt_leg4_down_dsp2 | 857 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_Batt_leg4_down_dsp2_IBUF | 791 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_down_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_R_up_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_R_up_dsp2 | 858 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_R_up_dsp2_IBUF | 792 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_RST_enable_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_RST_enable_dsp2 | 859 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_R_down_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_R_down_dsp2 | 860 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_R_down_dsp2_IBUF | 794 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_S_up_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_S_up_dsp2 | 861 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_S_up_dsp2_IBUF | 795 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_S_down_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_S_down_dsp2 | 862 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_S_down_dsp2_IBUF | 796 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_T_up_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_T_up_dsp2 | 863 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_T_up_dsp2_IBUF | 797 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_T_down_dsp2_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_T_down_dsp2 | 864 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_T_down_dsp2_IBUF | 798 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_inv_RST_enable_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_inv_RST_enable_dsp1 | 865 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_R_up_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_R_up_dsp1 | 866 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_R_up_dsp1_IBUF | 800 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_R_down_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_R_down_dsp1 | 867 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_R_down_dsp1_IBUF | 801 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_S_up_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_S_up_dsp1 | 868 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_S_up_dsp1_IBUF | 802 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_S_down_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_S_down_dsp1 | 869 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_S_down_dsp1_IBUF | 803 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_T_up_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_T_up_dsp1 | 870 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_T_up_dsp1_IBUF | 804 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | PWM_T_down_dsp1_IBUF | test1_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PWM_T_down_dsp1 | 871 | PI | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | PWM_T_down_dsp1_IBUF | 805 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_4_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_up_dsp2_IBUF | 789 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_enable_dsp2_IBUF | 790 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_down_dsp2_IBUF | 791 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_4_PWM1_OBUF | 806 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_4_PWM1_OBUF.Q | Charger_4_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_4_PWM1_OBUF.SI | Charger_4_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_up_dsp2_IBUF | 789 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_enable_dsp2_IBUF | 790 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_down_dsp2_IBUF | 791 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_4_PWM1_OBUF.D1 | 881 | ? | 0 | 4096 | Charger_4_PWM1_OBUF | NULL | NULL | Charger_4_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_4_PWM1_OBUF.D2 | 882 | ? | 0 | 4096 | Charger_4_PWM1_OBUF | NULL | NULL | Charger_4_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_Batt_leg4_up_dsp2_IBUF | IV_FALSE | PWM_Batt_leg4_enable_dsp2_IBUF | IV_TRUE | PWM_Batt_leg4_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_4_PWM1_OBUF.REG | Charger_4_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_4_PWM1_OBUF.D | 880 | ? | 0 | 0 | Charger_4_PWM1_OBUF | NULL | NULL | Charger_4_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_4_PWM1_OBUF.Q | 883 | ? | 0 | 0 | Charger_4_PWM1_OBUF | NULL | NULL | Charger_4_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_4_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_up_dsp2_IBUF | 789 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_enable_dsp2_IBUF | 790 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_down_dsp2_IBUF | 791 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_4_PWM2_OBUF | 807 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_4_PWM2_OBUF.Q | Charger_4_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_4_PWM2_OBUF.SI | Charger_4_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_up_dsp2_IBUF | 789 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_enable_dsp2_IBUF | 790 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_Batt_leg4_down_dsp2_IBUF | 791 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_Batt_leg4_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_4_PWM2_OBUF.D1 | 885 | ? | 0 | 4096 | Charger_4_PWM2_OBUF | NULL | NULL | Charger_4_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_4_PWM2_OBUF.D2 | 886 | ? | 0 | 4096 | Charger_4_PWM2_OBUF | NULL | NULL | Charger_4_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | PWM_Batt_leg4_up_dsp2_IBUF | IV_FALSE | PWM_Batt_leg4_enable_dsp2_IBUF | IV_FALSE | PWM_Batt_leg4_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_4_PWM2_OBUF.REG | Charger_4_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_4_PWM2_OBUF.D | 884 | ? | 0 | 0 | Charger_4_PWM2_OBUF | NULL | NULL | Charger_4_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_4_PWM2_OBUF.Q | 887 | ? | 0 | 0 | Charger_4_PWM2_OBUF | NULL | NULL | Charger_4_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_R_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp2_IBUF | 792 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp2_IBUF | 794 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_R_PWM1_OBUF | 808 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_R_PWM1_OBUF.Q | Charger_R_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_R_PWM1_OBUF.SI | Charger_R_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp2_IBUF | 792 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp2_IBUF | 794 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_R_PWM1_OBUF.D1 | 889 | ? | 0 | 4096 | Charger_R_PWM1_OBUF | NULL | NULL | Charger_R_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_R_PWM1_OBUF.D2 | 890 | ? | 0 | 4096 | Charger_R_PWM1_OBUF | NULL | NULL | Charger_R_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_R_up_dsp2_IBUF | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_TRUE | PWM_R_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_R_PWM1_OBUF.REG | Charger_R_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_R_PWM1_OBUF.D | 888 | ? | 0 | 0 | Charger_R_PWM1_OBUF | NULL | NULL | Charger_R_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_R_PWM1_OBUF.Q | 891 | ? | 0 | 0 | Charger_R_PWM1_OBUF | NULL | NULL | Charger_R_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_R_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp2_IBUF | 792 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp2_IBUF | 794 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_R_PWM2_OBUF | 809 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_R_PWM2_OBUF.Q | Charger_R_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_R_PWM2_OBUF.SI | Charger_R_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp2_IBUF | 792 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp2_IBUF | 794 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_R_PWM2_OBUF.D1 | 893 | ? | 0 | 4096 | Charger_R_PWM2_OBUF | NULL | NULL | Charger_R_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_R_PWM2_OBUF.D2 | 894 | ? | 0 | 4096 | Charger_R_PWM2_OBUF | NULL | NULL | Charger_R_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | PWM_R_up_dsp2_IBUF | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_FALSE | PWM_R_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_R_PWM2_OBUF.REG | Charger_R_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_R_PWM2_OBUF.D | 892 | ? | 0 | 0 | Charger_R_PWM2_OBUF | NULL | NULL | Charger_R_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_R_PWM2_OBUF.Q | 895 | ? | 0 | 0 | Charger_R_PWM2_OBUF | NULL | NULL | Charger_R_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_S_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp2_IBUF | 795 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp2_IBUF | 796 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_S_PWM1_OBUF | 810 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_S_PWM1_OBUF.Q | Charger_S_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_S_PWM1_OBUF.SI | Charger_S_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp2_IBUF | 795 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp2_IBUF | 796 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_S_PWM1_OBUF.D1 | 897 | ? | 0 | 4096 | Charger_S_PWM1_OBUF | NULL | NULL | Charger_S_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_S_PWM1_OBUF.D2 | 898 | ? | 0 | 4096 | Charger_S_PWM1_OBUF | NULL | NULL | Charger_S_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_FALSE | PWM_S_up_dsp2_IBUF | IV_TRUE | PWM_S_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_S_PWM1_OBUF.REG | Charger_S_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_S_PWM1_OBUF.D | 896 | ? | 0 | 0 | Charger_S_PWM1_OBUF | NULL | NULL | Charger_S_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_S_PWM1_OBUF.Q | 899 | ? | 0 | 0 | Charger_S_PWM1_OBUF | NULL | NULL | Charger_S_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_S_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp2_IBUF | 795 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp2_IBUF | 796 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_S_PWM2_OBUF | 811 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_S_PWM2_OBUF.Q | Charger_S_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_S_PWM2_OBUF.SI | Charger_S_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp2_IBUF | 795 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp2_IBUF | 796 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_S_PWM2_OBUF.D1 | 901 | ? | 0 | 4096 | Charger_S_PWM2_OBUF | NULL | NULL | Charger_S_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_S_PWM2_OBUF.D2 | 902 | ? | 0 | 4096 | Charger_S_PWM2_OBUF | NULL | NULL | Charger_S_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_TRUE | PWM_S_up_dsp2_IBUF | IV_FALSE | PWM_S_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_S_PWM2_OBUF.REG | Charger_S_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_S_PWM2_OBUF.D | 900 | ? | 0 | 0 | Charger_S_PWM2_OBUF | NULL | NULL | Charger_S_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_S_PWM2_OBUF.Q | 903 | ? | 0 | 0 | Charger_S_PWM2_OBUF | NULL | NULL | Charger_S_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_T_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp2_IBUF | 797 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp2_IBUF | 798 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_T_PWM1_OBUF | 812 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_T_PWM1_OBUF.Q | Charger_T_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_T_PWM1_OBUF.SI | Charger_T_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp2_IBUF | 797 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp2_IBUF | 798 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_T_PWM1_OBUF.D1 | 905 | ? | 0 | 4096 | Charger_T_PWM1_OBUF | NULL | NULL | Charger_T_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_T_PWM1_OBUF.D2 | 906 | ? | 0 | 4096 | Charger_T_PWM1_OBUF | NULL | NULL | Charger_T_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_FALSE | PWM_T_up_dsp2_IBUF | IV_TRUE | PWM_T_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_T_PWM1_OBUF.REG | Charger_T_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_T_PWM1_OBUF.D | 904 | ? | 0 | 0 | Charger_T_PWM1_OBUF | NULL | NULL | Charger_T_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_T_PWM1_OBUF.Q | 907 | ? | 0 | 0 | Charger_T_PWM1_OBUF | NULL | NULL | Charger_T_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | Charger_T_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp2_IBUF | 797 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp2_IBUF | 798 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Charger_T_PWM2_OBUF | 813 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_T_PWM2_OBUF.Q | Charger_T_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Charger_T_PWM2_OBUF.SI | Charger_T_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_RST_enable_dsp2_IBUF | 793 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_RST_enable_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp2_IBUF | 797 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp2_IBUF | 798 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Charger_T_PWM2_OBUF.D1 | 909 | ? | 0 | 4096 | Charger_T_PWM2_OBUF | NULL | NULL | Charger_T_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Charger_T_PWM2_OBUF.D2 | 910 | ? | 0 | 4096 | Charger_T_PWM2_OBUF | NULL | NULL | Charger_T_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_RST_enable_dsp2_IBUF | IV_TRUE | PWM_T_up_dsp2_IBUF | IV_FALSE | PWM_T_down_dsp2_IBUF
+
+SRFF_INSTANCE | Charger_T_PWM2_OBUF.REG | Charger_T_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Charger_T_PWM2_OBUF.D | 908 | ? | 0 | 0 | Charger_T_PWM2_OBUF | NULL | NULL | Charger_T_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Charger_T_PWM2_OBUF.Q | 911 | ? | 0 | 0 | Charger_T_PWM2_OBUF | NULL | NULL | Charger_T_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_R_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp1_IBUF | 800 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp1_IBUF | 801 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_R_PWM1_OBUF | 814 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_R_PWM1_OBUF.Q | inv_R_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_R_PWM1_OBUF.SI | inv_R_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp1_IBUF | 800 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp1_IBUF | 801 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_R_PWM1_OBUF.D1 | 913 | ? | 0 | 4096 | inv_R_PWM1_OBUF | NULL | NULL | inv_R_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_R_PWM1_OBUF.D2 | 914 | ? | 0 | 4096 | inv_R_PWM1_OBUF | NULL | NULL | inv_R_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_FALSE | PWM_R_up_dsp1_IBUF | IV_TRUE | PWM_R_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_R_PWM1_OBUF.REG | inv_R_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_R_PWM1_OBUF.D | 912 | ? | 0 | 0 | inv_R_PWM1_OBUF | NULL | NULL | inv_R_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_R_PWM1_OBUF.Q | 915 | ? | 0 | 0 | inv_R_PWM1_OBUF | NULL | NULL | inv_R_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_R_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp1_IBUF | 800 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp1_IBUF | 801 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_R_PWM2_OBUF | 815 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_R_PWM2_OBUF.Q | inv_R_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_R_PWM2_OBUF.SI | inv_R_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_up_dsp1_IBUF | 800 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_R_down_dsp1_IBUF | 801 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_R_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_R_PWM2_OBUF.D1 | 917 | ? | 0 | 4096 | inv_R_PWM2_OBUF | NULL | NULL | inv_R_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_R_PWM2_OBUF.D2 | 918 | ? | 0 | 4096 | inv_R_PWM2_OBUF | NULL | NULL | inv_R_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_TRUE | PWM_R_up_dsp1_IBUF | IV_FALSE | PWM_R_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_R_PWM2_OBUF.REG | inv_R_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_R_PWM2_OBUF.D | 916 | ? | 0 | 0 | inv_R_PWM2_OBUF | NULL | NULL | inv_R_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_R_PWM2_OBUF.Q | 919 | ? | 0 | 0 | inv_R_PWM2_OBUF | NULL | NULL | inv_R_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_S_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp1_IBUF | 802 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp1_IBUF | 803 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_S_PWM1_OBUF | 816 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_S_PWM1_OBUF.Q | inv_S_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_S_PWM1_OBUF.SI | inv_S_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp1_IBUF | 802 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp1_IBUF | 803 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_S_PWM1_OBUF.D1 | 921 | ? | 0 | 4096 | inv_S_PWM1_OBUF | NULL | NULL | inv_S_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_S_PWM1_OBUF.D2 | 922 | ? | 0 | 4096 | inv_S_PWM1_OBUF | NULL | NULL | inv_S_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_FALSE | PWM_S_up_dsp1_IBUF | IV_TRUE | PWM_S_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_S_PWM1_OBUF.REG | inv_S_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_S_PWM1_OBUF.D | 920 | ? | 0 | 0 | inv_S_PWM1_OBUF | NULL | NULL | inv_S_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_S_PWM1_OBUF.Q | 923 | ? | 0 | 0 | inv_S_PWM1_OBUF | NULL | NULL | inv_S_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_S_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp1_IBUF | 802 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp1_IBUF | 803 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_S_PWM2_OBUF | 817 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_S_PWM2_OBUF.Q | inv_S_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_S_PWM2_OBUF.SI | inv_S_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_up_dsp1_IBUF | 802 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_S_down_dsp1_IBUF | 803 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_S_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_S_PWM2_OBUF.D1 | 925 | ? | 0 | 4096 | inv_S_PWM2_OBUF | NULL | NULL | inv_S_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_S_PWM2_OBUF.D2 | 926 | ? | 0 | 4096 | inv_S_PWM2_OBUF | NULL | NULL | inv_S_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_TRUE | PWM_S_up_dsp1_IBUF | IV_FALSE | PWM_S_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_S_PWM2_OBUF.REG | inv_S_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_S_PWM2_OBUF.D | 924 | ? | 0 | 0 | inv_S_PWM2_OBUF | NULL | NULL | inv_S_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_S_PWM2_OBUF.Q | 927 | ? | 0 | 0 | inv_S_PWM2_OBUF | NULL | NULL | inv_S_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_T_PWM1_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp1_IBUF | 804 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp1_IBUF | 805 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_T_PWM1_OBUF | 818 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_T_PWM1_OBUF.Q | inv_T_PWM1_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_T_PWM1_OBUF.SI | inv_T_PWM1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp1_IBUF | 804 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp1_IBUF | 805 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_T_PWM1_OBUF.D1 | 929 | ? | 0 | 4096 | inv_T_PWM1_OBUF | NULL | NULL | inv_T_PWM1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_T_PWM1_OBUF.D2 | 930 | ? | 0 | 4096 | inv_T_PWM1_OBUF | NULL | NULL | inv_T_PWM1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_FALSE | PWM_T_up_dsp1_IBUF | IV_TRUE | PWM_T_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_T_PWM1_OBUF.REG | inv_T_PWM1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_T_PWM1_OBUF.D | 928 | ? | 0 | 0 | inv_T_PWM1_OBUF | NULL | NULL | inv_T_PWM1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_T_PWM1_OBUF.Q | 931 | ? | 0 | 0 | inv_T_PWM1_OBUF | NULL | NULL | inv_T_PWM1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+OptxMapped | inv_T_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155872512 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp1_IBUF | 804 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp1_IBUF | 805 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_T_PWM2_OBUF | 819 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_T_PWM2_OBUF.Q | inv_T_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_T_PWM2_OBUF.SI | inv_T_PWM2_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_RST_enable_dsp1_IBUF | 799 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_RST_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_up_dsp1_IBUF | 804 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_up_dsp1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_T_down_dsp1_IBUF | 805 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_T_down_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_T_PWM2_OBUF.D1 | 933 | ? | 0 | 4096 | inv_T_PWM2_OBUF | NULL | NULL | inv_T_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_T_PWM2_OBUF.D2 | 934 | ? | 0 | 4096 | inv_T_PWM2_OBUF | NULL | NULL | inv_T_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | PWM_inv_RST_enable_dsp1_IBUF | IV_TRUE | PWM_T_up_dsp1_IBUF | IV_FALSE | PWM_T_down_dsp1_IBUF
+
+SRFF_INSTANCE | inv_T_PWM2_OBUF.REG | inv_T_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_T_PWM2_OBUF.D | 932 | ? | 0 | 0 | inv_T_PWM2_OBUF | NULL | NULL | inv_T_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_T_PWM2_OBUF.Q | 935 | ? | 0 | 0 | inv_T_PWM2_OBUF | NULL | NULL | inv_T_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 820 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.Q | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.SI | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.D1 | 937 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.D2 | 938 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | STS_byepass_nEnable_IBUF | IV_FALSE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.REG | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.D | 936 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.Q | 939 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 821 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.Q | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.SI | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.D1 | 941 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.D2 | 942 | ? | 0 | 4096 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | STS_byepass_nEnable_IBUF | IV_FALSE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.REG | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.D | 940 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.Q | 943 | ? | 0 | 0 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 822 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.Q | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.SI | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.D1 | 945 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.D2 | 946 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | STS_byepass_nEnable_IBUF | IV_TRUE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.REG | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.D | 944 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.Q | 947 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | test1_COPY_0_COPY_0 | 2155872256 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 823 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.Q | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.SI | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_byepass_nEnable_IBUF | 784 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_byepass_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STS_INV_nEnable_IBUF | 785 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | STS_INV_nEnable_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PWM_inv_leg4_enable_dsp1_IBUF | 786 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | PWM_inv_leg4_enable_dsp1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.D1 | 949 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.D2 | 950 | ? | 0 | 4096 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | STS_byepass_nEnable_IBUF | IV_TRUE | STS_INV_nEnable_IBUF | IV_FALSE | PWM_inv_leg4_enable_dsp1_IBUF
+
+SRFF_INSTANCE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.REG | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.D | 948 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.Q | 951 | ? | 0 | 0 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | NULL | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | inv_4_PWM2_OBUF | test1_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | inv_4_PWM2_OBUF | 824 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_4_PWM2_OBUF.Q | inv_4_PWM2_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | inv_4_PWM2_OBUF.SI | inv_4_PWM2_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | inv_4_PWM2_OBUF.D1 | 953 | ? | 0 | 4096 | inv_4_PWM2_OBUF | NULL | NULL | inv_4_PWM2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | inv_4_PWM2_OBUF.D2 | 954 | ? | 0 | 4096 | inv_4_PWM2_OBUF | NULL | NULL | inv_4_PWM2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | inv_4_PWM2_OBUF.REG | inv_4_PWM2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | inv_4_PWM2_OBUF.D | 952 | ? | 0 | 0 | inv_4_PWM2_OBUF | NULL | NULL | inv_4_PWM2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | inv_4_PWM2_OBUF.Q | 955 | ? | 0 | 0 | inv_4_PWM2_OBUF | NULL | NULL | inv_4_PWM2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+Merge+OptxMapped | test_85_OBUF | test1_COPY_0_COPY_0 | 2155907072 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | test_85_OBUF$Q | 825 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF.Q | test_85_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | test_85_OBUF.SI | test_85_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | test_85_OBUF.D1 | 957 | ? | 0 | 4096 | test_85_OBUF | NULL | NULL | test_85_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | test_85_OBUF.D2 | 958 | ? | 0 | 4096 | test_85_OBUF | NULL | NULL | test_85_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | test_85_OBUF.REG | test_85_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | test_85_OBUF.D | 956 | ? | 0 | 0 | test_85_OBUF | NULL | NULL | test_85_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | test_85_OBUF.Q | 959 | ? | 0 | 0 | test_85_OBUF | NULL | NULL | test_85_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | test_85_OBUF$BUF0 | test1_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | test_85_OBUF$BUF0 | 826 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF$BUF0.Q | test_85_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | test_85_OBUF$BUF0.SI | test_85_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | test_85_OBUF$BUF0.D1 | 961 | ? | 0 | 4096 | test_85_OBUF$BUF0 | NULL | NULL | test_85_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | test_85_OBUF$BUF0.D2 | 962 | ? | 0 | 6144 | test_85_OBUF$BUF0 | NULL | NULL | test_85_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | test_85_OBUF$BUF0.REG | test_85_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | test_85_OBUF$BUF0.D | 960 | ? | 0 | 0 | test_85_OBUF$BUF0 | NULL | NULL | test_85_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | test_85_OBUF$BUF0.Q | 963 | ? | 0 | 0 | test_85_OBUF$BUF0 | NULL | NULL | test_85_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | test_85_OBUF$BUF1 | test1_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | test_85_OBUF$BUF1 | 827 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF$BUF1.Q | test_85_OBUF$BUF1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | test_85_OBUF$BUF1.SI | test_85_OBUF$BUF1 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | test_85_OBUF$BUF1.D1 | 965 | ? | 0 | 4096 | test_85_OBUF$BUF1 | NULL | NULL | test_85_OBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | test_85_OBUF$BUF1.D2 | 966 | ? | 0 | 6144 | test_85_OBUF$BUF1 | NULL | NULL | test_85_OBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | test_85_OBUF$BUF1.REG | test_85_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | test_85_OBUF$BUF1.D | 964 | ? | 0 | 0 | test_85_OBUF$BUF1 | NULL | NULL | test_85_OBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | test_85_OBUF$BUF1.Q | 967 | ? | 0 | 0 | test_85_OBUF$BUF1 | NULL | NULL | test_85_OBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_INV_3 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$Q | 787 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF.Q | cpld_to_STS_in_pulse_INV_2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_INV_3 | 828 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_INV_3 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_IN_3 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$Q | 788 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF.Q | cpld_to_STS_in_pulse_IN_2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_IN_3 | 829 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_IN_3 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_4_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_4_PWM1_OBUF | 806 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_4_PWM1_OBUF.Q | Charger_4_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_4_PWM1 | 830 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_4_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_4_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_4_PWM2_OBUF | 807 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_4_PWM2_OBUF.Q | Charger_4_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_4_PWM2 | 831 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_4_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_R_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_R_PWM1_OBUF | 808 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_R_PWM1_OBUF.Q | Charger_R_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_R_PWM1 | 832 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_R_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_R_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_R_PWM2_OBUF | 809 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_R_PWM2_OBUF.Q | Charger_R_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_R_PWM2 | 833 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_R_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_S_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_S_PWM1_OBUF | 810 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_S_PWM1_OBUF.Q | Charger_S_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_S_PWM1 | 834 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_S_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_S_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_S_PWM2_OBUF | 811 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_S_PWM2_OBUF.Q | Charger_S_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_S_PWM2 | 835 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_S_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_T_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_T_PWM1_OBUF | 812 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_T_PWM1_OBUF.Q | Charger_T_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_T_PWM1 | 836 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_T_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Charger_T_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Charger_T_PWM2_OBUF | 813 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | Charger_T_PWM2_OBUF.Q | Charger_T_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Charger_T_PWM2 | 837 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | Charger_T_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_R_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_R_PWM1_OBUF | 814 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_R_PWM1_OBUF.Q | inv_R_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_R_PWM1 | 838 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_R_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_R_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_R_PWM2_OBUF | 815 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_R_PWM2_OBUF.Q | inv_R_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_R_PWM2 | 839 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_R_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_S_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_S_PWM1_OBUF | 816 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_S_PWM1_OBUF.Q | inv_S_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_S_PWM1 | 840 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_S_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_S_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_S_PWM2_OBUF | 817 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_S_PWM2_OBUF.Q | inv_S_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_S_PWM2 | 841 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_S_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_T_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_T_PWM1_OBUF | 818 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_T_PWM1_OBUF.Q | inv_T_PWM1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_T_PWM1 | 842 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_T_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_T_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_T_PWM2_OBUF | 819 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_T_PWM2_OBUF.Q | inv_T_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_T_PWM2 | 843 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_T_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_INV_2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 820 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0.Q | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_INV_2 | 844 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_INV_2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_INV_1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 821 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1.Q | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_INV_1 | 845 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_INV_1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_IN_2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 822 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0.Q | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_IN_2 | 846 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_IN_2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | cpld_to_STS_in_pulse_IN_1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 823 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1.Q | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | cpld_to_STS_in_pulse_IN_1 | 847 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | cpld_to_STS_in_pulse_IN_1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_4_PWM2 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | inv_4_PWM2_OBUF | 824 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | inv_4_PWM2_OBUF.Q | inv_4_PWM2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_4_PWM2 | 848 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_4_PWM2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | test_85 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | test_85_OBUF$Q | 825 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF.Q | test_85_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | test_85 | 849 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | test_85 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | inv_4_PWM1 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | test_85_OBUF$BUF0 | 826 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF$BUF0.Q | test_85_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | inv_4_PWM1 | 850 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | inv_4_PWM1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | CPLD_59 | test1_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | test_85_OBUF$BUF1 | 827 | ? | 0 | 0 | test1_COPY_0_COPY_0 | NULL | test_85_OBUF$BUF1.Q | test_85_OBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | CPLD_59 | 851 | PO | 0 | 0 | test1_COPY_0_COPY_0 | NULL | NULL | CPLD_59 | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | test1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | PWM_Batt_leg4_enable_dsp2_IBUF | 1 | NULL | 0 | 16 | 49152
+FBPIN | 2 | NULL | 0 | PWM_RST_enable_dsp2_IBUF | 1 | NULL | 0 | 13 | 49152
+FBPIN | 4 | Charger_4_PWM2_OBUF | 1 | NULL | 0 | Charger_4_PWM2 | 1 | 20 | 49152
+FBPIN | 5 | NULL | 0 | PWM_Batt_leg4_down_dsp2_IBUF | 1 | NULL | 0 | 14 | 49152
+FBPIN | 6 | NULL | 0 | PWM_Batt_leg4_up_dsp2_IBUF | 1 | NULL | 0 | 15 | 49152
+FBPIN | 7 | Charger_T_PWM2_OBUF | 1 | NULL | 0 | Charger_T_PWM2 | 1 | 25 | 49152
+FBPIN | 9 | NULL | 0 | STS_byepass_nEnable_IBUF | 1 | NULL | 0 | 22 | 57344
+FBPIN | 10 | Charger_S_PWM2_OBUF | 1 | NULL | 0 | Charger_S_PWM2 | 1 | 28 | 49152
+FBPIN | 11 | Charger_4_PWM1_OBUF | 1 | NULL | 0 | Charger_4_PWM1 | 1 | 23 | 57344
+FBPIN | 13 | inv_4_PWM2_OBUF | 1 | NULL | 0 | inv_4_PWM2 | 1 | 36 | 49152
+FBPIN | 14 | Charger_T_PWM1_OBUF | 1 | NULL | 0 | Charger_T_PWM1 | 1 | 27 | 57344
+FBPIN | 15 | Charger_S_PWM1_OBUF | 1 | NULL | 0 | Charger_S_PWM1 | 1 | 29 | 49152
+FBPIN | 16 | inv_T_PWM2_OBUF | 1 | NULL | 0 | inv_T_PWM2 | 1 | 39 | 49152
+FBPIN | 17 | Charger_R_PWM2_OBUF | 1 | NULL | 0 | Charger_R_PWM2 | 1 | 30 | 49152
+FBPIN | 18 | inv_T_PWM1_OBUF | 1 | NULL | 0 | inv_T_PWM1 | 1 | 40 | 49152
+
+FB_INSTANCE | FOOBAR2_ | test1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | PWM_T_down_dsp1_IBUF | 1 | NULL | 0 | 87 | 49152
+FBPIN | 3 | NULL | 0 | PWM_inv_leg4_enable_dsp1_IBUF | 1 | NULL | 0 | 91 | 49152
+FBPIN | 5 | test_85_OBUF$BUF1 | 1 | NULL | 0 | CPLD_59 | 1 | 95 | 49152
+FBPIN | 10 | NULL | 0 | STS_INV_nEnable_IBUF | 1 | NULL | 0 | 1 | 49152
+FBPIN | 12 | NULL | 0 | PWM_R_down_dsp2_IBUF | 1 | NULL | 0 | 6 | 49152
+FBPIN | 13 | NULL | 0 | PWM_R_up_dsp2_IBUF | 1 | NULL | 0 | 8 | 49152
+FBPIN | 14 | NULL | 0 | PWM_S_up_dsp2_IBUF | 1 | NULL | 0 | 9 | 49152
+FBPIN | 15 | NULL | 0 | PWM_T_up_dsp2_IBUF | 1 | NULL | 0 | 11 | 49152
+FBPIN | 16 | NULL | 0 | PWM_S_down_dsp2_IBUF | 1 | NULL | 0 | 10 | 49152
+FBPIN | 17 | NULL | 0 | PWM_T_down_dsp2_IBUF | 1 | NULL | 0 | 12 | 49152
+
+FB_INSTANCE | FOOBAR3_ | test1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | inv_S_PWM2_OBUF | 1 | NULL | 0 | inv_S_PWM2 | 1 | 41 | 49152
+FBPIN | 2 | Charger_R_PWM1_OBUF | 1 | NULL | 0 | Charger_R_PWM1 | 1 | 32 | 49152
+FBPIN | 3 | inv_R_PWM2_OBUF | 1 | NULL | 0 | inv_R_PWM2 | 1 | 49 | 49152
+FBPIN | 4 | inv_R_PWM1_OBUF | 1 | NULL | 0 | inv_R_PWM1 | 1 | 50 | 49152
+FBPIN | 7 | cpld_to_STS_in_pulse_IN_2_OBUF | 1 | NULL | 0 | cpld_to_STS_in_pulse_IN_3 | 1 | 54 | 49152
+FBPIN | 8 | test_85_OBUF$BUF0 | 1 | NULL | 0 | inv_4_PWM1 | 1 | 37 | 49152
+FBPIN | 9 | inv_S_PWM1_OBUF | 1 | NULL | 0 | inv_S_PWM1 | 1 | 42 | 49152
+FBPIN | 10 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF0 | 1 | NULL | 0 | cpld_to_STS_in_pulse_IN_2 | 1 | 60 | 49152
+FBPIN | 11 | cpld_to_STS_in_pulse_INV_2_OBUF | 1 | NULL | 0 | cpld_to_STS_in_pulse_INV_3 | 1 | 52 | 49152
+FBPIN | 12 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF1 | 1 | NULL | 0 | cpld_to_STS_in_pulse_INV_1 | 1 | 61 | 49152
+FBPIN | 16 | cpld_to_STS_in_pulse_IN_2_OBUF$BUF1 | 1 | NULL | 0 | cpld_to_STS_in_pulse_IN_1 | 1 | 64 | 49152
+FBPIN | 17 | cpld_to_STS_in_pulse_INV_2_OBUF$BUF0 | 1 | NULL | 0 | cpld_to_STS_in_pulse_INV_2 | 1 | 58 | 49152
+
+FB_INSTANCE | FOOBAR4_ | test1_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | NULL | 0 | PWM_R_down_dsp1_IBUF | 1 | NULL | 0 | 76 | 49152
+FBPIN | 7 | NULL | 0 | PWM_R_up_dsp1_IBUF | 1 | NULL | 0 | 77 | 49152
+FBPIN | 10 | NULL | 0 | PWM_S_down_dsp1_IBUF | 1 | NULL | 0 | 81 | 49152
+FBPIN | 12 | NULL | 0 | PWM_T_up_dsp1_IBUF | 1 | NULL | 0 | 82 | 49152
+FBPIN | 13 | test_85_OBUF | 1 | NULL | 0 | test_85 | 1 | 85 | 49152
+FBPIN | 14 | NULL | 0 | PWM_S_up_dsp1_IBUF | 1 | NULL | 0 | 78 | 49152
+FBPIN | 17 | NULL | 0 | PWM_inv_RST_enable_dsp1_IBUF | 1 | NULL | 0 | 90 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | test1_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | PWM_inv_RST_enable_dsp1 | 90 | 2 | PWM_Batt_leg4_up_dsp2 | 15 | 4 | PWM_Batt_leg4_enable_dsp2 | 16 | 8 | PWM_S_up_dsp2 | 9 | 14 | PWM_T_down_dsp2 | 12
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 16 | PWM_RST_enable_dsp2 | 13 | 21 | PWM_S_down_dsp2 | 10 | 25 | PWM_R_up_dsp2 | 8 | 29 | PWM_Batt_leg4_down_dsp2 | 14 | 35 | PWM_T_up_dsp1 | 82
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 36 | PWM_T_down_dsp1 | 87 | 45 | PWM_T_up_dsp2 | 11 | 48 | PWM_R_down_dsp2 | 6
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 73 | 110 | -1 | 112 | -1 | -1 | -1 | 98 | -1 | -1 | -1 | -1 | -1 | 104 | -1 | 106 | -1 | -1 | -1 | -1 | 100 | -1 | -1 | -1 | 96 | -1 | -1 | -1 | 108 | -1 | -1 | -1 | -1 | -1 | 83 | 77 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 102 | -1 | -1 | 94 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | PWM_inv_leg4_enable_dsp1 | 91 | 1 | PWM_inv_RST_enable_dsp1 | 90 | 13 | PWM_S_down_dsp1 | 81 | 16 | PWM_RST_enable_dsp2 | 13 | 20 | PWM_R_down_dsp1 | 76
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 25 | PWM_R_up_dsp2 | 8 | 30 | PWM_S_up_dsp1 | 78 | 32 | PWM_R_up_dsp1 | 77 | 39 | STS_INV_nEnable | 1 | 48 | PWM_R_down_dsp2 | 6
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 53 | STS_byepass_nEnable | 22
+
+FB_IMUX_INDEX | FOOBAR3_ | 72 | 73 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 85 | -1 | -1 | 106 | -1 | -1 | -1 | 93 | -1 | -1 | -1 | -1 | 96 | -1 | -1 | -1 | -1 | 89 | -1 | 91 | -1 | -1 | -1 | -1 | -1 | -1 | 88 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 94 | -1 | -1 | -1 | -1 | 120
+

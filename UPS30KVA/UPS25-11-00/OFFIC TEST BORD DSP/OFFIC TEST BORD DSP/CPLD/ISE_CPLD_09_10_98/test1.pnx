@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500xl" device="XC9572XL" pkg="TQ100" spg="-10"/><pin dir="input" nm="STS_byepass_nEnable" no="22"/><pin dir="input" nm="STS_INV_nEnable" no="1"/><pin dir="input" nm="PWM_inv_leg4_enable_dsp1" no="91"/><pin dir="input" nm="PWM_Batt_leg4_up_dsp2" no="15"/><pin dir="input" nm="PWM_Batt_leg4_enable_dsp2" no="16"/><pin dir="input" nm="PWM_Batt_leg4_down_dsp2" no="14"/><pin dir="input" nm="PWM_R_up_dsp2" no="8"/><pin dir="input" nm="PWM_RST_enable_dsp2" no="13"/><pin dir="input" nm="PWM_R_down_dsp2" no="6"/><pin dir="input" nm="PWM_S_up_dsp2" no="9"/><pin dir="input" nm="PWM_S_down_dsp2" no="10"/><pin dir="input" nm="PWM_T_up_dsp2" no="11"/><pin dir="input" nm="PWM_T_down_dsp2" no="12"/><pin dir="input" nm="PWM_inv_RST_enable_dsp1" no="90"/><pin dir="input" nm="PWM_R_up_dsp1" no="77"/><pin dir="input" nm="PWM_R_down_dsp1" no="76"/><pin dir="input" nm="PWM_S_up_dsp1" no="78"/><pin dir="input" nm="PWM_S_down_dsp1" no="81"/><pin dir="input" nm="PWM_T_up_dsp1" no="82"/><pin dir="input" nm="PWM_T_down_dsp1" no="87"/><pin dir="output" nm="cpld_to_STS_in_pulse_INV_3" no="52" sr="fast"/><pin dir="output" nm="cpld_to_STS_in_pulse_IN_3" no="54" sr="fast"/><pin dir="output" nm="Charger_4_PWM1" no="23" sr="fast"/><pin dir="output" nm="Charger_4_PWM2" no="20" sr="fast"/><pin dir="output" nm="Charger_R_PWM1" no="32" sr="fast"/><pin dir="output" nm="Charger_R_PWM2" no="30" sr="fast"/><pin dir="output" nm="Charger_S_PWM1" no="29" sr="fast"/><pin dir="output" nm="Charger_S_PWM2" no="28" sr="fast"/><pin dir="output" nm="Charger_T_PWM1" no="27" sr="fast"/><pin dir="output" nm="Charger_T_PWM2" no="25" sr="fast"/><pin dir="output" nm="inv_R_PWM1" no="50" sr="fast"/><pin dir="output" nm="inv_R_PWM2" no="49" sr="fast"/><pin dir="output" nm="inv_S_PWM1" no="42" sr="fast"/><pin dir="output" nm="inv_S_PWM2" no="41" sr="fast"/><pin dir="output" nm="inv_T_PWM1" no="40" sr="fast"/><pin dir="output" nm="inv_T_PWM2" no="39" sr="fast"/><pin dir="output" nm="cpld_to_STS_in_pulse_INV_2" no="58" sr="fast"/><pin dir="output" nm="cpld_to_STS_in_pulse_INV_1" no="61" sr="fast"/><pin dir="output" nm="cpld_to_STS_in_pulse_IN_2" no="60" sr="fast"/><pin dir="output" nm="cpld_to_STS_in_pulse_IN_1" no="64" sr="fast"/><pin dir="output" nm="inv_4_PWM2" no="36" sr="fast"/><pin dir="output" nm="test_85" no="85" sr="fast"/><pin dir="output" nm="inv_4_PWM1" no="37" sr="fast"/><pin dir="output" nm="CPLD_59" no="95" sr="fast"/></ibis>
