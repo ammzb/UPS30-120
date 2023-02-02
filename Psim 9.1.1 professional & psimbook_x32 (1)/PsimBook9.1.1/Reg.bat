@@ -1,2 +1,0 @@
-PsimX2Reg.exe
-
