@@ -1,0 +1,250 @@
+#ifndef UPS_CONFIG_H_
+#define UPS_CONFIG_H_
+
+#define Grid_22
+
+
+#ifdef Grid_22
+ 					   
+#define RST_Rectifier_ShortCircuit        1.5       //       (1.2*65/1.414)=55 RMS
+//#define RST_Rectifier_OverCurrent         0.7000       //       (0.7*65/1.414)=32 RMS
+//#define RST_Rectifier_OverCurrent       0.1692       //       (10*1.1)/65
+//#define RST_Rectifier_OverVoltage         0.128       //       (1.2)
+//#define RST_Rectifier_UnderVoltage      0.0364	   //       (14.14*.8)/311
+//#define DC_Rectifier_LowVoltage         0.9000
+#define DC_Rectifier_OverVoltage          0.1200       //       (90/750)
+#define DC_MAX_VOLTAGE                    0.2600       //       (200/750)
+#define MAX_CL                            0.15         //        (10/65)
+#define MAX_UNBALANCE_VOLTAGE             0.1300       //       (100/750)
+#define DC_Rectifier_UnderVoltage		  0.0867       //       (70/750)
+//#define VDC_Boost_OverVoltage           0.0800       //       (400/750)
+#define Min_Freq                          48.000       //       (47.5 Hz)
+#define Max_Freq                          52.000       //       (52.5 Hz) 
+#define VDC_Ref                           0.10667       //       (80/750)
+#define VDC_Ref_Buck                      0.0892       //       (6*2.23*48)/750
+#define VDC_Ref_Boost                     0.09333       //       (700/750)
+#define VDC_Min_Start                     0.04667       //       (400/750)
+#define Gain_pu							  10.0000
+#define VBat_Buck_OverVoltage             0.1100       //       (2.4*6*48/750)
+#define I_Buck_OverCurrent                1.0000       //       (20/65)
+#define I_Buck_MaxCurrent                 2.0000       //       (2*65ss/65)
+//#define V_DC_OFFSET                     0.0933       //       (70/750)
+#define I_Boost_OverCurrent               1.2000       //       (35/65)
+#define I_Boost_MaxCurrent                1.2000       //       (65/65)
+#define DC_LowVoltage               		0.04      //30/750
+//#define Vrms_Min                          10.000
+//#define Vrms_Max                          30.000
+#define Bat_Current_Limit                 0.0262      //       (1.7/65)
+#define Ki_IDC                             222.00//274.00
+#define Kp_IDC                             1.000//12.800
+#define Ki_DC                             222.00//274.00
+#define Kp_DC                             10.000//12.800
+#define Ki_a                              0.0000
+#define Kp_a                              -1.000
+#define Ki_b                              0.0000
+#define Kp_b                              -1.000
+#define Ki_c                              0.0000
+#define Kp_c                              -1.000
+#define Ki_Vbuck                          500.00
+#define Kp_Vbuck                          1.1000
+#define Ki_Ibuck                          500.00
+#define Kp_Ibuck                          1.1000
+#define Ki_Vboost                         1000.0
+#define Kp_Vboost                         0.1000
+#define Ki_Iboost                         0.0000
+#define Kp_Iboost                         1.0000
+#define Ki_Balancing                      50.000
+#define Kp_Balancing                      0.0500
+//#define Decoupling_Coeff                0.7000
+#define Max_Duty_Leg4                     -0.500
+#define SAMPLING_FREQ                     12000.0
+#define MAX_SAMPLES                       280
+#define MIN_SAMPLES                       200
+#define PWM_MAX                           6250
+#define	QSAMPLES						  60     //240/4=60
+#define PB_DETECTION_CYCLES               5
+#define PG_BOOST_OFF_CYCLES               1500
+#define	PG_SYNC_INV_CYCLES                2000
+#define	PG_START_REC_CYCLES               50
+#define	THRESHOLD_MAIN_OFF                0.016     //5/311
+
+
+#define B2_H1                             0.0065
+#define B1_H1                             0.0
+#define B0_H1                             0.0065
+#define A2_H1                             0.987
+#define A1_H1							  1.9863157
+
+#define B2_H3                             0.00004162
+#define B1_H3                             0.0
+#define B0_H3                             0.00004162
+#define A2_H3                             1.0
+#define A1_H3							  1.993835
+
+#define B2_H5                             0.00004155
+#define B1_H5                             0.0
+#define B0_H5                             0.00004155
+#define A2_H5                             1.0
+#define A1_H5							  1.9828897
+#define TEST_MODE                         1
+#endif
+
+//*****************************************************************************
+
+
+#ifdef Grid_220    // nominal inverter current for cos(phi)=0.8 = 36A RMS
+ 					   // nominal boost current for Vbatt=640 and active power=24000 = 40A
+
+#define RST_Rectifier_ShortCircuit        2.0      //       (1.2*65/1.414)=55 RMS
+//#define RST_Rectifier_OverCurrent       0.7000       //       (0.7*65/1.414)=32 RMS
+//#define RST_Rectifier_OverCurrent       0.1692       //       (10*1.1)/65
+//#define RST_Rectifier_OverVoltage       1.2000       //       (1.2)
+//#define RST_Rectifier_UnderVoltage      0.0364	   //       (14.14*.8)/311
+//#define DC_Rectifier_LowVoltage         0.9000
+#define DC_Rectifier_OverVoltage          1.0667       //       (800/750)
+#define DC_MAX_VOLTAGE                    1.2000      //       (900/750)
+#define MAX_CL                            0.15         //        (10/65)
+#define MAX_UNBALANCE_VOLTAGE             0.1300       //       (100/750)
+#define DC_Rectifier_UnderVoltage		  0.8933       //       (670/750)
+//#define VDC_Boost_OverVoltage           0.5333       //       (400/750) //425
+#define Min_Freq                          48.000       //       (47.5 Hz)
+#define Max_Freq                          52.000       //       (52.5 Hz) 
+#define VDC_Ref                           1.0000       //       (80/750)
+#define VDC_Ref_Buck                      0.8560       //       (6*2.23*48)/750
+#define VDC_Ref_Boost                     0.9600//0.9333       //       (700/750)
+#define VDC_Min_Start                     0.5333       //       (400/750)
+#define Gain_pu							  1.0000
+#define VBat_Buck_OverVoltage             1.1000       //       (2.4*6*48/750)
+#define I_Buck_OverCurrent                1.0000       //       (20/65)
+#define I_Buck_MaxCurrent                 1.0000       //       (20.0/65)
+//#define V_DC_OFFSET                     0.0933       //       (70/750)
+#define I_Boost_OverCurrent               1.5000       //       (15/65)
+#define I_Boost_MaxCurrent                1.5000       //       (15/65)
+#define DC_LowVoltage                     0.8000       //600/750
+//#define Vrms_Min                          180.00
+//#define Vrms_Max                          260.00
+#define Bat_Current_Limit                 0.0262      //       (1.7/65)
+#define Ki_IDC                             220.00
+#define Kp_IDC                             1.000
+#define Ki_DC                             220.00
+#define Kp_DC                             10.000
+#define Ki_a                              0.0000
+#define Kp_a                              -1.000
+#define Ki_b                              0.0000
+#define Kp_b                              -1.000
+#define Ki_c                              0.0000
+#define Kp_c                              -1.000
+#define Ki_Vbuck                          62.000
+#define Kp_Vbuck                          4.2000
+#define Ki_Ibuck                          1000.0
+#define Kp_Ibuck                          0.6000
+#define Ki_Vboost                         60.000
+#define Kp_Vboost                         6.0000
+#define Ki_Iboost                         770.0
+#define Kp_Iboost                         0.43
+#define Ki_Balancing                      50.000
+#define Kp_Balancing                      0.0500
+//#define Decoupling_Coeff                0.7000
+#define Max_Duty_Leg4                     -0.1000
+#define SAMPLING_FREQ                     12000.0
+#define MAX_SAMPLES                       280
+#define MIN_SAMPLES                       200
+#define PWM_MAX                           6250
+#define	QSAMPLES						  60      //240/4=60
+#define PB_DETECTION_CYCLES               5
+#define PG_BOOST_OFF_CYCLES               1500
+#define	PG_SYNC_INV_CYCLES                2000
+#define	PG_START_REC_CYCLES               50
+#define	THRESHOLD_MAIN_OFF                0.03     //20/311
+
+
+#define B2_H1                             0.0065
+#define B1_H1                             0.0
+#define B0_H1                             0.0065
+#define A2_H1                             0.987
+#define A1_H1							  1.9863157
+
+#define B2_H3                             0.00004162
+#define B1_H3                             0.0
+#define B0_H3                             0.00004162
+#define A2_H3                             1.0
+#define A1_H3							  1.993835
+
+#define B2_H5                             0.00004155
+#define B1_H5                             0.0
+#define B0_H5                             0.00004155
+#define A2_H5                             1.0
+#define A1_H5							  1.9828897
+#define TEST_MODE                         0
+
+#endif
+
+//*****************************************************************************************
+
+#define GAIN_CAL_VAC 1.64             //510/311
+#define GAIN_CAL_VDC 0.68             //510/750   
+#define GAIN_CAL_IAC 2.3             //160/65
+
+#define VDC_NOM 750.0
+#define IAC_NOM 65.0
+#define IDC_NOM 65.0
+#define VAC_NOM 311.0 
+
+//*********** Structure Definition ********//
+struct ConverterStatus {     // bits  description
+
+    unsigned long   Fault:1; 		  // Inverter Common Fault.
+    unsigned long   On:1;               // if 1, Inverter is on.   
+    unsigned long   EmergencyShutDown:1;     
+    unsigned long   ShutDown:1;         // Inverter reset flag.     
+
+    unsigned long   ShortCircuit:1;  // if 1, a short circuit is occured at the output.
+
+
+    unsigned long   AC_OverVoltage:1;         
+    unsigned long   AC_UnderVoltage:1;         
+  
+    unsigned long   DC_UnderVoltage:1;   // if 1, DC input of the inverter is exceeded the lowest acceptable range.
+    unsigned long   DC_OverVoltage:1;
+ 	unsigned long   DC_MaxVoltage:1;
+ 	unsigned long   Bat_OverVoltage:1;
+ 	unsigned long   DC_UnbalanceVoltage:1;
+ 	
+    unsigned long   IDF:1;	 // IGBT Dirver Fault
+    unsigned long   On_K2:1;            
+    unsigned long   On_K3:1;
+    unsigned long   OverCurrent:1;
+    unsigned long   MaxCurrent:1;
+    unsigned long   PG:1;
+    unsigned long   InverterFault:1;
+    unsigned long   ChargerFault:1;
+    unsigned long   VBatt_End:1;
+    unsigned long   Freq_OutOfRange:1;
+    unsigned long   FaultCommand:1;
+    unsigned long   DC_MinVoltage:1;
+    unsigned long   SequenceOK:1;
+    unsigned long	OverTemp:1;
+    unsigned long	ContactorFault:1;
+    unsigned long	ProcessorFault:1;
+    unsigned long   rsvd:4;
+       
+};
+
+struct Converter {
+	struct ConverterStatus Status; 
+};
+
+struct UPS_V {
+	struct Converter    Rectifier;
+	struct Converter    Inverter;
+	struct Converter    Buck;
+	struct Converter    Boost;
+	struct Converter	Balancer;
+};
+
+//*********** Function and Variables Declarations *******//
+
+void UPS_init(void);
+
+
+#endif /*UPS_CONFIG_H_*/

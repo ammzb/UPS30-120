@@ -1,0 +1,43 @@
+# FIXED
+
+DSP2833x_GlobalVariableDefs.obj: ../DSP2833x_GlobalVariableDefs.c
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Device.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Adc.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_DevEmu.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_CpuTimers.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_ECan.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_ECap.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_DMA.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_EPwm.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_EQep.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Gpio.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_I2c.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_McBSP.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_PieCtrl.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_PieVect.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Spi.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Sci.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_SysCtrl.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_XIntrupt.h
+DSP2833x_GlobalVariableDefs.obj: D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Xintf.h
+
+../DSP2833x_GlobalVariableDefs.c: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Device.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Adc.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_DevEmu.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_CpuTimers.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_ECan.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_ECap.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_DMA.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_EPwm.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_EQep.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Gpio.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_I2c.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_McBSP.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_PieCtrl.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_PieVect.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Spi.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Sci.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_SysCtrl.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_XIntrupt.h: 
+D:/dsp_workspace_v7/ChargerFinal18-08-01/include/DSP2833x_Xintf.h: 
