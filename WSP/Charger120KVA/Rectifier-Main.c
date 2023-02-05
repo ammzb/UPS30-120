@@ -302,6 +302,9 @@ Uint16 Flag_Boost_CLearTrip=0, Flag_Rectifier_ClearTrip=0, Flag_Buck_ClearTrip=0
 Uint16 OnCommand = 0, SystemIsHot = 0, Counter_Delay_Contactor=0, Counter_Delay_Reset=0, Delay_Mains_Contactor=0, test1 = 0,Emergency_Flag1=0, Counter_Toggle = 0, Flag_Battery_Ok = 0;
 Uint16 Flag_offset_error=0, Flag_UnbalanceVoltageFault=0, Flag_SystemStart = 0,offset_avg_counter = 0,Flag_StratUp = 0, State_AutoReset = 0, Counter_State1_AutoReset =0, Counter_State2_AutoReset=0,Counter_State3_AutoReset=0;
 int16 offset= 0,offset_sum = 0,offset_avg=0;
+
+float32 Kp_test = 1.0, Ki_test = 220.0;
+
 //--------------------------------------------------------------------------------------------
 
 /* MODBUS def */
@@ -921,18 +924,18 @@ interrupt void MainISR(void)
 		I_DC=(AdcMirror.ADCRESULT10*0.00024414-0.5)*2*GAIN_CAL_IAC;
 		V_DC=V_DCP+V_DCN;
     
-    if(offset_avg_counter <= 100 && Flag_StratUp == 1){
-		if(offset < 200 && offset > -200 ){
-			offset_avg_counter++;
-			if(offset_avg_counter > 100){
-			   offset_avg=(offset_sum/100);
-			   AdcRegs.ADCOFFTRIM.bit.OFFSET_TRIM -= offset_avg;
-			}
-			else{
-				offset_sum = offset_sum + offset;
-			}
-		}
-    }
+//    if(offset_avg_counter <= 100 && Flag_StratUp == 1){
+//		if(offset < 200 && offset > -200 ){
+//			offset_avg_counter++;
+//			if(offset_avg_counter > 100){
+//			   offset_avg=(offset_sum/100);
+//			   AdcRegs.ADCOFFTRIM.bit.OFFSET_TRIM -= offset_avg;
+//			}
+//			else{
+//				offset_sum = offset_sum + offset;
+//			}
+//		}
+//    }
 
     
     	
@@ -2231,6 +2234,8 @@ void Reset_System(void){
 	OnCommand = 0, SystemIsHot = 0, Counter_Delay_Contactor=0, Counter_Delay_Reset=0, Delay_Mains_Contactor=0, test1 = 0,Emergency_Flag1=0, Counter_Toggle = 0, Flag_Battery_Ok = 0;
 	Flag_offset_error=0, Flag_UnbalanceVoltageFault =0, Flag_SystemStart = 0,offset_avg_counter = 0,Flag_StratUp = 0, State_AutoReset = 0, Counter_State1_AutoReset =0, Counter_State2_AutoReset=0,Counter_State3_AutoReset=0;
 	offset= 0,offset_sum = 0,offset_avg=0;
+
+	Kp_test = 1.0, Ki_test = 220.0;
 	//---------------------Mimic Commands Initialization------------------------------------
 
 

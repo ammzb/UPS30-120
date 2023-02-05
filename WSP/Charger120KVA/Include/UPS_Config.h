@@ -101,7 +101,7 @@
 //#define RST_Rectifier_OverVoltage       1.2000       //       (1.2)
 //#define RST_Rectifier_UnderVoltage      0.0364	   //       (14.14*.8)/311
 //#define DC_Rectifier_LowVoltage         0.9000
-#define DC_Rectifier_OverVoltage          1.0667       //       (800/750)
+#define DC_Rectifier_OverVoltage          1.2000       //       (800/750)
 #define DC_MAX_VOLTAGE                    1.2000      //       (900/750)
 #define MAX_CL                            0.15         //        (10/65)
 #define MAX_UNBALANCE_VOLTAGE             0.1300       //       (100/750)
@@ -109,7 +109,7 @@
 //#define VDC_Boost_OverVoltage           0.5333       //       (400/750) //425
 #define Min_Freq                          48.000       //       (47.5 Hz)
 #define Max_Freq                          52.000       //       (52.5 Hz) 
-#define VDC_Ref                           1.0000       //       (80/750)
+#define VDC_Ref                           1.1420       //       (856/750)
 #define VDC_Ref_Buck                      0.8560       //       (6*2.23*48)/750
 #define VDC_Ref_Boost                     0.9600//0.9333       //       (700/750)
 #define VDC_Min_Start                     0.5333       //       (400/750)
@@ -125,7 +125,7 @@
 //#define Vrms_Max                          260.00
 #define Bat_Current_Limit                 0.0262      //       (1.7/65)
 #define Ki_IDC                             220.00
-#define Kp_IDC                             1.000
+#define Kp_IDC                             0.500
 #define Ki_DC                             220.00
 #define Kp_DC                             10.000
 #define Ki_a                              0.0000

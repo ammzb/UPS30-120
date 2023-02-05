@@ -1,10 +1,10 @@
 ******************************************************************************
              TMS320C2000 Linker PC v16.9.1                     
 ******************************************************************************
->> Linked Thu Feb 02 18:37:05 2023
+>> Linked Sun Feb 05 16:04:26 2023
 
 OUTPUT FILE NAME:   <Charger4w.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 00339321
+ENTRY POINT SYMBOL: "_c_int00"  address: 00339327
 
 
 MEMORY CONFIGURATION
@@ -13,8 +13,8 @@ MEMORY CONFIGURATION
 ----------------------  --------  ---------  --------  --------  ----  --------
 PAGE 0:
   ZONE0                 00004000   00001000  00000000  00001000  RWIX
-  RAML0                 00008000   00001000  00000c97  00000369  RWIX
-  RAML1                 00009000   00001000  00000e86  0000017a  RWIX
+  RAML0                 00008000   00001000  00000c51  000003af  RWIX
+  RAML1                 00009000   00001000  00000e82  0000017e  RWIX
   RAML2                 0000a000   00001000  00000000  00001000  RWIX
   RAML3                 0000b000   00001000  00000000  00001000  RWIX
   ZONE6                 00100000   00100000  00000000  00100000  RWIX
@@ -23,9 +23,9 @@ PAGE 0:
   FLASHG                00308000   00008000  00000000  00008000  RWIX
   FLASHF                00310000   00008000  00000000  00008000  RWIX
   FLASHE                00318000   00008000  00000000  00008000  RWIX
-  FLASHD                00320000   00008000  00001b1d  000064e3  RWIX
+  FLASHD                00320000   00008000  00001ad3  0000652d  RWIX
   FLASHC                00328000   00008000  00000000  00008000  RWIX
-  FLASHA                00338000   00007f80  000018f4  0000668c  RWIX
+  FLASHA                00338000   00007f80  000018e2  0000669e  RWIX
   CSM_RSVD              0033ff80   00000076  00000000  00000076  RWIX
   BEGIN                 0033fff6   00000002  00000002  00000000  RWIX
   CSM_PWL               0033fff8   00000008  00000000  00000008  RWIX
@@ -106,66 +106,65 @@ SECTION ALLOCATION MAP
 section   page    origin      length       input sections
 --------  ----  ----------  ----------   ----------------
 ramfuncs2 
-*          0    00320000    00000e86     RUN ADDR = 00009000
-                  00320000    00000567     Rectifier-Main.obj (ramfuncs2)
-                  00320567    00000375     modbus-rtu.obj (ramfuncs2)
-                  003208dc    00000239     SPLL_1ph_SOGI_F.obj (ramfuncs2)
-                  00320b15    000001aa     SINEANALYZER_DIFF_wPWR_F.obj (ramfuncs2)
-                  00320cbf    000000b4     CNTL_2P2Z_F.obj (ramfuncs2)
-                  00320d73    0000008d     modbus-rtu.obj (ramfuncs2:retain)
-                  00320e00    00000086     CNTL_PI_F.obj (ramfuncs2)
+*          0    00320000    00000e82     RUN ADDR = 00009000
+                  00320000    00000563     Rectifier-Main.obj (ramfuncs2)
+                  00320563    00000375     modbus-rtu.obj (ramfuncs2)
+                  003208d8    00000239     SPLL_1ph_SOGI_F.obj (ramfuncs2)
+                  00320b11    000001aa     SINEANALYZER_DIFF_wPWR_F.obj (ramfuncs2)
+                  00320cbb    000000b4     CNTL_2P2Z_F.obj (ramfuncs2)
+                  00320d6f    0000008d     modbus-rtu.obj (ramfuncs2:retain)
+                  00320dfc    00000086     CNTL_PI_F.obj (ramfuncs2)
 
-ramfuncs   0    00320e86    00000c97     RUN ADDR = 00008000
-                  00320e86    00000c78     Rectifier-Main.obj (ramfuncs:retain)
-                  00321afe    0000001b     Rectifier-DevInit.obj (ramfuncs)
-                  00321b19    00000004     DSP2833x_usDelay.obj (ramfuncs)
+ramfuncs   0    00320e82    00000c51     RUN ADDR = 00008000
+                  00320e82    00000c32     Rectifier-Main.obj (ramfuncs:retain)
+                  00321ab4    0000001b     Rectifier-DevInit.obj (ramfuncs)
+                  00321acf    00000004     DSP2833x_usDelay.obj (ramfuncs)
 
-.text      0    00338000    00001610     
-                  00338000    000007b5     Rectifier-Main.obj (.text)
-                  003387b5    00000316     DSP2833x_DefaultIsr.obj (.text:retain)
-                  00338acb    000001af     PWM_Setup.obj (.text)
-                  00338c7a    000001a1     IO_Setup.obj (.text)
-                  00338e1b    00000166     SPLL_1ph_SOGI_F.obj (.text)
-                  00338f81    0000015d     modbus-rtu.obj (.text)
-                  003390de    000000df     Rectifier-DevInit.obj (.text)
-                  003391bd    0000008d     ADC_Setup.obj (.text)
-                  0033924a    0000007e     SINEANALYZER_DIFF_wPWR_F.obj (.text)
-                  003392c8    00000059     UPS_Config.obj (.text)
-                  00339321    00000056     rts2800_fpu32.lib : boot28.obj (.text)
-                  00339377    00000050     CNTL_2P2Z_F.obj (.text)
-                  003393c7    0000004f     DSP2833x_CpuTimers.obj (.text)
-                  00339416    0000003d     CNTL_PI_F.obj (.text)
-                  00339453    00000034     rts2800_fpu32_fast_supplement.lib : cos_f32.obj (.text)
-                  00339487    00000034                                       : sin_f32.obj (.text)
-                  003394bb    00000029     rts2800_fpu32.lib : exit.obj (.text)
-                  003394e4    00000028     DSP2833x_PieCtrl.obj (.text)
-                  0033950c    00000024     rts2800_fpu32.lib : cpy_tbl.obj (.text)
-                  00339530    00000022                       : i_div28.obj (.text)
-                  00339552    00000021     rts2800_fpu32_fast_supplement.lib : sqrt_f32.obj (.text)
-                  00339573    00000020     DSP2833x_PieVect.obj (.text)
-                  00339593    0000001e     rts2800_fpu32.lib : memcpy.obj (.text)
-                  003395b1    00000019     modbus-rtu.obj (.text:retain)
-                  003395ca    00000019     rts2800_fpu32.lib : args_main.obj (.text)
-                  003395e3    00000019     rts2800_fpu32_fast_supplement.lib : div_f32.obj (.text)
-                  003395fc    00000009     rts2800_fpu32.lib : _lock.obj (.text)
-                  00339605    00000008     DSP2833x_CodeStartBranch.obj (.text)
-                  0033960d    00000002     rts2800_fpu32.lib : pre_init.obj (.text)
-                  0033960f    00000001                       : startup.obj (.text)
+.text      0    00338000    000015f4     
+                  00338000    000007bb     Rectifier-Main.obj (.text)
+                  003387bb    00000316     DSP2833x_DefaultIsr.obj (.text:retain)
+                  00338ad1    000001af     PWM_Setup.obj (.text)
+                  00338c80    000001a1     IO_Setup.obj (.text)
+                  00338e21    00000166     SPLL_1ph_SOGI_F.obj (.text)
+                  00338f87    0000015d     modbus-rtu.obj (.text)
+                  003390e4    000000df     Rectifier-DevInit.obj (.text)
+                  003391c3    0000008d     ADC_Setup.obj (.text)
+                  00339250    0000007e     SINEANALYZER_DIFF_wPWR_F.obj (.text)
+                  003392ce    00000059     UPS_Config.obj (.text)
+                  00339327    00000056     rts2800_fpu32.lib : boot28.obj (.text)
+                  0033937d    00000050     CNTL_2P2Z_F.obj (.text)
+                  003393cd    0000004f     DSP2833x_CpuTimers.obj (.text)
+                  0033941c    0000003d     CNTL_PI_F.obj (.text)
+                  00339459    00000034     rts2800_fpu32_fast_supplement.lib : cos_f32.obj (.text)
+                  0033948d    00000034                                       : sin_f32.obj (.text)
+                  003394c1    00000029     rts2800_fpu32.lib : exit.obj (.text)
+                  003394ea    00000028     DSP2833x_PieCtrl.obj (.text)
+                  00339512    00000024     rts2800_fpu32.lib : cpy_tbl.obj (.text)
+                  00339536    00000021     rts2800_fpu32_fast_supplement.lib : sqrt_f32.obj (.text)
+                  00339557    00000020     DSP2833x_PieVect.obj (.text)
+                  00339577    0000001e     rts2800_fpu32.lib : memcpy.obj (.text)
+                  00339595    00000019     modbus-rtu.obj (.text:retain)
+                  003395ae    00000019     rts2800_fpu32.lib : args_main.obj (.text)
+                  003395c7    00000019     rts2800_fpu32_fast_supplement.lib : div_f32.obj (.text)
+                  003395e0    00000009     rts2800_fpu32.lib : _lock.obj (.text)
+                  003395e9    00000008     DSP2833x_CodeStartBranch.obj (.text)
+                  003395f1    00000002     rts2800_fpu32.lib : pre_init.obj (.text)
+                  003395f3    00000001                       : startup.obj (.text)
 
-.cinit     0    00339610    000001b0     
-                  00339610    00000192     Rectifier-Main.obj (.cinit)
-                  003397a2    0000000e     rts2800_fpu32.lib : exit.obj (.cinit)
-                  003397b0    00000005                       : _lock.obj (.cinit:__lock)
-                  003397b5    00000005                       : _lock.obj (.cinit:__unlock)
-                  003397ba    00000004     modbus-rtu.obj (.cinit)
-                  003397be    00000002     --HOLE-- [fill = 0]
+.cinit     0    003395f4    000001ba     
+                  003395f4    0000019c     Rectifier-Main.obj (.cinit)
+                  00339790    0000000e     rts2800_fpu32.lib : exit.obj (.cinit)
+                  0033979e    00000005                       : _lock.obj (.cinit:__lock)
+                  003397a3    00000005                       : _lock.obj (.cinit:__unlock)
+                  003397a8    00000004     modbus-rtu.obj (.cinit)
+                  003397ac    00000002     --HOLE-- [fill = 0]
 
-.econst    0    003397c0    00000100     
-                  003397c0    00000100     DSP2833x_PieVect.obj (.econst:_PieVectTableInit)
+.econst    0    003397ae    00000100     
+                  003397ae    00000100     DSP2833x_PieVect.obj (.econst:_PieVectTableInit)
 
-.switch    0    003398c0    00000034     
-                  003398c0    0000001a     Rectifier-Main.obj (.switch:_CheckSettings)
-                  003398da    0000001a     Rectifier-Main.obj (.switch:_ModbusHoldingRegUpdate)
+.switch    0    003398ae    00000034     
+                  003398ae    0000001a     Rectifier-Main.obj (.switch:_CheckSettings)
+                  003398c8    0000001a     Rectifier-Main.obj (.switch:_ModbusHoldingRegUpdate)
 
 codestart 
 *          0    0033fff6    00000002     
@@ -402,7 +401,7 @@ MODULE SUMMARY
        Module                            code    initialized data   uninitialized data
        ------                            ----    ----------------   ------------------
     .\
-       Rectifier-Main.obj                11123   454                1242              
+       Rectifier-Main.obj                10981   464                1242              
        modbus-rtu.obj                    2426    4                  576               
        DSP2833x_GlobalVariableDefs.obj   0       0                  2679              
        SPLL_1ph_SOGI_F.obj               1496    0                  0                 
@@ -422,7 +421,7 @@ MODULE SUMMARY
        DSP2833x_usDelay.obj              8       0                  0                 
        DSP2833x_ADC_cal.obj              7       0                  0                 
     +--+---------------------------------+-------+------------------+--------------------+
-       Total:                            19113   714                4531              
+       Total:                            18971   724                4531              
                                                                                       
     D:/AMirza/UPS30-120/WSP/Charger120KVA/rts2800_fpu32_fast_supplement.lib
        FPUmathTables.obj                 0       1696               0                 
@@ -437,18 +436,17 @@ MODULE SUMMARY
        boot28.obj                        86      0                  0                 
        exit.obj                          41      14                 6                 
        cpy_tbl.obj                       36      0                  0                 
-       i_div28.obj                       34      0                  0                 
        memcpy.obj                        30      0                  0                 
        args_main.obj                     25      0                  0                 
        _lock.obj                         9       10                 4                 
        pre_init.obj                      2       0                  0                 
        startup.obj                       1       0                  0                 
     +--+---------------------------------+-------+------------------+--------------------+
-       Total:                            264     24                 10                
+       Total:                            230     24                 10                
                                                                                       
        Stack:                            0       0                  1024              
     +--+---------------------------------+-------+------------------+--------------------+
-       Grand Total:                      19539   2434               5565              
+       Grand Total:                      19363   2444               5565              
 
 
 GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
@@ -543,132 +541,134 @@ address     data page           name
 
 00007900     1e4 (00007900)     _I2caRegs
 
-0000c000     300 (0000c000)     _Counter_Buck_Start
-0000c001     300 (0000c000)     _Counter_DC_OK
-0000c002     300 (0000c000)     _n_of_battery_cells1
-0000c003     300 (0000c000)     _battery_capacity1
-0000c004     300 (0000c000)     _Counter_Start
-0000c005     300 (0000c000)     _Counter_Boost_Off
-0000c006     300 (0000c000)     _Flag_BoostFault
-0000c007     300 (0000c000)     _Flag_BoostDanger
-0000c008     300 (0000c000)     _Counter_Boost_Start
-0000c009     300 (0000c000)     _PowerGood
-0000c00a     300 (0000c000)     _ac_fail_time1
-0000c00b     300 (0000c000)     _mains_nominal_voltage1
-0000c00c     300 (0000c000)     _quick_time1
-0000c00d     300 (0000c000)     _low_voltage_alarm1
-0000c00e     300 (0000c000)     _quick_voltage1
-0000c00f     300 (0000c000)     _mains_voltage_tolerance1
-0000c010     300 (0000c000)     _ref_float_voltage1
-0000c011     300 (0000c000)     _mains_voltage1
-0000c012     300 (0000c000)     _current_limit_rate1
-0000c013     300 (0000c000)     _battery_type1
-0000c014     300 (0000c000)     _Restart_System
-0000c015     300 (0000c000)     _PowerBad
-0000c016     300 (0000c000)     _Flag_IDF
-0000c017     300 (0000c000)     _Flag_RecDanger
-0000c018     300 (0000c000)     _Emergency_Flag
-0000c019     300 (0000c000)     _Flag_ContactorFault
-0000c01a     300 (0000c000)     _Counter_Sequence_OK
-0000c01b     300 (0000c000)     _SystemIsReady
-0000c01c     300 (0000c000)     _Flag_PowerOk
-0000c01d     300 (0000c000)     _Flag_ZCD
-0000c01e     300 (0000c000)     _Flag_MainsOff1
-0000c01f     300 (0000c000)     _Flag_MainsOff2
-0000c020     300 (0000c000)     _Flag_BatConnected
-0000c021     300 (0000c000)     _Flag_Auto
-0000c022     300 (0000c000)     _Flag_BatDisConnected
-0000c023     300 (0000c000)     _Flag_RecFault
-0000c024     300 (0000c000)     _Flag_InvFault
-0000c025     300 (0000c000)     _Flag_BuckDanger
-0000c026     300 (0000c000)     _Flag_MainsOff3
-0000c027     300 (0000c000)     _Flag_BuckFault
-0000c028     300 (0000c000)     _deep_dischage_voltage1
-0000c029     300 (0000c000)     _Counter_State1_AutoReset
-0000c02a     300 (0000c000)     _Counter_State2_AutoReset
-0000c02b     300 (0000c000)     _State_AutoReset
-0000c02c     300 (0000c000)     _offset_avg_counter
-0000c02d     300 (0000c000)     _Flag_StratUp
-0000c02e     300 (0000c000)     _Flag_SystemStart
-0000c02f     300 (0000c000)     _offset_avg
-0000c030     300 (0000c000)     _offset
-0000c031     300 (0000c000)     _offset_sum
-0000c032     300 (0000c000)     _Counter_State3_AutoReset
-0000c033     300 (0000c000)     _UpsStatus4
-0000c034     300 (0000c000)     _modbusFn
-0000c035     300 (0000c000)     _UpsStatus3
-0000c036     300 (0000c000)     _UpsStatus1
-0000c037     300 (0000c000)     _UpsStatus2
-0000c038     300 (0000c000)     _Flag_UnbalanceVoltageFault
-0000c039     300 (0000c000)     _Emergency_Flag1
-0000c03a     300 (0000c000)     _test1
-0000c03b     300 (0000c000)     _Counter_Toggle
-0000c03c     300 (0000c000)     _Flag_offset_error
-0000c03d     300 (0000c000)     _Flag_Battery_Ok
-0000c03e     300 (0000c000)     _Delay_Null_Contactor
-0000c03f     300 (0000c000)     _Counter_AfterReset
+0000c000     300 (0000c000)     _Counter_DC_OK
+0000c001     300 (0000c000)     _Counter_Start
+0000c002     300 (0000c000)     _battery_capacity1
+0000c003     300 (0000c000)     _mains_voltage_tolerance1
+0000c004     300 (0000c000)     _ref_float_voltage1
+0000c005     300 (0000c000)     _Counter_Boost_Start
+0000c006     300 (0000c000)     _Counter_Boost_Off
+0000c007     300 (0000c000)     _Flag_BoostFault
+0000c008     300 (0000c000)     _Counter_Buck_Start
+0000c009     300 (0000c000)     _Flag_BoostDanger
+0000c00a     300 (0000c000)     _quick_time1
+0000c00b     300 (0000c000)     _ac_fail_time1
+0000c00c     300 (0000c000)     _deep_dischage_voltage1
+0000c00d     300 (0000c000)     _quick_voltage1
+0000c00e     300 (0000c000)     _Flag_Boost_CLearTrip
+0000c00f     300 (0000c000)     _mains_voltage1
+0000c010     300 (0000c000)     _n_of_battery_cells1
+0000c011     300 (0000c000)     _battery_type1
+0000c012     300 (0000c000)     _mains_nominal_voltage1
+0000c013     300 (0000c000)     _current_limit_rate1
+0000c014     300 (0000c000)     _low_voltage_alarm1
+0000c015     300 (0000c000)     _Restart_System
+0000c016     300 (0000c000)     _PowerBad
+0000c017     300 (0000c000)     _Flag_IDF
+0000c018     300 (0000c000)     _Flag_RecDanger
+0000c019     300 (0000c000)     _Emergency_Flag
+0000c01a     300 (0000c000)     _Flag_ContactorFault
+0000c01b     300 (0000c000)     _Counter_Sequence_OK
+0000c01c     300 (0000c000)     _SystemIsReady
+0000c01d     300 (0000c000)     _Flag_PowerOk
+0000c01e     300 (0000c000)     _Flag_ZCD
+0000c01f     300 (0000c000)     _Flag_MainsOff1
+0000c020     300 (0000c000)     _Flag_MainsOff2
+0000c021     300 (0000c000)     _Flag_BatConnected
+0000c022     300 (0000c000)     _Flag_Auto
+0000c023     300 (0000c000)     _Flag_BatDisConnected
+0000c024     300 (0000c000)     _Flag_RecFault
+0000c025     300 (0000c000)     _Flag_InvFault
+0000c026     300 (0000c000)     _Flag_BuckDanger
+0000c027     300 (0000c000)     _Flag_MainsOff3
+0000c028     300 (0000c000)     _Flag_BuckFault
+0000c029     300 (0000c000)     _PowerGood
+0000c02a     300 (0000c000)     _UpsStatus4
+0000c02b     300 (0000c000)     _UpsStatus3
+0000c02c     300 (0000c000)     _modbusAdd
+0000c02d     300 (0000c000)     _UpsStatus1
+0000c02e     300 (0000c000)     _Flag_StratUp
+0000c02f     300 (0000c000)     _modbusFn
+0000c030     300 (0000c000)     _Flag_offset_error
+0000c031     300 (0000c000)     _Flag_UnbalanceVoltageFault
+0000c032     300 (0000c000)     _Counter_Toggle
+0000c033     300 (0000c000)     _offset_avg_counter
+0000c034     300 (0000c000)     _UpsStatus2
+0000c035     300 (0000c000)     _Flag_Battery_Ok
+0000c036     300 (0000c000)     _offset_sum
+0000c037     300 (0000c000)     _offset_avg
+0000c038     300 (0000c000)     _Counter_State1_AutoReset
+0000c039     300 (0000c000)     _Counter_State2_AutoReset
+0000c03a     300 (0000c000)     _Flag_SystemStart
+0000c03b     300 (0000c000)     _offset
+0000c03c     300 (0000c000)     _State_AutoReset
+0000c03d     300 (0000c000)     _Counter_State3_AutoReset
+0000c03e     300 (0000c000)     _SystemIsHot
+0000c03f     300 (0000c000)     _Counter_Delay_Contactor
 
 0000c040     301 (0000c040)     _Flag_ManualShutDown
-0000c041     301 (0000c040)     _Counter_TurnOn
-0000c042     301 (0000c040)     _Flag_Rectifier_ClearTrip
-0000c043     301 (0000c040)     _Flag_Boost_CLearTrip
+0000c041     301 (0000c040)     _Delay_Mains_Contactor
+0000c042     301 (0000c040)     _test1
+0000c043     301 (0000c040)     _OnCommand
 0000c044     301 (0000c040)     _Flag_Balancer_ClearTrip
-0000c045     301 (0000c040)     _Flag_Buck_ClearTrip
-0000c046     301 (0000c040)     _OnCommand
-0000c047     301 (0000c040)     _Counter_Delay_Reset
-0000c048     301 (0000c040)     _Counter_Delay_Contactor
-0000c049     301 (0000c040)     _Delay_Mains_Contactor
-0000c04a     301 (0000c040)     _SystemIsHot
-0000c04b     301 (0000c040)     _modbusAdd
-0000c04c     301 (0000c040)     _V_DCP
-0000c04e     301 (0000c040)     _V_DCN
-0000c050     301 (0000c040)     _I_T
-0000c052     301 (0000c040)     _V_DC_OUT
-0000c054     301 (0000c040)     _OutputRegister
-0000c056     301 (0000c040)     _V_DC
-0000c058     301 (0000c040)     _V_DC_BAT
-0000c05a     301 (0000c040)     _vrms_mains_min
-0000c05c     301 (0000c040)     _vrms_mains_max
-0000c05e     301 (0000c040)     _ref_float_voltage
-0000c060     301 (0000c040)     _SoftStart_Buck
-0000c062     301 (0000c040)     _SoftStart_Boost
-0000c064     301 (0000c040)     _mains_nominal_voltage
-0000c066     301 (0000c040)     _deep_dischage_voltage
-0000c068     301 (0000c040)     _mains_voltage
+0000c045     301 (0000c040)     _Counter_AfterReset
+0000c046     301 (0000c040)     _Flag_Rectifier_ClearTrip
+0000c047     301 (0000c040)     _Counter_TurnOn
+0000c048     301 (0000c040)     _Counter_Delay_Reset
+0000c049     301 (0000c040)     _Flag_Buck_ClearTrip
+0000c04a     301 (0000c040)     _Emergency_Flag1
+0000c04b     301 (0000c040)     _Delay_Null_Contactor
+0000c04c     301 (0000c040)     _deep_dischage_voltage
+0000c04e     301 (0000c040)     _mains_nominal_voltage
+0000c050     301 (0000c040)     _OutputRegister
+0000c052     301 (0000c040)     _Step_SoftStart
+0000c054     301 (0000c040)     _Ki_test
+0000c056     301 (0000c040)     _Kp_test
+0000c058     301 (0000c040)     _mains_voltage
+0000c05a     301 (0000c040)     _V_DC_OUT
+0000c05c     301 (0000c040)     _V_DC_BAT
+0000c05e     301 (0000c040)     _V_DCP
+0000c060     301 (0000c040)     _V_DCN
+0000c062     301 (0000c040)     _Vrms_R
+0000c064     301 (0000c040)     _current_limit_rate
+0000c066     301 (0000c040)     _I_DC
+0000c068     301 (0000c040)     _SoftStart_Buck
 0000c06a     301 (0000c040)     _battery_overvoltage
-0000c06c     301 (0000c040)     _current_limit_rate
+0000c06c     301 (0000c040)     _Vrms_S
 0000c06e     301 (0000c040)     _VBuck_Start
-0000c070     301 (0000c040)     _Vrms_T
-0000c072     301 (0000c040)     _Irms_R
-0000c074     301 (0000c040)     _Vrms_S
-0000c076     301 (0000c040)     _K
-0000c078     301 (0000c040)     _Vrms_R
-0000c07a     301 (0000c040)     _VDC_Start
-0000c07c     301 (0000c040)     _Step_SoftStart
-0000c07e     301 (0000c040)     _V_RCha
+0000c070     301 (0000c040)     _ref_float_voltage
+0000c072     301 (0000c040)     _SoftStart_Boost
+0000c074     301 (0000c040)     _vrms_mains_max
+0000c076     301 (0000c040)     _V_RCha
+0000c078     301 (0000c040)     _Irms_T
+0000c07a     301 (0000c040)     _K
+0000c07c     301 (0000c040)     _VDC_Start
+0000c07e     301 (0000c040)     _Vrms_T
 
-0000c080     302 (0000c080)     _Irms_S
-0000c082     302 (0000c080)     _Irms_T
-0000c084     302 (0000c080)     _C_Task_Ptr
-0000c086     302 (0000c080)     _Alpha_State_Ptr
+0000c080     302 (0000c080)     _vrms_mains_min
+0000c082     302 (0000c080)     _Irms_S
+0000c084     302 (0000c080)     _Irms_R
+0000c086     302 (0000c080)     _C_Task_Ptr
 0000c088     302 (0000c080)     _B_Task_Ptr
-0000c08a     302 (0000c080)     _DutyR
-0000c08c     302 (0000c080)     _V_S
-0000c08e     302 (0000c080)     _V_R
+0000c08a     302 (0000c080)     _Alpha_State_Ptr
+0000c08c     302 (0000c080)     _DutyR
+0000c08e     302 (0000c080)     _pwm1
 0000c090     302 (0000c080)     _V_T
-0000c092     302 (0000c080)     _I_S
+0000c092     302 (0000c080)     _V_S
 0000c094     302 (0000c080)     _I_R
-0000c096     302 (0000c080)     _I_DC
-0000c098     302 (0000c080)     _DutyS
-0000c09a     302 (0000c080)     _pwm1
+0000c096     302 (0000c080)     _I_T
+0000c098     302 (0000c080)     _I_S
+0000c09a     302 (0000c080)     _V_DC
 0000c09c     302 (0000c080)     _DutyT
-0000c09e     302 (0000c080)     _Flag_Start
+0000c09e     302 (0000c080)     _DutyS
 0000c0a0     302 (0000c080)     _Duty_Leg4
 0000c0a2     302 (0000c080)     _Flag_OverTemp
-0000c0a4     302 (0000c080)     _VTimer1
-0000c0a8     302 (0000c080)     _VTimer2
+0000c0a4     302 (0000c080)     _Flag_Start
+0000c0a6     302 (0000c080)     _V_R
+0000c0a8     302 (0000c080)     _VTimer1
 0000c0ac     302 (0000c080)     _VTimer0
-0000c0b0     302 (0000c080)     _Coil
+0000c0b0     302 (0000c080)     _VTimer2
+0000c0b4     302 (0000c080)     _Coil
 
 0000c0c0     303 (0000c0c0)     _PWM
 0000c0ce     303 (0000c0c0)     _Vars3_h3
@@ -697,17 +697,17 @@ address     data page           name
 0000c200     308 (0000c200)     _cntl_pi3
 0000c218     308 (0000c200)     _cntl_pi2
 
-0000c240     309 (0000c240)     _cntl_pi4
-0000c258     309 (0000c240)     _cntl_pi7
+0000c240     309 (0000c240)     _cntl_pi5
+0000c258     309 (0000c240)     _cntl_pi4
 
-0000c280     30a (0000c280)     _cntl_pi5
-0000c298     30a (0000c280)     _cntl_pi10
+0000c280     30a (0000c280)     _cntl_pi6
+0000c298     30a (0000c280)     _cntl_pi9
 
-0000c2c0     30b (0000c2c0)     _cntl_pi9
-0000c2d8     30b (0000c2c0)     _cntl_pi1
+0000c2c0     30b (0000c2c0)     _cntl_pi10
+0000c2d8     30b (0000c2c0)     _cntl_pi7
 
 0000c300     30c (0000c300)     _cntl_pi8
-0000c318     30c (0000c300)     _cntl_pi6
+0000c318     30c (0000c300)     _cntl_pi1
 
 0000c340     30d (0000c340)     _InputRegister
 
@@ -715,9 +715,9 @@ address     data page           name
 
 0000c3c0     30f (0000c3c0)     _sine_mainsV_S
 
-0000c400     310 (0000c400)     _sine_mainsV_T
+0000c400     310 (0000c400)     _sine_mainsV_R
 
-0000c440     311 (0000c440)     _sine_mainsV_R
+0000c440     311 (0000c440)     _sine_mainsV_T
 
 0000c480     312 (0000c480)     _spll1
 
@@ -744,7 +744,7 @@ address     data page           name
 0000c742     31d (0000c740)     ___TI_cleanup_ptr
 0000c744     31d (0000c740)     ___TI_dtors_ptr
 
-003397c0    ce5f (003397c0)     _PieVectTableInit
+003397ae    ce5e (00339780)     _PieVectTableInit
 
 0033fff8    cfff (0033ffc0)     _CsmPwl
 
@@ -768,32 +768,30 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 page  address   name                             
 ----  -------   ----                             
 0     00338000  .text                            
-0     003394bb  C$$EXIT                          
-0     003395e3  FS$$DIV                          
-0     00339530  I$$DIV                           
-0     00339541  I$$MOD                           
-0     0033889b  _ADCINT_ISR                      
-0     003391bd  _ADC_Setup                       
+0     003394c1  C$$EXIT                          
+0     003395c7  FS$$DIV                          
+0     003388a1  _ADCINT_ISR                      
+0     003391c3  _ADC_Setup                       
 0     00380080  _ADC_cal                         
 1     00000b00  _AdcMirror                       
 1     00007100  _AdcRegs                         
-1     0000c086  _Alpha_State_Ptr                 
+1     0000c08a  _Alpha_State_Ptr                 
 0     0033807c  _B0                              
-0     003380fa  _B1                              
-0     00338100  _B2                              
-0     00338106  _B3                              
+0     003380fc  _B1                              
+0     00338102  _B2                              
+0     00338108  _B3                              
 1     0000c088  _B_Task_Ptr                      
-0     003380e4  _C0                              
-0     0033810c  _C1                              
-0     00338185  _C2                              
-0     003381fd  _C3                              
-0     00339377  _CNTL_2P2Z_F_COEFFS_init         
-0     00009cbf  _CNTL_2P2Z_F_FUNC                
-0     003393a2  _CNTL_2P2Z_F_VARS_init           
-0     00009e00  _CNTL_PI_F_FUNC                  
-0     00339416  _CNTL_PI_F_init                  
-1     0000c084  _C_Task_Ptr                      
-0     003382b3  _CheckSettings                   
+0     003380e6  _C0                              
+0     0033810e  _C1                              
+0     00338183  _C2                              
+0     003381fb  _C3                              
+0     0033937d  _CNTL_2P2Z_F_COEFFS_init         
+0     00009cbb  _CNTL_2P2Z_F_FUNC                
+0     003393a8  _CNTL_2P2Z_F_VARS_init           
+0     00009dfc  _CNTL_PI_F_FUNC                  
+0     0033941c  _CNTL_PI_F_init                  
+1     0000c086  _C_Task_Ptr                      
+0     003382af  _CheckSettings                   
 1     0000c180  _Coeff1_h1                       
 1     0000c1d0  _Coeff1_h3                       
 1     0000c0de  _Coeff1_h5                       
@@ -803,23 +801,23 @@ page  address   name
 1     0000c1e0  _Coeff3_h1                       
 1     0000c100  _Coeff3_h3                       
 1     0000c120  _Coeff3_h5                       
-1     0000c0b0  _Coil                            
+1     0000c0b4  _Coil                            
 1     0000c516  _CoilPtr                         
-0     003393dc  _ConfigCpuTimer                  
-1     0000c03f  _Counter_AfterReset              
-1     0000c005  _Counter_Boost_Off               
-1     0000c008  _Counter_Boost_Start             
-1     0000c000  _Counter_Buck_Start              
-1     0000c001  _Counter_DC_OK                   
-1     0000c048  _Counter_Delay_Contactor         
-1     0000c047  _Counter_Delay_Reset             
-1     0000c01a  _Counter_Sequence_OK             
-1     0000c004  _Counter_Start                   
-1     0000c029  _Counter_State1_AutoReset        
-1     0000c02a  _Counter_State2_AutoReset        
-1     0000c032  _Counter_State3_AutoReset        
-1     0000c03b  _Counter_Toggle                  
-1     0000c041  _Counter_TurnOn                  
+0     003393e2  _ConfigCpuTimer                  
+1     0000c045  _Counter_AfterReset              
+1     0000c006  _Counter_Boost_Off               
+1     0000c005  _Counter_Boost_Start             
+1     0000c008  _Counter_Buck_Start              
+1     0000c000  _Counter_DC_OK                   
+1     0000c03f  _Counter_Delay_Contactor         
+1     0000c048  _Counter_Delay_Reset             
+1     0000c01b  _Counter_Sequence_OK             
+1     0000c001  _Counter_Start                   
+1     0000c038  _Counter_State1_AutoReset        
+1     0000c039  _Counter_State2_AutoReset        
+1     0000c03d  _Counter_State3_AutoReset        
+1     0000c032  _Counter_Toggle                  
+1     0000c047  _Counter_TurnOn                  
 1     0000c4ea  _CpuTimer0                       
 1     00000c00  _CpuTimer0Regs                   
 1     0000c4da  _CpuTimer1                       
@@ -828,33 +826,33 @@ page  address   name
 1     00000c10  _CpuTimer2Regs                   
 1     0033fff8  _CsmPwl                          
 1     00000ae0  _CsmRegs                         
-0     003387c9  _DATALOG_ISR                     
-0     003389bd  _DINTCH1_ISR                     
-0     003389c7  _DINTCH2_ISR                     
-0     003389d1  _DINTCH3_ISR                     
-0     003389db  _DINTCH4_ISR                     
-0     003389e5  _DINTCH5_ISR                     
-0     003389ef  _DINTCH6_ISR                     
-0     00008c93  _DSP28x_usDelay                  
-1     0000c049  _Delay_Mains_Contactor           
-1     0000c03e  _Delay_Null_Contactor            
+0     003387cf  _DATALOG_ISR                     
+0     003389c3  _DINTCH1_ISR                     
+0     003389cd  _DINTCH2_ISR                     
+0     003389d7  _DINTCH3_ISR                     
+0     003389e1  _DINTCH4_ISR                     
+0     003389eb  _DINTCH5_ISR                     
+0     003389f5  _DINTCH6_ISR                     
+0     00008c4d  _DSP28x_usDelay                  
+1     0000c041  _Delay_Mains_Contactor           
+1     0000c04b  _Delay_Null_Contactor            
 1     00000880  _DevEmuRegs                      
-0     003390fd  _DisableDog                      
+0     00339103  _DisableDog                      
 1     00001000  _DmaRegs                         
-1     0000c08a  _DutyR                           
-1     0000c098  _DutyS                           
+1     0000c08c  _DutyR                           
+1     0000c09e  _DutyS                           
 1     0000c09c  _DutyT                           
 1     0000c0a0  _Duty_Leg4                       
-0     00338a49  _ECAN0INTA_ISR                   
-0     00338a5d  _ECAN0INTB_ISR                   
-0     00338a53  _ECAN1INTA_ISR                   
-0     00338a67  _ECAN1INTB_ISR                   
-0     00338931  _ECAP1_INT_ISR                   
-0     0033893b  _ECAP2_INT_ISR                   
-0     00338945  _ECAP3_INT_ISR                   
-0     0033894f  _ECAP4_INT_ISR                   
-0     00338959  _ECAP5_INT_ISR                   
-0     00338963  _ECAP6_INT_ISR                   
+0     00338a4f  _ECAN0INTA_ISR                   
+0     00338a63  _ECAN0INTB_ISR                   
+0     00338a59  _ECAN1INTA_ISR                   
+0     00338a6d  _ECAN1INTB_ISR                   
+0     00338937  _ECAP1_INT_ISR                   
+0     00338941  _ECAP2_INT_ISR                   
+0     0033894b  _ECAP3_INT_ISR                   
+0     00338955  _ECAP4_INT_ISR                   
+0     0033895f  _ECAP5_INT_ISR                   
+0     00338969  _ECAP6_INT_ISR                   
 1     00006040  _ECanaLAMRegs                    
 1     000060c0  _ECanaMOTORegs                   
 1     00006080  _ECanaMOTSRegs                   
@@ -871,32 +869,32 @@ page  address   name
 1     00006a60  _ECap4Regs                       
 1     00006a80  _ECap5Regs                       
 1     00006aa0  _ECap6Regs                       
-0     003387dd  _EMUINT_ISR                      
-0     003388f5  _EPWM1_INT_ISR                   
-0     003388b9  _EPWM1_TZINT_ISR                 
-0     003388ff  _EPWM2_INT_ISR                   
-0     003388c3  _EPWM2_TZINT_ISR                 
-0     00338909  _EPWM3_INT_ISR                   
-0     003388cd  _EPWM3_TZINT_ISR                 
-0     00338913  _EPWM4_INT_ISR                   
-0     003388d7  _EPWM4_TZINT_ISR                 
-0     0033891d  _EPWM5_INT_ISR                   
-0     003388e1  _EPWM5_TZINT_ISR                 
-0     00338927  _EPWM6_INT_ISR                   
-0     003388eb  _EPWM6_TZINT_ISR                 
+0     003387e3  _EMUINT_ISR                      
+0     003388fb  _EPWM1_INT_ISR                   
+0     003388bf  _EPWM1_TZINT_ISR                 
+0     00338905  _EPWM2_INT_ISR                   
+0     003388c9  _EPWM2_TZINT_ISR                 
+0     0033890f  _EPWM3_INT_ISR                   
+0     003388d3  _EPWM3_TZINT_ISR                 
+0     00338919  _EPWM4_INT_ISR                   
+0     003388dd  _EPWM4_TZINT_ISR                 
+0     00338923  _EPWM5_INT_ISR                   
+0     003388e7  _EPWM5_TZINT_ISR                 
+0     0033892d  _EPWM6_INT_ISR                   
+0     003388f1  _EPWM6_TZINT_ISR                 
 1     00006800  _EPwm1Regs                       
 1     00006840  _EPwm2Regs                       
 1     00006880  _EPwm3Regs                       
 1     000068c0  _EPwm4Regs                       
 1     00006900  _EPwm5Regs                       
 1     00006940  _EPwm6Regs                       
-0     0033896d  _EQEP1_INT_ISR                   
-0     00338977  _EQEP2_INT_ISR                   
+0     00338973  _EQEP1_INT_ISR                   
+0     0033897d  _EQEP2_INT_ISR                   
 1     00006b00  _EQep1Regs                       
 1     00006b40  _EQep2Regs                       
-1     0000c018  _Emergency_Flag                  
-1     0000c039  _Emergency_Flag1                 
-0     00339503  _EnableInterrupts                
+1     0000c019  _Emergency_Flag                  
+1     0000c04a  _Emergency_Flag1                 
+0     00339509  _EnableInterrupts                
 0     003ff0de  _FPUatan2HalfPITable             
 0     003ff0e2  _FPUatan2Table                   
 0     003ff268  _FPUatan2TableEnd                
@@ -904,172 +902,174 @@ page  address   name
 0     003ff0de  _FPUcosTableEnd                  
 0     003febdc  _FPUsinTable                     
 0     003fefdc  _FPUsinTableEnd                  
-1     0000c021  _Flag_Auto                       
+1     0000c022  _Flag_Auto                       
 1     0000c044  _Flag_Balancer_ClearTrip         
-1     0000c020  _Flag_BatConnected               
-1     0000c022  _Flag_BatDisConnected            
-1     0000c03d  _Flag_Battery_Ok                 
-1     0000c007  _Flag_BoostDanger                
-1     0000c006  _Flag_BoostFault                 
-1     0000c043  _Flag_Boost_CLearTrip            
-1     0000c025  _Flag_BuckDanger                 
-1     0000c027  _Flag_BuckFault                  
-1     0000c045  _Flag_Buck_ClearTrip             
-1     0000c019  _Flag_ContactorFault             
-1     0000c016  _Flag_IDF                        
-1     0000c024  _Flag_InvFault                   
-1     0000c01e  _Flag_MainsOff1                  
-1     0000c01f  _Flag_MainsOff2                  
-1     0000c026  _Flag_MainsOff3                  
+1     0000c021  _Flag_BatConnected               
+1     0000c023  _Flag_BatDisConnected            
+1     0000c035  _Flag_Battery_Ok                 
+1     0000c009  _Flag_BoostDanger                
+1     0000c007  _Flag_BoostFault                 
+1     0000c00e  _Flag_Boost_CLearTrip            
+1     0000c026  _Flag_BuckDanger                 
+1     0000c028  _Flag_BuckFault                  
+1     0000c049  _Flag_Buck_ClearTrip             
+1     0000c01a  _Flag_ContactorFault             
+1     0000c017  _Flag_IDF                        
+1     0000c025  _Flag_InvFault                   
+1     0000c01f  _Flag_MainsOff1                  
+1     0000c020  _Flag_MainsOff2                  
+1     0000c027  _Flag_MainsOff3                  
 1     0000c040  _Flag_ManualShutDown             
 1     0000c0a2  _Flag_OverTemp                   
-1     0000c01c  _Flag_PowerOk                    
-1     0000c017  _Flag_RecDanger                  
-1     0000c023  _Flag_RecFault                   
-1     0000c042  _Flag_Rectifier_ClearTrip        
-1     0000c09e  _Flag_Start                      
-1     0000c02d  _Flag_StratUp                    
-1     0000c02e  _Flag_SystemStart                
-1     0000c038  _Flag_UnbalanceVoltageFault      
-1     0000c01d  _Flag_ZCD                        
-1     0000c03c  _Flag_offset_error               
+1     0000c01d  _Flag_PowerOk                    
+1     0000c018  _Flag_RecDanger                  
+1     0000c024  _Flag_RecFault                   
+1     0000c046  _Flag_Rectifier_ClearTrip        
+1     0000c0a4  _Flag_Start                      
+1     0000c02e  _Flag_StratUp                    
+1     0000c03a  _Flag_SystemStart                
+1     0000c031  _Flag_UnbalanceVoltageFault      
+1     0000c01e  _Flag_ZCD                        
+1     0000c030  _Flag_offset_error               
 1     00000a80  _FlashRegs                       
 1     00006f80  _GpioCtrlRegs                    
 1     00006fc0  _GpioDataRegs                    
 1     00006fe0  _GpioIntRegs                     
 1     0000c512  _HoldingRegPtr                   
 1     0000c380  _HoldingRegister                 
-0     003389f9  _I2CINT1A_ISR                    
-0     00338a03  _I2CINT2A_ISR                    
+0     003389ff  _I2CINT1A_ISR                    
+0     00338a09  _I2CINT2A_ISR                    
 1     00007900  _I2caRegs                        
-0     003387f1  _ILLEGAL_ISR                     
-0     003387b5  _INT13_ISR                       
-0     003387bf  _INT14_ISR                       
-0     00338c7a  _IO_Setup                        
-1     0000c096  _I_DC                            
+0     003387f7  _ILLEGAL_ISR                     
+0     003387bb  _INT13_ISR                       
+0     003387c5  _INT14_ISR                       
+0     00338c80  _IO_Setup                        
+1     0000c066  _I_DC                            
 1     0000c094  _I_R                             
-1     0000c092  _I_S                             
-1     0000c050  _I_T                             
-0     003393c7  _InitCpuTimers                   
-0     00008c78  _InitFlash                       
-0     00339156  _InitPeripheralClocks            
-0     003394e4  _InitPieCtrl                     
-0     00339573  _InitPieVectTable                
-0     00339105  _InitPll                         
-0     003390de  _InitSysCtrl                     
-0     003387a0  _Initial_Settings                
+1     0000c098  _I_S                             
+1     0000c096  _I_T                             
+0     003393cd  _InitCpuTimers                   
+0     00008c32  _InitFlash                       
+0     0033915c  _InitPeripheralClocks            
+0     003394ea  _InitPieCtrl                     
+0     00339557  _InitPieVectTable                
+0     0033910b  _InitPll                         
+0     003390e4  _InitSysCtrl                     
+0     003387a6  _Initial_Settings                
 1     0000c514  _InputRegPtr                     
 1     0000c340  _InputRegister                   
-1     0000c072  _Irms_R                          
-1     0000c080  _Irms_S                          
-1     0000c082  _Irms_T                          
-1     0000c076  _K                               
-0     00338aad  _LUF_ISR                         
-0     00338aa3  _LVF_ISR                         
-0     003389a9  _MRINTA_ISR                      
-0     00338995  _MRINTB_ISR                      
-0     003389b3  _MXINTA_ISR                      
-0     0033899f  _MXINTB_ISR                      
+1     0000c084  _Irms_R                          
+1     0000c082  _Irms_S                          
+1     0000c078  _Irms_T                          
+1     0000c07a  _K                               
+1     0000c054  _Ki_test                         
+1     0000c056  _Kp_test                         
+0     00338ab3  _LUF_ISR                         
+0     00338aa9  _LVF_ISR                         
+0     003389af  _MRINTA_ISR                      
+0     0033899b  _MRINTB_ISR                      
+0     003389b9  _MXINTA_ISR                      
+0     003389a5  _MXINTB_ISR                      
 0     00008000  _MainISR                         
 1     00005000  _McbspaRegs                      
 1     00005040  _McbspbRegs                      
-0     003391aa  _MemCopy                         
-0     003390d6  _ModbusEntryCoilAddress          
-0     003390da  _ModbusEntryCoilQty              
-0     003390ce  _ModbusEntryHoldingRegistrAddress
-0     003390d2  _ModbusEntryHoldingRegistrQty    
-0     00009892  _ModbusHandler                   
-0     00338358  _ModbusHoldingRegUpdate          
+0     003391b0  _MemCopy                         
+0     003390dc  _ModbusEntryCoilAddress          
+0     003390e0  _ModbusEntryCoilQty              
+0     003390d4  _ModbusEntryHoldingRegistrAddress
+0     003390d8  _ModbusEntryHoldingRegistrQty    
+0     0000988e  _ModbusHandler                   
+0     00338354  _ModbusHoldingRegUpdate          
 0     00009000  _ModbusInputRegUpdate            
-0     003383dc  _ModbusRwDataUpdate              
-0     003387e7  _NMI_ISR                         
-1     0000c046  _OnCommand                       
-1     0000c054  _OutputRegister                  
-0     00338ab7  _PIE_RESERVED                    
+0     003383d8  _ModbusRwDataUpdate              
+0     003387ed  _NMI_ISR                         
+1     0000c043  _OnCommand                       
+1     0000c050  _OutputRegister                  
+0     00338abd  _PIE_RESERVED                    
 1     0000c0c0  _PWM                             
-0     00338bce  _PWM_Drive                       
-0     00338acb  _PWM_INIT                        
+0     00338bd4  _PWM_Drive                       
+0     00338ad1  _PWM_INIT                        
 1     00380090  _PartIdRegs                      
 1     00000ce0  _PieCtrlRegs                     
 1     00000d00  _PieVectTable                    
-0     003397c0  _PieVectTableInit                
-1     0000c015  _PowerBad                        
-1     0000c009  _PowerGood                       
-0     00009226  _Protection                      
-0     003387d3  _RTOSINT_ISR                     
-0     00320e86  _Ramfuncs2LoadEnd                
+0     003397ae  _PieVectTableInit                
+1     0000c016  _PowerBad                        
+1     0000c029  _PowerGood                       
+0     00009224  _Protection                      
+0     003387d9  _RTOSINT_ISR                     
+0     00320e82  _Ramfuncs2LoadEnd                
 0     00320000  _Ramfuncs2LoadStart              
 0     00009000  _Ramfuncs2RunStart               
-0     00321b1d  _RamfuncsLoadEnd                 
-0     00320e86  _RamfuncsLoadStart               
+0     00321ad3  _RamfuncsLoadEnd                 
+0     00320e82  _RamfuncsLoadStart               
 0     00008000  _RamfuncsRunStart                
-0     003383dd  _Reset_System                    
-1     0000c014  _Restart_System                  
-0     00338a21  _SCIRXINTA_ISR                   
-0     00338a35  _SCIRXINTB_ISR                   
-0     00338a0d  _SCIRXINTC_ISR                   
-0     00338a2b  _SCITXINTA_ISR                   
-0     00338a3f  _SCITXINTB_ISR                   
-0     00338a17  _SCITXINTC_ISR                   
-0     00338873  _SEQ1INT_ISR                     
-0     0033887d  _SEQ2INT_ISR                     
-0     00009b15  _SINEANALYZER_DIFF_wPWR_F_FUNC   
-0     0033924a  _SINEANALYZER_DIFF_wPWR_F_init   
-0     00338981  _SPIRXINTA_ISR                   
-0     0033898b  _SPITXINTA_ISR                   
-0     000098dc  _SPLL_1ph_SOGI_F_FUNC            
-0     00338ed9  _SPLL_1ph_SOGI_F_coeff_update    
-0     00338e1b  _SPLL_1ph_SOGI_F_init            
+0     003383d9  _Reset_System                    
+1     0000c015  _Restart_System                  
+0     00338a27  _SCIRXINTA_ISR                   
+0     00338a3b  _SCIRXINTB_ISR                   
+0     00338a13  _SCIRXINTC_ISR                   
+0     00338a31  _SCITXINTA_ISR                   
+0     00338a45  _SCITXINTB_ISR                   
+0     00338a1d  _SCITXINTC_ISR                   
+0     00338879  _SEQ1INT_ISR                     
+0     00338883  _SEQ2INT_ISR                     
+0     00009b11  _SINEANALYZER_DIFF_wPWR_F_FUNC   
+0     00339250  _SINEANALYZER_DIFF_wPWR_F_init   
+0     00338987  _SPIRXINTA_ISR                   
+0     00338991  _SPITXINTA_ISR                   
+0     000098d8  _SPLL_1ph_SOGI_F_FUNC            
+0     00338edf  _SPLL_1ph_SOGI_F_coeff_update    
+0     00338e21  _SPLL_1ph_SOGI_F_init            
 1     00007050  _SciaRegs                        
 1     00007750  _ScibRegs                        
 1     00007770  _ScicRegs                        
 1     0000c501  _SdataEndIndex                   
-0     003390f3  _ServiceDog                      
-0     00338278  _Shut_down_buck                  
-0     00338210  _Shut_down_system                
-1     0000c062  _SoftStart_Boost                 
-1     0000c060  _SoftStart_Buck                  
+0     003390f9  _ServiceDog                      
+0     00338274  _Shut_down_buck                  
+0     0033820e  _Shut_down_system                
+1     0000c072  _SoftStart_Boost                 
+1     0000c068  _SoftStart_Buck                  
 1     00007040  _SpiaRegs                        
-1     0000c02b  _State_AutoReset                 
-1     0000c07c  _Step_SoftStart                  
+1     0000c03c  _State_AutoReset                 
+1     0000c052  _Step_SoftStart                  
 1     00007010  _SysCtrlRegs                     
-1     0000c04a  _SystemIsHot                     
-1     0000c01b  _SystemIsReady                   
-0     003388a5  _TINT0_ISR                       
-0     00338290  _Turn_on_boost                   
-0     00338203  _Turn_on_power                   
-0     0033829f  _Turn_on_system                  
+1     0000c03e  _SystemIsHot                     
+1     0000c01c  _SystemIsReady                   
+0     003388ab  _TINT0_ISR                       
+0     0033828c  _Turn_on_boost                   
+0     00338201  _Turn_on_power                   
+0     0033829b  _Turn_on_system                  
 1     0000c4f2  _UPS                             
-0     003392c8  _UPS_init                        
-0     00338855  _USER10_ISR                      
-0     0033885f  _USER11_ISR                      
-0     00338869  _USER12_ISR                      
-0     003387fb  _USER1_ISR                       
-0     00338805  _USER2_ISR                       
-0     0033880f  _USER3_ISR                       
-0     00338819  _USER4_ISR                       
-0     00338823  _USER5_ISR                       
-0     0033882d  _USER6_ISR                       
-0     00338837  _USER7_ISR                       
-0     00338841  _USER8_ISR                       
-0     0033884b  _USER9_ISR                       
-1     0000c036  _UpsStatus1                      
-1     0000c037  _UpsStatus2                      
-1     0000c035  _UpsStatus3                      
-1     0000c033  _UpsStatus4                      
+0     003392ce  _UPS_init                        
+0     0033885b  _USER10_ISR                      
+0     00338865  _USER11_ISR                      
+0     0033886f  _USER12_ISR                      
+0     00338801  _USER1_ISR                       
+0     0033880b  _USER2_ISR                       
+0     00338815  _USER3_ISR                       
+0     0033881f  _USER4_ISR                       
+0     00338829  _USER5_ISR                       
+0     00338833  _USER6_ISR                       
+0     0033883d  _USER7_ISR                       
+0     00338847  _USER8_ISR                       
+0     00338851  _USER9_ISR                       
+1     0000c02d  _UpsStatus1                      
+1     0000c034  _UpsStatus2                      
+1     0000c02b  _UpsStatus3                      
+1     0000c02a  _UpsStatus4                      
 1     0000c06e  _VBuck_Start                     
-1     0000c07a  _VDC_Start                       
+1     0000c07c  _VDC_Start                       
 1     0000c0ac  _VTimer0                         
-1     0000c0a4  _VTimer1                         
-1     0000c0a8  _VTimer2                         
-1     0000c056  _V_DC                            
-1     0000c04e  _V_DCN                           
-1     0000c04c  _V_DCP                           
-1     0000c058  _V_DC_BAT                        
-1     0000c052  _V_DC_OUT                        
-1     0000c08e  _V_R                             
-1     0000c07e  _V_RCha                          
-1     0000c08c  _V_S                             
+1     0000c0a8  _VTimer1                         
+1     0000c0b0  _VTimer2                         
+1     0000c09a  _V_DC                            
+1     0000c060  _V_DCN                           
+1     0000c05e  _V_DCP                           
+1     0000c05c  _V_DC_BAT                        
+1     0000c05a  _V_DC_OUT                        
+1     0000c0a6  _V_R                             
+1     0000c076  _V_RCha                          
+1     0000c092  _V_S                             
 1     0000c090  _V_T                             
 1     0000c190  _Vars1_h1                        
 1     0000c1a0  _Vars1_h3                        
@@ -1080,17 +1080,17 @@ page  address   name
 1     0000c1c0  _Vars3_h1                        
 1     0000c0ce  _Vars3_h3                        
 1     0000c130  _Vars3_h5                        
-1     0000c078  _Vrms_R                          
-1     0000c074  _Vrms_S                          
-1     0000c070  _Vrms_T                          
-0     003388af  _WAKEINT_ISR                     
-0     00338887  _XINT1_ISR                       
-0     00338891  _XINT2_ISR                       
-0     00338a71  _XINT3_ISR                       
-0     00338a7b  _XINT4_ISR                       
-0     00338a85  _XINT5_ISR                       
-0     00338a8f  _XINT6_ISR                       
-0     00338a99  _XINT7_ISR                       
+1     0000c062  _Vrms_R                          
+1     0000c06c  _Vrms_S                          
+1     0000c07e  _Vrms_T                          
+0     003388b5  _WAKEINT_ISR                     
+0     0033888d  _XINT1_ISR                       
+0     00338897  _XINT2_ISR                       
+0     00338a77  _XINT3_ISR                       
+0     00338a81  _XINT4_ISR                       
+0     00338a8b  _XINT5_ISR                       
+0     00338a95  _XINT6_ISR                       
+0     00338a9f  _XINT7_ISR                       
 1     00007070  _XIntruptRegs                    
 1     00000b20  _XintfRegs                       
 1     00000800  __STACK_END                      
@@ -1103,87 +1103,87 @@ abs   ffffffff  ___TI_prof_data_size
 abs   ffffffff  ___TI_prof_data_start            
 abs   ffffffff  ___binit__                       
 abs   ffffffff  ___c_args__                      
-0     00339610  ___cinit__                       
-0     00339610  ___etext__                       
+0     003395f4  ___cinit__                       
+0     003395f4  ___etext__                       
 abs   ffffffff  ___pinit__                       
 0     00338000  ___text__                        
-0     003395ca  __args_main                      
+0     003395ae  __args_main                      
 1     0000c4fc  __lock                           
-0     00339604  __nop                            
-0     00339600  __register_lock                  
-0     003395fc  __register_unlock                
+0     003395e8  __nop                            
+0     003395e4  __register_lock                  
+0     003395e0  __register_unlock                
 1     00000400  __stack                          
-0     0033960f  __system_post_cinit              
-0     0033960d  __system_pre_init                
+0     003395f3  __system_post_cinit              
+0     003395f1  __system_pre_init                
 1     0000c4fe  __unlock                         
-0     003394bb  _abort                           
-1     0000c00a  _ac_fail_time1                   
-1     0000c003  _battery_capacity1               
+0     003394c1  _abort                           
+1     0000c00b  _ac_fail_time1                   
+1     0000c002  _battery_capacity1               
 1     0000c06a  _battery_overvoltage             
-1     0000c013  _battery_type1                   
-0     00339321  _c_int00                         
-1     0000c2d8  _cntl_pi1                        
-1     0000c298  _cntl_pi10                       
+1     0000c011  _battery_type1                   
+0     00339327  _c_int00                         
+1     0000c318  _cntl_pi1                        
+1     0000c2c0  _cntl_pi10                       
 1     0000c218  _cntl_pi2                        
 1     0000c200  _cntl_pi3                        
-1     0000c240  _cntl_pi4                        
-1     0000c280  _cntl_pi5                        
-1     0000c318  _cntl_pi6                        
-1     0000c258  _cntl_pi7                        
+1     0000c258  _cntl_pi4                        
+1     0000c240  _cntl_pi5                        
+1     0000c280  _cntl_pi6                        
+1     0000c2d8  _cntl_pi7                        
 1     0000c300  _cntl_pi8                        
-1     0000c2c0  _cntl_pi9                        
-0     0033950c  _copy_in                         
-0     00339453  _cos                             
-0     003395b1  _cpu_timer0_isr                  
-1     0000c06c  _current_limit_rate              
-1     0000c012  _current_limit_rate1             
-1     0000c066  _deep_dischage_voltage           
-1     0000c028  _deep_dischage_voltage1          
-0     003394bd  _exit                            
-1     0000c00d  _low_voltage_alarm1              
+1     0000c298  _cntl_pi9                        
+0     00339512  _copy_in                         
+0     00339459  _cos                             
+0     00339595  _cpu_timer0_isr                  
+1     0000c064  _current_limit_rate              
+1     0000c013  _current_limit_rate1             
+1     0000c04c  _deep_dischage_voltage           
+1     0000c00c  _deep_dischage_voltage1          
+0     003394c3  _exit                            
+1     0000c014  _low_voltage_alarm1              
 0     00338000  _main                            
-1     0000c064  _mains_nominal_voltage           
-1     0000c00b  _mains_nominal_voltage1          
-1     0000c068  _mains_voltage                   
-1     0000c011  _mains_voltage1                  
-1     0000c00f  _mains_voltage_tolerance1        
-0     00339593  _memcpy                          
-1     0000c04b  _modbusAdd                       
-1     0000c034  _modbusFn                        
-0     00338f81  _modbus_rtu_init                 
-1     0000c002  _n_of_battery_cells1             
-1     0000c030  _offset                          
-1     0000c02f  _offset_avg                      
-1     0000c02c  _offset_avg_counter              
-1     0000c031  _offset_sum                      
-1     0000c09a  _pwm1                            
-1     0000c00c  _quick_time1                     
-1     0000c00e  _quick_voltage1                  
+1     0000c04e  _mains_nominal_voltage           
+1     0000c012  _mains_nominal_voltage1          
+1     0000c058  _mains_voltage                   
+1     0000c00f  _mains_voltage1                  
+1     0000c003  _mains_voltage_tolerance1        
+0     00339577  _memcpy                          
+1     0000c02c  _modbusAdd                       
+1     0000c02f  _modbusFn                        
+0     00338f87  _modbus_rtu_init                 
+1     0000c010  _n_of_battery_cells1             
+1     0000c03b  _offset                          
+1     0000c037  _offset_avg                      
+1     0000c033  _offset_avg_counter              
+1     0000c036  _offset_sum                      
+1     0000c08e  _pwm1                            
+1     0000c00a  _quick_time1                     
+1     0000c00d  _quick_voltage1                  
 1     0000c640  _rdataA                          
 1     0000c504  _rdata_pointA                    
-1     0000c05e  _ref_float_voltage               
-1     0000c010  _ref_float_voltage1              
-0     00338ac1  _rsvd_ISR                        
-0     00009dae  _sciaRxFifoIsr                   
-0     00009d73  _sciaTxFifoIsr                   
-0     00009886  _scia_Tx_fifo_init               
-0     003390bb  _scia_fifo_init                  
+1     0000c070  _ref_float_voltage               
+1     0000c004  _ref_float_voltage1              
+0     00338ac7  _rsvd_ISR                        
+0     00009daa  _sciaRxFifoIsr                   
+0     00009d6f  _sciaTxFifoIsr                   
+0     00009882  _scia_Tx_fifo_init               
+0     003390c1  _scia_fifo_init                  
 1     0000c540  _sdataA                          
 1     0000c506  _sdata_pointA                    
-0     00339487  _sin                             
-1     0000c440  _sine_mainsV_R                   
+0     0033948d  _sin                             
+1     0000c400  _sine_mainsV_R                   
 1     0000c3c0  _sine_mainsV_S                   
-1     0000c400  _sine_mainsV_T                   
+1     0000c440  _sine_mainsV_T                   
 1     0000c480  _spll1                           
-0     00339552  _sqrt                            
-1     0000c03a  _test1                           
+0     00339536  _sqrt                            
+1     0000c042  _test1                           
 1     0000c500  _time_out_reached                
-1     0000c05c  _vrms_mains_max                  
-1     0000c05a  _vrms_mains_min                  
+1     0000c074  _vrms_mains_max                  
+1     0000c080  _vrms_mains_min                  
 abs   ffffffff  binit                            
-0     00339610  cinit                            
+0     003395f4  cinit                            
 0     0033fff6  code_start                       
-0     00339610  etext                            
+0     003395f4  etext                            
 abs   ffffffff  pinit                            
 
 
@@ -1193,175 +1193,173 @@ page  address   name
 ----  -------   ----                             
 0     00008000  _MainISR                         
 0     00008000  _RamfuncsRunStart                
-0     00008c78  _InitFlash                       
-0     00008c93  _DSP28x_usDelay                  
+0     00008c32  _InitFlash                       
+0     00008c4d  _DSP28x_usDelay                  
 0     00009000  _ModbusInputRegUpdate            
 0     00009000  _Ramfuncs2RunStart               
-0     00009226  _Protection                      
-0     00009886  _scia_Tx_fifo_init               
-0     00009892  _ModbusHandler                   
-0     000098dc  _SPLL_1ph_SOGI_F_FUNC            
-0     00009b15  _SINEANALYZER_DIFF_wPWR_F_FUNC   
-0     00009cbf  _CNTL_2P2Z_F_FUNC                
-0     00009d73  _sciaTxFifoIsr                   
-0     00009dae  _sciaRxFifoIsr                   
-0     00009e00  _CNTL_PI_F_FUNC                  
+0     00009224  _Protection                      
+0     00009882  _scia_Tx_fifo_init               
+0     0000988e  _ModbusHandler                   
+0     000098d8  _SPLL_1ph_SOGI_F_FUNC            
+0     00009b11  _SINEANALYZER_DIFF_wPWR_F_FUNC   
+0     00009cbb  _CNTL_2P2Z_F_FUNC                
+0     00009d6f  _sciaTxFifoIsr                   
+0     00009daa  _sciaRxFifoIsr                   
+0     00009dfc  _CNTL_PI_F_FUNC                  
 0     00320000  _Ramfuncs2LoadStart              
-0     00320e86  _Ramfuncs2LoadEnd                
-0     00320e86  _RamfuncsLoadStart               
-0     00321b1d  _RamfuncsLoadEnd                 
+0     00320e82  _Ramfuncs2LoadEnd                
+0     00320e82  _RamfuncsLoadStart               
+0     00321ad3  _RamfuncsLoadEnd                 
 0     00338000  .text                            
 0     00338000  ___text__                        
 0     00338000  _main                            
 0     0033807c  _B0                              
-0     003380e4  _C0                              
-0     003380fa  _B1                              
-0     00338100  _B2                              
-0     00338106  _B3                              
-0     0033810c  _C1                              
-0     00338185  _C2                              
-0     003381fd  _C3                              
-0     00338203  _Turn_on_power                   
-0     00338210  _Shut_down_system                
-0     00338278  _Shut_down_buck                  
-0     00338290  _Turn_on_boost                   
-0     0033829f  _Turn_on_system                  
-0     003382b3  _CheckSettings                   
-0     00338358  _ModbusHoldingRegUpdate          
-0     003383dc  _ModbusRwDataUpdate              
-0     003383dd  _Reset_System                    
-0     003387a0  _Initial_Settings                
-0     003387b5  _INT13_ISR                       
-0     003387bf  _INT14_ISR                       
-0     003387c9  _DATALOG_ISR                     
-0     003387d3  _RTOSINT_ISR                     
-0     003387dd  _EMUINT_ISR                      
-0     003387e7  _NMI_ISR                         
-0     003387f1  _ILLEGAL_ISR                     
-0     003387fb  _USER1_ISR                       
-0     00338805  _USER2_ISR                       
-0     0033880f  _USER3_ISR                       
-0     00338819  _USER4_ISR                       
-0     00338823  _USER5_ISR                       
-0     0033882d  _USER6_ISR                       
-0     00338837  _USER7_ISR                       
-0     00338841  _USER8_ISR                       
-0     0033884b  _USER9_ISR                       
-0     00338855  _USER10_ISR                      
-0     0033885f  _USER11_ISR                      
-0     00338869  _USER12_ISR                      
-0     00338873  _SEQ1INT_ISR                     
-0     0033887d  _SEQ2INT_ISR                     
-0     00338887  _XINT1_ISR                       
-0     00338891  _XINT2_ISR                       
-0     0033889b  _ADCINT_ISR                      
-0     003388a5  _TINT0_ISR                       
-0     003388af  _WAKEINT_ISR                     
-0     003388b9  _EPWM1_TZINT_ISR                 
-0     003388c3  _EPWM2_TZINT_ISR                 
-0     003388cd  _EPWM3_TZINT_ISR                 
-0     003388d7  _EPWM4_TZINT_ISR                 
-0     003388e1  _EPWM5_TZINT_ISR                 
-0     003388eb  _EPWM6_TZINT_ISR                 
-0     003388f5  _EPWM1_INT_ISR                   
-0     003388ff  _EPWM2_INT_ISR                   
-0     00338909  _EPWM3_INT_ISR                   
-0     00338913  _EPWM4_INT_ISR                   
-0     0033891d  _EPWM5_INT_ISR                   
-0     00338927  _EPWM6_INT_ISR                   
-0     00338931  _ECAP1_INT_ISR                   
-0     0033893b  _ECAP2_INT_ISR                   
-0     00338945  _ECAP3_INT_ISR                   
-0     0033894f  _ECAP4_INT_ISR                   
-0     00338959  _ECAP5_INT_ISR                   
-0     00338963  _ECAP6_INT_ISR                   
-0     0033896d  _EQEP1_INT_ISR                   
-0     00338977  _EQEP2_INT_ISR                   
-0     00338981  _SPIRXINTA_ISR                   
-0     0033898b  _SPITXINTA_ISR                   
-0     00338995  _MRINTB_ISR                      
-0     0033899f  _MXINTB_ISR                      
-0     003389a9  _MRINTA_ISR                      
-0     003389b3  _MXINTA_ISR                      
-0     003389bd  _DINTCH1_ISR                     
-0     003389c7  _DINTCH2_ISR                     
-0     003389d1  _DINTCH3_ISR                     
-0     003389db  _DINTCH4_ISR                     
-0     003389e5  _DINTCH5_ISR                     
-0     003389ef  _DINTCH6_ISR                     
-0     003389f9  _I2CINT1A_ISR                    
-0     00338a03  _I2CINT2A_ISR                    
-0     00338a0d  _SCIRXINTC_ISR                   
-0     00338a17  _SCITXINTC_ISR                   
-0     00338a21  _SCIRXINTA_ISR                   
-0     00338a2b  _SCITXINTA_ISR                   
-0     00338a35  _SCIRXINTB_ISR                   
-0     00338a3f  _SCITXINTB_ISR                   
-0     00338a49  _ECAN0INTA_ISR                   
-0     00338a53  _ECAN1INTA_ISR                   
-0     00338a5d  _ECAN0INTB_ISR                   
-0     00338a67  _ECAN1INTB_ISR                   
-0     00338a71  _XINT3_ISR                       
-0     00338a7b  _XINT4_ISR                       
-0     00338a85  _XINT5_ISR                       
-0     00338a8f  _XINT6_ISR                       
-0     00338a99  _XINT7_ISR                       
-0     00338aa3  _LVF_ISR                         
-0     00338aad  _LUF_ISR                         
-0     00338ab7  _PIE_RESERVED                    
-0     00338ac1  _rsvd_ISR                        
-0     00338acb  _PWM_INIT                        
-0     00338bce  _PWM_Drive                       
-0     00338c7a  _IO_Setup                        
-0     00338e1b  _SPLL_1ph_SOGI_F_init            
-0     00338ed9  _SPLL_1ph_SOGI_F_coeff_update    
-0     00338f81  _modbus_rtu_init                 
-0     003390bb  _scia_fifo_init                  
-0     003390ce  _ModbusEntryHoldingRegistrAddress
-0     003390d2  _ModbusEntryHoldingRegistrQty    
-0     003390d6  _ModbusEntryCoilAddress          
-0     003390da  _ModbusEntryCoilQty              
-0     003390de  _InitSysCtrl                     
-0     003390f3  _ServiceDog                      
-0     003390fd  _DisableDog                      
-0     00339105  _InitPll                         
-0     00339156  _InitPeripheralClocks            
-0     003391aa  _MemCopy                         
-0     003391bd  _ADC_Setup                       
-0     0033924a  _SINEANALYZER_DIFF_wPWR_F_init   
-0     003392c8  _UPS_init                        
-0     00339321  _c_int00                         
-0     00339377  _CNTL_2P2Z_F_COEFFS_init         
-0     003393a2  _CNTL_2P2Z_F_VARS_init           
-0     003393c7  _InitCpuTimers                   
-0     003393dc  _ConfigCpuTimer                  
-0     00339416  _CNTL_PI_F_init                  
-0     00339453  _cos                             
-0     00339487  _sin                             
-0     003394bb  C$$EXIT                          
-0     003394bb  _abort                           
-0     003394bd  _exit                            
-0     003394e4  _InitPieCtrl                     
-0     00339503  _EnableInterrupts                
-0     0033950c  _copy_in                         
-0     00339530  I$$DIV                           
-0     00339541  I$$MOD                           
-0     00339552  _sqrt                            
-0     00339573  _InitPieVectTable                
-0     00339593  _memcpy                          
-0     003395b1  _cpu_timer0_isr                  
-0     003395ca  __args_main                      
-0     003395e3  FS$$DIV                          
-0     003395fc  __register_unlock                
-0     00339600  __register_lock                  
-0     00339604  __nop                            
-0     0033960d  __system_pre_init                
-0     0033960f  __system_post_cinit              
-0     00339610  ___cinit__                       
-0     00339610  ___etext__                       
-0     00339610  cinit                            
-0     00339610  etext                            
-0     003397c0  _PieVectTableInit                
+0     003380e6  _C0                              
+0     003380fc  _B1                              
+0     00338102  _B2                              
+0     00338108  _B3                              
+0     0033810e  _C1                              
+0     00338183  _C2                              
+0     003381fb  _C3                              
+0     00338201  _Turn_on_power                   
+0     0033820e  _Shut_down_system                
+0     00338274  _Shut_down_buck                  
+0     0033828c  _Turn_on_boost                   
+0     0033829b  _Turn_on_system                  
+0     003382af  _CheckSettings                   
+0     00338354  _ModbusHoldingRegUpdate          
+0     003383d8  _ModbusRwDataUpdate              
+0     003383d9  _Reset_System                    
+0     003387a6  _Initial_Settings                
+0     003387bb  _INT13_ISR                       
+0     003387c5  _INT14_ISR                       
+0     003387cf  _DATALOG_ISR                     
+0     003387d9  _RTOSINT_ISR                     
+0     003387e3  _EMUINT_ISR                      
+0     003387ed  _NMI_ISR                         
+0     003387f7  _ILLEGAL_ISR                     
+0     00338801  _USER1_ISR                       
+0     0033880b  _USER2_ISR                       
+0     00338815  _USER3_ISR                       
+0     0033881f  _USER4_ISR                       
+0     00338829  _USER5_ISR                       
+0     00338833  _USER6_ISR                       
+0     0033883d  _USER7_ISR                       
+0     00338847  _USER8_ISR                       
+0     00338851  _USER9_ISR                       
+0     0033885b  _USER10_ISR                      
+0     00338865  _USER11_ISR                      
+0     0033886f  _USER12_ISR                      
+0     00338879  _SEQ1INT_ISR                     
+0     00338883  _SEQ2INT_ISR                     
+0     0033888d  _XINT1_ISR                       
+0     00338897  _XINT2_ISR                       
+0     003388a1  _ADCINT_ISR                      
+0     003388ab  _TINT0_ISR                       
+0     003388b5  _WAKEINT_ISR                     
+0     003388bf  _EPWM1_TZINT_ISR                 
+0     003388c9  _EPWM2_TZINT_ISR                 
+0     003388d3  _EPWM3_TZINT_ISR                 
+0     003388dd  _EPWM4_TZINT_ISR                 
+0     003388e7  _EPWM5_TZINT_ISR                 
+0     003388f1  _EPWM6_TZINT_ISR                 
+0     003388fb  _EPWM1_INT_ISR                   
+0     00338905  _EPWM2_INT_ISR                   
+0     0033890f  _EPWM3_INT_ISR                   
+0     00338919  _EPWM4_INT_ISR                   
+0     00338923  _EPWM5_INT_ISR                   
+0     0033892d  _EPWM6_INT_ISR                   
+0     00338937  _ECAP1_INT_ISR                   
+0     00338941  _ECAP2_INT_ISR                   
+0     0033894b  _ECAP3_INT_ISR                   
+0     00338955  _ECAP4_INT_ISR                   
+0     0033895f  _ECAP5_INT_ISR                   
+0     00338969  _ECAP6_INT_ISR                   
+0     00338973  _EQEP1_INT_ISR                   
+0     0033897d  _EQEP2_INT_ISR                   
+0     00338987  _SPIRXINTA_ISR                   
+0     00338991  _SPITXINTA_ISR                   
+0     0033899b  _MRINTB_ISR                      
+0     003389a5  _MXINTB_ISR                      
+0     003389af  _MRINTA_ISR                      
+0     003389b9  _MXINTA_ISR                      
+0     003389c3  _DINTCH1_ISR                     
+0     003389cd  _DINTCH2_ISR                     
+0     003389d7  _DINTCH3_ISR                     
+0     003389e1  _DINTCH4_ISR                     
+0     003389eb  _DINTCH5_ISR                     
+0     003389f5  _DINTCH6_ISR                     
+0     003389ff  _I2CINT1A_ISR                    
+0     00338a09  _I2CINT2A_ISR                    
+0     00338a13  _SCIRXINTC_ISR                   
+0     00338a1d  _SCITXINTC_ISR                   
+0     00338a27  _SCIRXINTA_ISR                   
+0     00338a31  _SCITXINTA_ISR                   
+0     00338a3b  _SCIRXINTB_ISR                   
+0     00338a45  _SCITXINTB_ISR                   
+0     00338a4f  _ECAN0INTA_ISR                   
+0     00338a59  _ECAN1INTA_ISR                   
+0     00338a63  _ECAN0INTB_ISR                   
+0     00338a6d  _ECAN1INTB_ISR                   
+0     00338a77  _XINT3_ISR                       
+0     00338a81  _XINT4_ISR                       
+0     00338a8b  _XINT5_ISR                       
+0     00338a95  _XINT6_ISR                       
+0     00338a9f  _XINT7_ISR                       
+0     00338aa9  _LVF_ISR                         
+0     00338ab3  _LUF_ISR                         
+0     00338abd  _PIE_RESERVED                    
+0     00338ac7  _rsvd_ISR                        
+0     00338ad1  _PWM_INIT                        
+0     00338bd4  _PWM_Drive                       
+0     00338c80  _IO_Setup                        
+0     00338e21  _SPLL_1ph_SOGI_F_init            
+0     00338edf  _SPLL_1ph_SOGI_F_coeff_update    
+0     00338f87  _modbus_rtu_init                 
+0     003390c1  _scia_fifo_init                  
+0     003390d4  _ModbusEntryHoldingRegistrAddress
+0     003390d8  _ModbusEntryHoldingRegistrQty    
+0     003390dc  _ModbusEntryCoilAddress          
+0     003390e0  _ModbusEntryCoilQty              
+0     003390e4  _InitSysCtrl                     
+0     003390f9  _ServiceDog                      
+0     00339103  _DisableDog                      
+0     0033910b  _InitPll                         
+0     0033915c  _InitPeripheralClocks            
+0     003391b0  _MemCopy                         
+0     003391c3  _ADC_Setup                       
+0     00339250  _SINEANALYZER_DIFF_wPWR_F_init   
+0     003392ce  _UPS_init                        
+0     00339327  _c_int00                         
+0     0033937d  _CNTL_2P2Z_F_COEFFS_init         
+0     003393a8  _CNTL_2P2Z_F_VARS_init           
+0     003393cd  _InitCpuTimers                   
+0     003393e2  _ConfigCpuTimer                  
+0     0033941c  _CNTL_PI_F_init                  
+0     00339459  _cos                             
+0     0033948d  _sin                             
+0     003394c1  C$$EXIT                          
+0     003394c1  _abort                           
+0     003394c3  _exit                            
+0     003394ea  _InitPieCtrl                     
+0     00339509  _EnableInterrupts                
+0     00339512  _copy_in                         
+0     00339536  _sqrt                            
+0     00339557  _InitPieVectTable                
+0     00339577  _memcpy                          
+0     00339595  _cpu_timer0_isr                  
+0     003395ae  __args_main                      
+0     003395c7  FS$$DIV                          
+0     003395e0  __register_unlock                
+0     003395e4  __register_lock                  
+0     003395e8  __nop                            
+0     003395f1  __system_pre_init                
+0     003395f3  __system_post_cinit              
+0     003395f4  ___cinit__                       
+0     003395f4  ___etext__                       
+0     003395f4  cinit                            
+0     003395f4  etext                            
+0     003397ae  _PieVectTableInit                
 0     0033fff6  code_start                       
 0     00380080  _ADC_cal                         
 0     003febdc  _FPUsinTable                     
@@ -1421,130 +1419,132 @@ page  address   name
 1     00007750  _ScibRegs                        
 1     00007770  _ScicRegs                        
 1     00007900  _I2caRegs                        
-1     0000c000  _Counter_Buck_Start              
-1     0000c001  _Counter_DC_OK                   
-1     0000c002  _n_of_battery_cells1             
-1     0000c003  _battery_capacity1               
-1     0000c004  _Counter_Start                   
-1     0000c005  _Counter_Boost_Off               
-1     0000c006  _Flag_BoostFault                 
-1     0000c007  _Flag_BoostDanger                
-1     0000c008  _Counter_Boost_Start             
-1     0000c009  _PowerGood                       
-1     0000c00a  _ac_fail_time1                   
-1     0000c00b  _mains_nominal_voltage1          
-1     0000c00c  _quick_time1                     
-1     0000c00d  _low_voltage_alarm1              
-1     0000c00e  _quick_voltage1                  
-1     0000c00f  _mains_voltage_tolerance1        
-1     0000c010  _ref_float_voltage1              
-1     0000c011  _mains_voltage1                  
-1     0000c012  _current_limit_rate1             
-1     0000c013  _battery_type1                   
-1     0000c014  _Restart_System                  
-1     0000c015  _PowerBad                        
-1     0000c016  _Flag_IDF                        
-1     0000c017  _Flag_RecDanger                  
-1     0000c018  _Emergency_Flag                  
-1     0000c019  _Flag_ContactorFault             
-1     0000c01a  _Counter_Sequence_OK             
-1     0000c01b  _SystemIsReady                   
-1     0000c01c  _Flag_PowerOk                    
-1     0000c01d  _Flag_ZCD                        
-1     0000c01e  _Flag_MainsOff1                  
-1     0000c01f  _Flag_MainsOff2                  
-1     0000c020  _Flag_BatConnected               
-1     0000c021  _Flag_Auto                       
-1     0000c022  _Flag_BatDisConnected            
-1     0000c023  _Flag_RecFault                   
-1     0000c024  _Flag_InvFault                   
-1     0000c025  _Flag_BuckDanger                 
-1     0000c026  _Flag_MainsOff3                  
-1     0000c027  _Flag_BuckFault                  
-1     0000c028  _deep_dischage_voltage1          
-1     0000c029  _Counter_State1_AutoReset        
-1     0000c02a  _Counter_State2_AutoReset        
-1     0000c02b  _State_AutoReset                 
-1     0000c02c  _offset_avg_counter              
-1     0000c02d  _Flag_StratUp                    
-1     0000c02e  _Flag_SystemStart                
-1     0000c02f  _offset_avg                      
-1     0000c030  _offset                          
-1     0000c031  _offset_sum                      
-1     0000c032  _Counter_State3_AutoReset        
-1     0000c033  _UpsStatus4                      
-1     0000c034  _modbusFn                        
-1     0000c035  _UpsStatus3                      
-1     0000c036  _UpsStatus1                      
-1     0000c037  _UpsStatus2                      
-1     0000c038  _Flag_UnbalanceVoltageFault      
-1     0000c039  _Emergency_Flag1                 
-1     0000c03a  _test1                           
-1     0000c03b  _Counter_Toggle                  
-1     0000c03c  _Flag_offset_error               
-1     0000c03d  _Flag_Battery_Ok                 
-1     0000c03e  _Delay_Null_Contactor            
-1     0000c03f  _Counter_AfterReset              
+1     0000c000  _Counter_DC_OK                   
+1     0000c001  _Counter_Start                   
+1     0000c002  _battery_capacity1               
+1     0000c003  _mains_voltage_tolerance1        
+1     0000c004  _ref_float_voltage1              
+1     0000c005  _Counter_Boost_Start             
+1     0000c006  _Counter_Boost_Off               
+1     0000c007  _Flag_BoostFault                 
+1     0000c008  _Counter_Buck_Start              
+1     0000c009  _Flag_BoostDanger                
+1     0000c00a  _quick_time1                     
+1     0000c00b  _ac_fail_time1                   
+1     0000c00c  _deep_dischage_voltage1          
+1     0000c00d  _quick_voltage1                  
+1     0000c00e  _Flag_Boost_CLearTrip            
+1     0000c00f  _mains_voltage1                  
+1     0000c010  _n_of_battery_cells1             
+1     0000c011  _battery_type1                   
+1     0000c012  _mains_nominal_voltage1          
+1     0000c013  _current_limit_rate1             
+1     0000c014  _low_voltage_alarm1              
+1     0000c015  _Restart_System                  
+1     0000c016  _PowerBad                        
+1     0000c017  _Flag_IDF                        
+1     0000c018  _Flag_RecDanger                  
+1     0000c019  _Emergency_Flag                  
+1     0000c01a  _Flag_ContactorFault             
+1     0000c01b  _Counter_Sequence_OK             
+1     0000c01c  _SystemIsReady                   
+1     0000c01d  _Flag_PowerOk                    
+1     0000c01e  _Flag_ZCD                        
+1     0000c01f  _Flag_MainsOff1                  
+1     0000c020  _Flag_MainsOff2                  
+1     0000c021  _Flag_BatConnected               
+1     0000c022  _Flag_Auto                       
+1     0000c023  _Flag_BatDisConnected            
+1     0000c024  _Flag_RecFault                   
+1     0000c025  _Flag_InvFault                   
+1     0000c026  _Flag_BuckDanger                 
+1     0000c027  _Flag_MainsOff3                  
+1     0000c028  _Flag_BuckFault                  
+1     0000c029  _PowerGood                       
+1     0000c02a  _UpsStatus4                      
+1     0000c02b  _UpsStatus3                      
+1     0000c02c  _modbusAdd                       
+1     0000c02d  _UpsStatus1                      
+1     0000c02e  _Flag_StratUp                    
+1     0000c02f  _modbusFn                        
+1     0000c030  _Flag_offset_error               
+1     0000c031  _Flag_UnbalanceVoltageFault      
+1     0000c032  _Counter_Toggle                  
+1     0000c033  _offset_avg_counter              
+1     0000c034  _UpsStatus2                      
+1     0000c035  _Flag_Battery_Ok                 
+1     0000c036  _offset_sum                      
+1     0000c037  _offset_avg                      
+1     0000c038  _Counter_State1_AutoReset        
+1     0000c039  _Counter_State2_AutoReset        
+1     0000c03a  _Flag_SystemStart                
+1     0000c03b  _offset                          
+1     0000c03c  _State_AutoReset                 
+1     0000c03d  _Counter_State3_AutoReset        
+1     0000c03e  _SystemIsHot                     
+1     0000c03f  _Counter_Delay_Contactor         
 1     0000c040  _Flag_ManualShutDown             
-1     0000c041  _Counter_TurnOn                  
-1     0000c042  _Flag_Rectifier_ClearTrip        
-1     0000c043  _Flag_Boost_CLearTrip            
+1     0000c041  _Delay_Mains_Contactor           
+1     0000c042  _test1                           
+1     0000c043  _OnCommand                       
 1     0000c044  _Flag_Balancer_ClearTrip         
-1     0000c045  _Flag_Buck_ClearTrip             
-1     0000c046  _OnCommand                       
-1     0000c047  _Counter_Delay_Reset             
-1     0000c048  _Counter_Delay_Contactor         
-1     0000c049  _Delay_Mains_Contactor           
-1     0000c04a  _SystemIsHot                     
-1     0000c04b  _modbusAdd                       
-1     0000c04c  _V_DCP                           
-1     0000c04e  _V_DCN                           
-1     0000c050  _I_T                             
-1     0000c052  _V_DC_OUT                        
-1     0000c054  _OutputRegister                  
-1     0000c056  _V_DC                            
-1     0000c058  _V_DC_BAT                        
-1     0000c05a  _vrms_mains_min                  
-1     0000c05c  _vrms_mains_max                  
-1     0000c05e  _ref_float_voltage               
-1     0000c060  _SoftStart_Buck                  
-1     0000c062  _SoftStart_Boost                 
-1     0000c064  _mains_nominal_voltage           
-1     0000c066  _deep_dischage_voltage           
-1     0000c068  _mains_voltage                   
+1     0000c045  _Counter_AfterReset              
+1     0000c046  _Flag_Rectifier_ClearTrip        
+1     0000c047  _Counter_TurnOn                  
+1     0000c048  _Counter_Delay_Reset             
+1     0000c049  _Flag_Buck_ClearTrip             
+1     0000c04a  _Emergency_Flag1                 
+1     0000c04b  _Delay_Null_Contactor            
+1     0000c04c  _deep_dischage_voltage           
+1     0000c04e  _mains_nominal_voltage           
+1     0000c050  _OutputRegister                  
+1     0000c052  _Step_SoftStart                  
+1     0000c054  _Ki_test                         
+1     0000c056  _Kp_test                         
+1     0000c058  _mains_voltage                   
+1     0000c05a  _V_DC_OUT                        
+1     0000c05c  _V_DC_BAT                        
+1     0000c05e  _V_DCP                           
+1     0000c060  _V_DCN                           
+1     0000c062  _Vrms_R                          
+1     0000c064  _current_limit_rate              
+1     0000c066  _I_DC                            
+1     0000c068  _SoftStart_Buck                  
 1     0000c06a  _battery_overvoltage             
-1     0000c06c  _current_limit_rate              
+1     0000c06c  _Vrms_S                          
 1     0000c06e  _VBuck_Start                     
-1     0000c070  _Vrms_T                          
-1     0000c072  _Irms_R                          
-1     0000c074  _Vrms_S                          
-1     0000c076  _K                               
-1     0000c078  _Vrms_R                          
-1     0000c07a  _VDC_Start                       
-1     0000c07c  _Step_SoftStart                  
-1     0000c07e  _V_RCha                          
-1     0000c080  _Irms_S                          
-1     0000c082  _Irms_T                          
-1     0000c084  _C_Task_Ptr                      
-1     0000c086  _Alpha_State_Ptr                 
+1     0000c070  _ref_float_voltage               
+1     0000c072  _SoftStart_Boost                 
+1     0000c074  _vrms_mains_max                  
+1     0000c076  _V_RCha                          
+1     0000c078  _Irms_T                          
+1     0000c07a  _K                               
+1     0000c07c  _VDC_Start                       
+1     0000c07e  _Vrms_T                          
+1     0000c080  _vrms_mains_min                  
+1     0000c082  _Irms_S                          
+1     0000c084  _Irms_R                          
+1     0000c086  _C_Task_Ptr                      
 1     0000c088  _B_Task_Ptr                      
-1     0000c08a  _DutyR                           
-1     0000c08c  _V_S                             
-1     0000c08e  _V_R                             
+1     0000c08a  _Alpha_State_Ptr                 
+1     0000c08c  _DutyR                           
+1     0000c08e  _pwm1                            
 1     0000c090  _V_T                             
-1     0000c092  _I_S                             
+1     0000c092  _V_S                             
 1     0000c094  _I_R                             
-1     0000c096  _I_DC                            
-1     0000c098  _DutyS                           
-1     0000c09a  _pwm1                            
+1     0000c096  _I_T                             
+1     0000c098  _I_S                             
+1     0000c09a  _V_DC                            
 1     0000c09c  _DutyT                           
-1     0000c09e  _Flag_Start                      
+1     0000c09e  _DutyS                           
 1     0000c0a0  _Duty_Leg4                       
 1     0000c0a2  _Flag_OverTemp                   
-1     0000c0a4  _VTimer1                         
-1     0000c0a8  _VTimer2                         
+1     0000c0a4  _Flag_Start                      
+1     0000c0a6  _V_R                             
+1     0000c0a8  _VTimer1                         
 1     0000c0ac  _VTimer0                         
-1     0000c0b0  _Coil                            
+1     0000c0b0  _VTimer2                         
+1     0000c0b4  _Coil                            
 1     0000c0c0  _PWM                             
 1     0000c0ce  _Vars3_h3                        
 1     0000c0de  _Coeff1_h5                       
@@ -1566,19 +1566,19 @@ page  address   name
 1     0000c1e0  _Coeff3_h1                       
 1     0000c200  _cntl_pi3                        
 1     0000c218  _cntl_pi2                        
-1     0000c240  _cntl_pi4                        
-1     0000c258  _cntl_pi7                        
-1     0000c280  _cntl_pi5                        
-1     0000c298  _cntl_pi10                       
-1     0000c2c0  _cntl_pi9                        
-1     0000c2d8  _cntl_pi1                        
+1     0000c240  _cntl_pi5                        
+1     0000c258  _cntl_pi4                        
+1     0000c280  _cntl_pi6                        
+1     0000c298  _cntl_pi9                        
+1     0000c2c0  _cntl_pi10                       
+1     0000c2d8  _cntl_pi7                        
 1     0000c300  _cntl_pi8                        
-1     0000c318  _cntl_pi6                        
+1     0000c318  _cntl_pi1                        
 1     0000c340  _InputRegister                   
 1     0000c380  _HoldingRegister                 
 1     0000c3c0  _sine_mainsV_S                   
-1     0000c400  _sine_mainsV_T                   
-1     0000c440  _sine_mainsV_R                   
+1     0000c400  _sine_mainsV_R                   
+1     0000c440  _sine_mainsV_T                   
 1     0000c480  _spll1                           
 1     0000c4da  _CpuTimer1                       
 1     0000c4e2  _CpuTimer2                       
