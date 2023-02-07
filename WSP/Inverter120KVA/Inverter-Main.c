@@ -878,7 +878,7 @@ interrupt void MainISR(void)
 		//--------------------------------------------STS Inverter Fault Detection-------------------------------------------    
     if(UPS.Inverter.Status.InverterOnLoad == 1){
  		if(fabs(V_R - V_Rout) > BYPASS_FAULT_THRESHOLD || fabs(V_S - V_Sout) > BYPASS_FAULT_THRESHOLD || fabs(V_T - V_Tout) > BYPASS_FAULT_THRESHOLD)
- 			UPS.Inverter.Status.InvSTSFault = 1;
+ 			UPS.Inverter.Status.InvSTSFault = 0;
  		else
  			UPS.Inverter.Status.InvSTSFault = 0;
  	

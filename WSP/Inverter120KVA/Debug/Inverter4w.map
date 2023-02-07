@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v16.9.1                     
 ******************************************************************************
->> Linked Tue Nov 08 18:01:32 2022
+>> Linked Tue Feb 07 18:46:53 2023
 
 OUTPUT FILE NAME:   <Inverter4w.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0033961b
@@ -426,7 +426,7 @@ MODULE SUMMARY
     +--+---------------------------------+-------+------------------+--------------------+
        Total:                            17971   671                5211              
                                                                                       
-    D:/dsp_workspace_v7/Inverter120KVA30-06-01/rts2800_fpu32_fast_supplement.lib
+    D:/AMirza/UPS30-120/WSP/Inverter120KVA/rts2800_fpu32_fast_supplement.lib
        FPUmathTables.obj                 0       1696               0                 
        cos_f32.obj                       52      0                  0                 
        sin_f32.obj                       52      0                  0                 

@@ -1,7 +1,7 @@
 #ifndef UPS_CONFIG_H_
 #define UPS_CONFIG_H_
 
-#define Grid_22
+#define Grid_220
 
 
 #ifdef Grid_22
@@ -101,15 +101,15 @@
 //#define RST_Rectifier_OverVoltage       1.2000       //       (1.2)
 //#define RST_Rectifier_UnderVoltage      0.0364	   //       (14.14*.8)/311
 //#define DC_Rectifier_LowVoltage         0.9000
-#define DC_Rectifier_OverVoltage          1.2000       //       (800/750)
-#define DC_MAX_VOLTAGE                    1.2000      //       (900/750)
+#define DC_Rectifier_OverVoltage          1.066       //       (800/750)
+#define DC_MAX_VOLTAGE                    1.066      //       (800/750)
 #define MAX_CL                            0.15         //        (10/65)
 #define MAX_UNBALANCE_VOLTAGE             0.1300       //       (100/750)
 #define DC_Rectifier_UnderVoltage		  0.8933       //       (670/750)
 //#define VDC_Boost_OverVoltage           0.5333       //       (400/750) //425
 #define Min_Freq                          48.000       //       (47.5 Hz)
 #define Max_Freq                          52.000       //       (52.5 Hz) 
-#define VDC_Ref                           1.1420       //       (856/750)
+#define VDC_Ref                           1.0350       //       (776/750)
 #define VDC_Ref_Buck                      0.8560       //       (6*2.23*48)/750
 #define VDC_Ref_Boost                     0.9600//0.9333       //       (700/750)
 #define VDC_Min_Start                     0.5333       //       (400/750)
@@ -120,7 +120,7 @@
 //#define V_DC_OFFSET                     0.0933       //       (70/750)
 #define I_Boost_OverCurrent               1.5000       //       (15/65)
 #define I_Boost_MaxCurrent                1.5000       //       (15/65)
-#define DC_LowVoltage                     0.8000       //600/750
+#define DC_LowVoltage                     0.8800       //600/750
 //#define Vrms_Min                          180.00
 //#define Vrms_Max                          260.00
 #define Bat_Current_Limit                 0.0262      //       (1.7/65)

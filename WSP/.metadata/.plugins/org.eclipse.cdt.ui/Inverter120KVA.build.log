@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Inverter120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Inverter-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Inverter-Main.d"  "../Inverter-Main.c"
+'Finished building: ../Inverter-Main.c'
+' '
+'Building target: Inverter4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Inverter4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Inverter120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Inverter4w_linkInfo.xml" --rom_model -o "Inverter4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ABC_DQ0_POS_F.obj" "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./Inverter-Main.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Inverter4w.out'
+' '
+
+**** Build Finished ****

@@ -343,7 +343,7 @@ void main(void)
 
 
 		
-		
+//
 #ifdef FLASH 
 // Copy time critical code and Flash setup code to RAM
 // The  RamfuncsLoadStart, RamfuncsLoadEnd, and RamfuncsRunStart
@@ -914,16 +914,17 @@ interrupt void MainISR(void)
 		V_R=(AdcMirror.ADCRESULT0*0.00024414-0.5)*2*GAIN_CAL_VAC;
 		V_S=(AdcMirror.ADCRESULT1*0.00024414-0.5)*2*GAIN_CAL_VAC;
 		V_T=(AdcMirror.ADCRESULT2*0.00024414-0.5)*2*GAIN_CAL_VAC;
-		V_DCP=(AdcMirror.ADCRESULT3*0.00024414-0.5)*2*GAIN_CAL_VDC * 0.875;
-		V_DCN=(AdcMirror.ADCRESULT4*0.00024414-0.5)*2*GAIN_CAL_VDC * 0.875;
+		V_DCP=((AdcMirror.ADCRESULT3)*0.00024414-0.5)*2*GAIN_CAL_VDC;
+		V_DCN=((AdcMirror.ADCRESULT4)*0.00024414-0.5)*2*GAIN_CAL_VDC;
 		I_R=(AdcMirror.ADCRESULT5*0.00024414-0.5)*2*GAIN_CAL_IAC;
 		I_S=(AdcMirror.ADCRESULT6*0.00024414-0.5)*2*GAIN_CAL_IAC;
 		I_T=(AdcMirror.ADCRESULT7*0.00024414-0.5)*2*GAIN_CAL_IAC;
-		V_DC_BAT=(AdcMirror.ADCRESULT8*0.00024414-0.5)*2*GAIN_CAL_VDC*1.468;
-		V_DC_OUT=(AdcMirror.ADCRESULT9*0.00024414-0.5)*2*GAIN_CAL_VDC*1.468;
+		//V_DC_BAT=(AdcMirror.ADCRESULT8*0.00024414-0.5)*2*GAIN_CAL_VDC*1.468;
+		//V_DC_OUT=(AdcMirror.ADCRESULT9*0.00024414-0.5)*2*GAIN_CAL_VDC*1.468;
 		I_DC=(AdcMirror.ADCRESULT10*0.00024414-0.5)*2*GAIN_CAL_IAC;
 		V_DC=V_DCP+V_DCN;
-    
+		V_DC_BAT=V_DC;
+		V_DC_OUT=V_DC;
 //    if(offset_avg_counter <= 100 && Flag_StratUp == 1){
 //		if(offset < 200 && offset > -200 ){
 //			offset_avg_counter++;
@@ -1018,14 +1019,14 @@ interrupt void MainISR(void)
         vrms_mains_max = (float32)(0.01*(100 + mains_voltage_tolerance1))*mains_voltage;
 
         if(battery_type1 == 0)
-            battery_overvoltage = (float32)(0.02*n_of_battery_cells1);//0.02=2.45*6*(1/750)
+            battery_overvoltage = 1.066;//850/750
         else
-            battery_overvoltage = (float32)(0.0022*n_of_battery_cells1);//0.0022=1.65*(1/750)
+            battery_overvoltage = 1.066;//850/750
 
         if(battery_type1 == 0)
-            deep_dischage_voltage = 0.00008*deep_dischage_voltage1*n_of_battery_cells1; //0.0008=(0.01*6)/750
+            deep_dischage_voltage = 0.88; //0.0008=(0.01*6)/750
         else
-            deep_dischage_voltage = 0.00001333*deep_dischage_voltage1*n_of_battery_cells1; //0.0008=(0.01)/750
+            deep_dischage_voltage = 0.88; //0.0008=(0.01)/750
 
 
         if(current_limit_rate > MAX_CL)
@@ -1324,7 +1325,7 @@ interrupt void MainISR(void)
 
 
 	else{
-			if((Flag_RecFault == 2 || UPS.Rectifier.Status.PG==0) && Counter_Boost_Start == 0  && Flag_SystemStart == 1){//
+			if((Flag_RecFault == 2 || UPS.Rectifier.Status.PG==0 || UPS.Rectifier.Status.ShortCircuit == 1) && Counter_Boost_Start == 0  && Flag_SystemStart == 1){//
 				if(UPS.Boost.Status.On == 0 && UPS.Rectifier.Status.On == 1 && UPS.Inverter.Status.On == 1){
 						Turn_on_boost(); //Turn on boost
 						Flag_RecFault++;
@@ -1379,7 +1380,7 @@ interrupt void MainISR(void)
 		UPS.Rectifier.Status.DC_OverVoltage=0;
 		
     	Counter_DC_OK=1; 
-    	SoftStart_Boost=0.9*VDC_Ref_Boost; 
+    	SoftStart_Boost=0.9 * VDC_Ref_Boost;
     	PowerGood=0;
     	UPS.Rectifier.Status.PG = 0;
     	GpioDataRegs.GPBSET.bit.GPIO59=1; //say to inverter that don't sync output with input
@@ -2013,7 +2014,7 @@ void Protection(void){
 //================================================================================================================================================
 
 //--------------------------------------------------------------Buck Faults-----------------------------------------------------------------			
-	if(UPS.Buck.Status.On==1){						
+	if(UPS.Buck.Status.On==1 || UPS.Rectifier.Status.On==1){
 		if(V_DC_BAT > battery_overvoltage)
 			UPS.Buck.Status.Bat_OverVoltage=1;
 		else 
@@ -2063,7 +2064,7 @@ void Protection(void){
 	
 //-----------------------------------------------Rectifier Protection Counters------------------------------------------------	
 	
-	if(UPS.Rectifier.Status.On == 1 && Flag_RecDanger < 1){ 
+	if(UPS.Rectifier.Status.On == 1 && Flag_RecDanger < 2){
 		if(UPS.Rectifier.Status.ShortCircuit || UPS.Rectifier.Status.DC_MaxVoltage || UPS.Rectifier.Status.DC_MinVoltage)
 			Flag_RecDanger++;  
 		else
@@ -2123,7 +2124,7 @@ void Protection(void){
 			Flag_BuckDanger=0;				
 	}
 
-	if(UPS.Buck.Status.On == 1 && Flag_BuckFault < 12000){
+	if(Flag_BuckFault < 12000){
 		if(UPS.Buck.Status.OverCurrent || UPS.Buck.Status.Bat_OverVoltage)
 			Flag_BuckFault++;  //Shut down Buck 	
 		else
@@ -2189,7 +2190,7 @@ void Protection(void){
 		Shut_down_buck();
 	}	
 	
-	if(Flag_RecDanger >= 1 || Flag_OverTemp >= 60000 || Flag_ContactorFault >= 10 || Flag_IDF >= 1 || Flag_UnbalanceVoltageFault >= 2 || Flag_offset_error >= 1){
+	if(Flag_RecDanger >= 2 || Flag_OverTemp >= 60000 || Flag_ContactorFault >= 10 || Flag_IDF >= 1 || Flag_UnbalanceVoltageFault >= 2 || Flag_offset_error >= 1 || Flag_BuckFault >= 12000){
 		UPS.Rectifier.Status.Fault=1;
 		Shut_down_system();
 	}

@@ -34,7 +34,7 @@
 #define MAX_PHASEDIFF                     0.14 //(8/360)*2*pi
 #define PB_DETECTION_CYCLES               10
 #define PG_DETECTION_CYCLES               100
-#define BYPASS_FAULT_THRESHOLD            0.035  //10/311
+#define BYPASS_FAULT_THRESHOLD            0.07  //10/311
 
 #define K                                 0.0
 #define TEST_MODE                         1
@@ -107,7 +107,7 @@
 #define MAX_PHASEDIFF                     0.14 //(8/360)*2*pi
 #define PB_DETECTION_CYCLES               20
 #define PG_DETECTION_CYCLES               250  //5 seconds
-#define BYPASS_FAULT_THRESHOLD            0.035  //10/311
+#define BYPASS_FAULT_THRESHOLD            0.07  //10/311
 
 #define K                                 1.0
 #define TEST_MODE                         0

@@ -254,3 +254,390 @@ gmake: Nothing to be done for 'all'.
 gmake: Nothing to be done for 'all'.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../ADC_Setup.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="ADC_Setup.d"  "../ADC_Setup.c"
+'Finished building: ../ADC_Setup.c'
+' '
+'Building file: ../CNTL_2P2Z_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="CNTL_2P2Z_F.d"  "../CNTL_2P2Z_F.c"
+'Finished building: ../CNTL_2P2Z_F.c'
+' '
+'Building file: ../CNTL_PI_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="CNTL_PI_F.d"  "../CNTL_PI_F.c"
+'Finished building: ../CNTL_PI_F.c'
+' '
+'Building file: ../DLOG_4CH_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DLOG_4CH_F.d"  "../DLOG_4CH_F.c"
+'Finished building: ../DLOG_4CH_F.c'
+' '
+'Building file: ../DSP2833x_ADC_cal.asm'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_ADC_cal.d"  "../DSP2833x_ADC_cal.asm"
+'Finished building: ../DSP2833x_ADC_cal.asm'
+' '
+'Building file: ../DSP2833x_CodeStartBranch.asm'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_CodeStartBranch.d"  "../DSP2833x_CodeStartBranch.asm"
+'Finished building: ../DSP2833x_CodeStartBranch.asm'
+' '
+'Building file: ../DSP2833x_CpuTimers.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_CpuTimers.d"  "../DSP2833x_CpuTimers.c"
+'Finished building: ../DSP2833x_CpuTimers.c'
+' '
+'Building file: ../DSP2833x_DefaultIsr.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_DefaultIsr.d"  "../DSP2833x_DefaultIsr.c"
+'Finished building: ../DSP2833x_DefaultIsr.c'
+' '
+'Building file: ../DSP2833x_GlobalVariableDefs.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_GlobalVariableDefs.d"  "../DSP2833x_GlobalVariableDefs.c"
+'Finished building: ../DSP2833x_GlobalVariableDefs.c'
+' '
+'Building file: ../DSP2833x_PieCtrl.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_PieCtrl.d"  "../DSP2833x_PieCtrl.c"
+'Finished building: ../DSP2833x_PieCtrl.c'
+' '
+'Building file: ../DSP2833x_PieVect.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_PieVect.d"  "../DSP2833x_PieVect.c"
+'Finished building: ../DSP2833x_PieVect.c'
+' '
+'Building file: ../DSP2833x_usDelay.asm'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="DSP2833x_usDelay.d"  "../DSP2833x_usDelay.asm"
+'Finished building: ../DSP2833x_usDelay.asm'
+' '
+'Building file: ../IO_Setup.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="IO_Setup.d"  "../IO_Setup.c"
+'Finished building: ../IO_Setup.c'
+' '
+'Building file: ../PWM_Setup.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="PWM_Setup.d"  "../PWM_Setup.c"
+'Finished building: ../PWM_Setup.c'
+' '
+'Building file: ../Rectifier-DevInit.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-DevInit.d"  "../Rectifier-DevInit.c"
+'Finished building: ../Rectifier-DevInit.c'
+' '
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building file: ../SINEANALYZER_DIFF_wPWR_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="SINEANALYZER_DIFF_wPWR_F.d"  "../SINEANALYZER_DIFF_wPWR_F.c"
+'Finished building: ../SINEANALYZER_DIFF_wPWR_F.c'
+' '
+'Building file: ../SPLL_1ph_SOGI_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="SPLL_1ph_SOGI_F.d"  "../SPLL_1ph_SOGI_F.c"
+'Finished building: ../SPLL_1ph_SOGI_F.c'
+' '
+'Building file: ../UPS_Config.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="UPS_Config.d"  "../UPS_Config.c"
+'Finished building: ../UPS_Config.c'
+' '
+'Building file: ../iCLARKE_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="iCLARKE_F.d"  "../iCLARKE_F.c"
+'Finished building: ../iCLARKE_F.c'
+' '
+'Building file: ../iPARK_F.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="iPARK_F.d"  "../iPARK_F.c"
+'Finished building: ../iPARK_F.c'
+' '
+'Building file: ../modbus-rtu.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="modbus-rtu.d"  "../modbus-rtu.c"
+"../modbus-rtu.c", line 38: warning: variable "CoilQty" was set but never used
+'Finished building: ../modbus-rtu.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building file: ../UPS_Config.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="UPS_Config.d"  "../UPS_Config.c"
+'Finished building: ../UPS_Config.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Inverter120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../IO_Setup.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="IO_Setup.d"  "../IO_Setup.c"
+'Finished building: ../IO_Setup.c'
+' '
+'Building file: ../Inverter-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Inverter-Main.d"  "../Inverter-Main.c"
+'Finished building: ../Inverter-Main.c'
+' '
+'Building target: Inverter4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Inverter4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Inverter120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Inverter4w_linkInfo.xml" --rom_model -o "Inverter4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ABC_DQ0_POS_F.obj" "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./Inverter-Main.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Inverter4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building file: ../UPS_Config.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="UPS_Config.d"  "../UPS_Config.c"
+'Finished building: ../UPS_Config.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building file: ../UPS_Config.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="UPS_Config.d"  "../UPS_Config.c"
+'Finished building: ../UPS_Config.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Rectifier-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Charger120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Rectifier-Main.d"  "../Rectifier-Main.c"
+'Finished building: ../Rectifier-Main.c'
+' '
+'Building target: Charger4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Charger4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Charger120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Charger4w_linkInfo.xml" --rom_model -o "Charger4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./Rectifier-Main.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./iCLARKE_F.obj" "./iPARK_F.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Charger4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Charger120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Inverter120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Inverter120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Inverter-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Inverter-Main.d"  "../Inverter-Main.c"
+'Finished building: ../Inverter-Main.c'
+' '
+'Building file: ../UPS_Config.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="UPS_Config.d"  "../UPS_Config.c"
+'Finished building: ../UPS_Config.c'
+' '
+'Building target: Inverter4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Inverter4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Inverter120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Inverter4w_linkInfo.xml" --rom_model -o "Inverter4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ABC_DQ0_POS_F.obj" "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./Inverter-Main.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Inverter4w.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Inverter120KVA ****
+
+"D:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+'Building file: ../Inverter-Main.c'
+'Invoking: C2000 Compiler'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --include_path="D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --include_path="D:/AMirza/UPS30-120/WSP/Inverter120KVA/include" --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 --preproc_with_compile --preproc_dependency="Inverter-Main.d"  "../Inverter-Main.c"
+'Finished building: ../Inverter-Main.c'
+' '
+'Building target: Inverter4w.out'
+'Invoking: C2000 Linker'
+"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/bin/cl2000" --silicon_version=28 -g --diag_warning=225 --large_memory_model --unified_memory --float_support=fpu32 -z -m"Inverter4w.map" --stack_size=0x400 --warn_sections -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/lib" -i"D:/AMirza/UPS30-120/WSP/Inverter120KVA" -i"D:/ti/ccsv7/tools/compiler/ti-cgt-c2000_16.9.1.LTS/include" --priority --reread_libs --xml_link_info="Inverter4w_linkInfo.xml" --rom_model -o "Inverter4w.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./ABC_DQ0_POS_F.obj" "./ADC_Setup.obj" "./CNTL_2P2Z_F.obj" "./CNTL_PI_F.obj" "./DLOG_4CH_F.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_CpuTimers.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_usDelay.obj" "./IO_Setup.obj" "./Inverter-Main.obj" "./PWM_Setup.obj" "./Rectifier-DevInit.obj" "./SINEANALYZER_DIFF_wPWR_F.obj" "./SPLL_1ph_SOGI_F.obj" "./UPS_Config.obj" "./modbus-rtu.obj" "../C28x_SGEN_Lib_fpu32.lib" "../DSP2833x_Headers_nonBIOS.cmd" "../F28335_FLASH_SolarInverter.cmd" "../rts2800_fpu32_fast_supplement.lib"  -lC28x_SGEN_Lib_fpu32.lib 
+<Linking>
+'Finished building target: Inverter4w.out'
+' '
+
+**** Build Finished ****
